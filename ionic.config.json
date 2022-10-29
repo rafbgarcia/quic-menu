@@ -1,0 +1,7 @@
+{
+  "name": "quic_menu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
