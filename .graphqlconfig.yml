@@ -1,0 +1,15 @@
+projects:
+  quicmenu:
+    schemaPath: amplify/backend/api/quicmenu/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: sa-east-1
+        apiId: null
+        maxDepth: 2

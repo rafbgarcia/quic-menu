@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-quicmenu-dev-154550-authRole",
+      "UnauthRoleArn": "arn:aws:iam::128777745898:role/amplify-quicmenu-dev-154550-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::128777745898:role/amplify-quicmenu-dev-154550-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-quicmenu-dev-154550-deployment",
+      "UnauthRoleName": "amplify-quicmenu-dev-154550-unauthRole",
+      "StackName": "amplify-quicmenu-dev-154550",
+      "StackId": "arn:aws:cloudformation:sa-east-1:128777745898:stack/amplify-quicmenu-dev-154550/e9c17750-57b9-11ed-ac07-06e9cfdfcfb6",
+      "AmplifyAppId": "d2b0zrn8orov76"
+    }
+  }
+}
