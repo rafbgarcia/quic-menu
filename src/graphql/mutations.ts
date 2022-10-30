@@ -10,6 +10,12 @@ export const createPlace = /* GraphQL */ `
     createPlace(input: $input, condition: $condition) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version
@@ -26,6 +32,12 @@ export const updatePlace = /* GraphQL */ `
     updatePlace(input: $input, condition: $condition) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version
@@ -42,6 +54,12 @@ export const deletePlace = /* GraphQL */ `
     deletePlace(input: $input, condition: $condition) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version

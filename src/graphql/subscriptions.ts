@@ -7,6 +7,12 @@ export const onCreatePlace = /* GraphQL */ `
     onCreatePlace(filter: $filter) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version
@@ -20,6 +26,12 @@ export const onUpdatePlace = /* GraphQL */ `
     onUpdatePlace(filter: $filter) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version
@@ -33,6 +45,12 @@ export const onDeletePlace = /* GraphQL */ `
     onDeletePlace(filter: $filter) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version

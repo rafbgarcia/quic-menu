@@ -2,18 +2,17 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const scrapeGoomer = /* GraphQL */ `
-  query ScrapeGoomer($url: String!) {
-    scrapeGoomer(url: $url) {
-      name
-    }
-  }
-`;
 export const getPlace = /* GraphQL */ `
   query GetPlace($id: ID!) {
     getPlace(id: $id) {
       id
       name
+      category
+      about
+      menu {
+        name
+      }
+      minimumAge
       createdAt
       updatedAt
       _version
@@ -32,6 +31,9 @@ export const listPlaces = /* GraphQL */ `
       items {
         id
         name
+        category
+        about
+        minimumAge
         createdAt
         updatedAt
         _version
@@ -59,6 +61,9 @@ export const syncPlaces = /* GraphQL */ `
       items {
         id
         name
+        category
+        about
+        minimumAge
         createdAt
         updatedAt
         _version

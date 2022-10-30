@@ -5,11 +5,39 @@
 export type CreatePlaceInput = {
   id?: string | null,
   name: string,
+  category?: string | null,
+  about?: string | null,
+  menu?: Array< MenuGroupInput | null > | null,
+  minimumAge?: number | null,
   _version?: number | null,
+};
+
+export type MenuGroupInput = {
+  name: string,
+  items?: Array< MenuItemInput | null > | null,
+};
+
+export type MenuItemInput = {
+  name: string,
+  price: number,
+  discountPrice?: number | null,
+  description?: string | null,
+  images?: ItemImagesInput | null,
+  hide?: boolean | null,
+  hideFromDelivery?: boolean | null,
+};
+
+export type ItemImagesInput = {
+  small?: string | null,
+  medium?: string | null,
+  large?: string | null,
 };
 
 export type ModelPlaceConditionInput = {
   name?: ModelStringInput | null,
+  category?: ModelStringInput | null,
+  about?: ModelStringInput | null,
+  minimumAge?: ModelIntInput | null,
   and?: Array< ModelPlaceConditionInput | null > | null,
   or?: Array< ModelPlaceConditionInput | null > | null,
   not?: ModelPlaceConditionInput | null,
@@ -55,10 +83,26 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
+export type ModelIntInput = {
+  ne?: number | null,
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
+  attributeExists?: boolean | null,
+  attributeType?: ModelAttributeTypes | null,
+};
+
 export type Place = {
   __typename: "Place",
   id: string,
   name: string,
+  category?: string | null,
+  about?: string | null,
+  menu?:  Array<MenuGroup | null > | null,
+  minimumAge?: number | null,
   createdAt: string,
   updatedAt: string,
   _version: number,
@@ -66,9 +110,37 @@ export type Place = {
   _lastChangedAt: number,
 };
 
+export type MenuGroup = {
+  __typename: "MenuGroup",
+  name: string,
+  items?:  Array<MenuItem | null > | null,
+};
+
+export type MenuItem = {
+  __typename: "MenuItem",
+  name: string,
+  price: number,
+  discountPrice?: number | null,
+  description?: string | null,
+  images?: ItemImages | null,
+  hide?: boolean | null,
+  hideFromDelivery?: boolean | null,
+};
+
+export type ItemImages = {
+  __typename: "ItemImages",
+  small?: string | null,
+  medium?: string | null,
+  large?: string | null,
+};
+
 export type UpdatePlaceInput = {
   id: string,
   name?: string | null,
+  category?: string | null,
+  about?: string | null,
+  menu?: Array< MenuGroupInput | null > | null,
+  minimumAge?: number | null,
   _version?: number | null,
 };
 
@@ -77,14 +149,12 @@ export type DeletePlaceInput = {
   _version?: number | null,
 };
 
-export type ScrapedPlace = {
-  __typename: "ScrapedPlace",
-  name?: string | null,
-};
-
 export type ModelPlaceFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
+  category?: ModelStringInput | null,
+  about?: ModelStringInput | null,
+  minimumAge?: ModelIntInput | null,
   and?: Array< ModelPlaceFilterInput | null > | null,
   or?: Array< ModelPlaceFilterInput | null > | null,
   not?: ModelPlaceFilterInput | null,
@@ -116,6 +186,9 @@ export type ModelPlaceConnection = {
 export type ModelSubscriptionPlaceFilterInput = {
   id?: ModelSubscriptionIDInput | null,
   name?: ModelSubscriptionStringInput | null,
+  category?: ModelSubscriptionStringInput | null,
+  about?: ModelSubscriptionStringInput | null,
+  minimumAge?: ModelSubscriptionIntInput | null,
   and?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
   or?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
 };
@@ -150,6 +223,18 @@ export type ModelSubscriptionStringInput = {
   notIn?: Array< string | null > | null,
 };
 
+export type ModelSubscriptionIntInput = {
+  ne?: number | null,
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
+  in?: Array< number | null > | null,
+  notIn?: Array< number | null > | null,
+};
+
 export type CreatePlaceMutationVariables = {
   input: CreatePlaceInput,
   condition?: ModelPlaceConditionInput | null,
@@ -160,6 +245,13 @@ export type CreatePlaceMutation = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -178,6 +270,13 @@ export type UpdatePlaceMutation = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -196,22 +295,18 @@ export type DeletePlaceMutation = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
     _deleted?: boolean | null,
     _lastChangedAt: number,
-  } | null,
-};
-
-export type ScrapeGoomerQueryVariables = {
-  url: string,
-};
-
-export type ScrapeGoomerQuery = {
-  scrapeGoomer?:  {
-    __typename: "ScrapedPlace",
-    name?: string | null,
   } | null,
 };
 
@@ -224,6 +319,13 @@ export type GetPlaceQuery = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -245,6 +347,9 @@ export type ListPlacesQuery = {
       __typename: "Place",
       id: string,
       name: string,
+      category?: string | null,
+      about?: string | null,
+      minimumAge?: number | null,
       createdAt: string,
       updatedAt: string,
       _version: number,
@@ -270,6 +375,9 @@ export type SyncPlacesQuery = {
       __typename: "Place",
       id: string,
       name: string,
+      category?: string | null,
+      about?: string | null,
+      minimumAge?: number | null,
       createdAt: string,
       updatedAt: string,
       _version: number,
@@ -290,6 +398,13 @@ export type OnCreatePlaceSubscription = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -307,6 +422,13 @@ export type OnUpdatePlaceSubscription = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -324,6 +446,13 @@ export type OnDeletePlaceSubscription = {
     __typename: "Place",
     id: string,
     name: string,
+    category?: string | null,
+    about?: string | null,
+    menu?:  Array< {
+      __typename: "MenuGroup",
+      name: string,
+    } | null > | null,
+    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,

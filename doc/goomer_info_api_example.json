@@ -1,0 +1,238 @@
+{
+  "version": "2.0",
+  "info": {
+    "id": 176907,
+    "name": "Confeitos e Afetos",
+    "address": "Rua Max Wilhelm, 140 - Vila Baependi, Jaraguá do Sul - SC",
+    "menu": "https://www.goomer.app/webmenu/confeitos-e-afetos/menu/1667072749976",
+    "hours": [
+      {
+        "from": "Ter",
+        "to": "Sex",
+        "open": "00:00",
+        "close": "00:00"
+      }
+    ],
+    "open_hours": "Ter - Sex: 00:00 - 00:00\n",
+    "order_phone": "",
+    "coupons": [],
+    "welcome_message": "Aqui tem afeto",
+    "color_3": "#ffffff",
+    "color_1": "#1D84FF",
+    "logo": "https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_v1649716508.png",
+    "order_whatsapp": 0,
+    "show_prices_whatsapp": 0,
+    "show_barcodes_whatsapp": 0,
+    "takeaway_discount": {
+      "type": "percent",
+      "value": 0
+    },
+    "delivery_waiting_time": "",
+    "delivery_fee": 0,
+    "delivery_required_amount": 0,
+    "checkout_options": {
+      "cpf": {
+        "enable": 0,
+        "required": 0
+      },
+      "phone_number": {
+        "enable": 1,
+        "required": 0
+      },
+      "name": {
+        "enable": 1,
+        "required": 0
+      },
+      "option_groups": [
+        {
+          "name": "Escolha uma opção",
+          "type": "delivery-options",
+          "options": [
+            {
+              "name": "Retirar no local",
+              "info": "(sujeito a disponibilidade)",
+              "discount": {
+                "type": "percent",
+                "value": 0
+              }
+            },
+            {
+              "name": "Entrega",
+              "info": "(sujeito a disponibilidade e taxas)",
+              "delivery": true,
+              "field": {
+                "name": "Qual é o seu endereço?",
+                "required": 1,
+                "type": "text",
+                "limit": 120
+              },
+              "waiting_time": "",
+              "fee": 0,
+              "required_amount": 0
+            }
+          ]
+        },
+        {
+          "name": "Como você vai pagar?",
+          "type": "payment-options",
+          "options": [
+            {
+              "name": "Dinheiro",
+              "field": {
+                "name": "Troco para quanto?",
+                "required": 1,
+                "type": "number",
+                "mask": "currency"
+              }
+            },
+            {
+              "name": "Débito"
+            },
+            {
+              "name": "Crédito"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "settings": {
+    "slug": "confeitos-e-afetos",
+    "id": 177777,
+    "store_code": 176907,
+    "name": "Confeitos e Afetos",
+    "address": {
+      "zipcode": "89256-000",
+      "country": "Brasil",
+      "number": "140",
+      "city": "Jaraguá do Sul",
+      "street": "Rua Max Wilhelm",
+      "latitude": "-26.481816",
+      "state": "SC",
+      "neighborhood": "Vila Baependi",
+      "complement": null,
+      "longitude": "-49.079147"
+    },
+    "about": null,
+    "specialty_name": "Cafeteria",
+    "gg_version": "0.0.1",
+    "subscription_info": {
+      "freemium": false,
+      "pack_type": "free",
+      "trial_enabled": false
+    },
+    "description": "Template Padrão",
+    "mm_splash_screen_message": "Aqui tem afeto",
+    "mm_logo_key": "stores/177777/products/mobile_menu/templates/294665/logo_v1649716508.png",
+    "mm_logo_url": "https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_v1649716508.png",
+    "mm_resized_logos": "{\"logo\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_v1649716508.png\"},\"logo_16x16\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_16x16_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_16x16_v1649716508.png\"},\"logo_32x32\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_32x32_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_32x32_v1649716508.png\"},\"logo_120x120\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_120x120_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_120x120_v1649716508.png\"},\"logo_180x180\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_180x180_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_180x180_v1649716508.png\"},\"logo_192x192\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_192x192_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_192x192_v1649716508.png\"},\"logo_300x300\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_300x300_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_300x300_v1649716508.png\"},\"logo_512x512\":{\"key\":\"stores/177777/products/mobile_menu/templates/294665/logo_512x512_v1649716508.png\",\"url\":\"https://static.goomer.app/stores/177777/products/mobile_menu/templates/294665/logo_512x512_v1649716508.png\"}}",
+    "mm_main_color": "#ffffff",
+    "mm_secondary_color": "#1D84FF",
+    "menu_url": "https://www.goomer.app/webmenu/confeitos-e-afetos/menu/1667072749976",
+    "mm_always_open": "true",
+    "mm_coupon_enabled": "true",
+    "mm_delivery_zone_options_neighborhood_enabled": "false",
+    "mm_delivery_zone_type": "static",
+    "mm_fixed_hours": "",
+    "mm_hours_mode": "fixed",
+    "mm_info_version": "2.0",
+    "mm_in_store_always_open": "true",
+    "mm_in_store_enabled": "true",
+    "mm_in_store_fixed_hours": "",
+    "mm_in_store_hours_mode": "fixed",
+    "mm_in_store_operating_hours": "{\"hours\":[{\"from\":\"Ter\",\"to\":\"Sex\",\"open\":\"9:30\",\"close\":\"19:0\"},{\"from\":\"Sab\",\"to\":\"Sab\",\"open\":\"9:0\",\"close\":\"17:30\"}]}",
+    "mm_in_store_store_closed": "true",
+    "mm_notification_new_order": "false",
+    "mm_onsite_menu_url": "https://www.goomer.app/webmenu/confeitos-e-afetos/localmenu/1667072749976",
+    "mm_operating_hours": "{\"hours\":[{\"from\":\"Ter\",\"to\":\"Sex\",\"open\":\"0:0\",\"close\":\"0:0\"}]}",
+    "mm_order_scheduling_delivery": "{\"min\":{\"value\":2,\"type\":\"hours\"},\"max\":{\"value\":7,\"type\":\"hours\"}}",
+    "mm_order_scheduling_enabled": "false",
+    "mm_order_scheduling_only": "false",
+    "mm_order_scheduling_takeaway": "{\"min\":{\"value\":2,\"type\":\"hours\"},\"max\":{\"value\":7,\"type\":\"hours\"}}",
+    "mm_order_status_check_enabled": "false",
+    "mm_payment_qrcode_tuna_credit_card_checkout_enabled": "false",
+    "mm_payment_qrcode_tuna_pix_checkout_enabled": "false",
+    "mm_payment_tuna_credit_card_checkout_enabled": "false",
+    "mm_payment_tuna_pix_checkout_enabled": "false",
+    "mm_show_short_address": "false",
+    "mm_store_closed": "true",
+    "mm_suggestive_selling_enabled": "true",
+    "pre_mm_payment_qrcode_tuna_credit_card_checkout_enabled": "false",
+    "pre_mm_payment_qrcode_tuna_pix_checkout_enabled": "false",
+    "pre_mm_payment_tuna_credit_card_checkout_enabled": "false",
+    "pre_mm_payment_tuna_pix_checkout_enabled": "false",
+    "mm_store_domain": "",
+    "mm_currency": "{\"id\":1,\"code\":\"BRL\",\"label\":\"Real\",\"symbol\":\"R$\",\"enabled\":true,\"locale\":\"pt-BR\"}",
+    "mm_payment_pix_info": "{\"key\": \"\", \"accountName\": \"\"}",
+    "mm_payment_qrcode_credit_enabled": "false",
+    "mm_facebook_business_access_token": "",
+    "mm_payment_qrcode_debit_flags": "",
+    "mm_free_delivery_enabled": "false",
+    "mm_enabled": "true",
+    "mm_delivery_zone_options_neighborhood": "",
+    "mm_takeaway_discount_enabled": "false",
+    "mm_new_menu_enabled": "false",
+    "mm_order_show_prices": "false",
+    "mm_free_delivery_minimum_value": "0",
+    "mm_payment_debit_enabled": "true",
+    "mm_ask_for_name": "optional",
+    "mm_delivery_average_time": "",
+    "mm_payment_mpago_link_enabled": "false",
+    "mm_delivery_zone_options": "",
+    "mm_payment_voucher_flags": "",
+    "mm_payment_qrcode_mpago_checkout_enabled": "false",
+    "mm_payment_voucher_enabled": "false",
+    "mm_payment_qrcode_voucher_flags": "",
+    "mm_facebook_business_enabled": "false",
+    "mm_payment_vrpague_link_enabled": "false",
+    "mm_in_store_maximum_order_distance": "500",
+    "mm_payment_credit_enabled": "true",
+    "mm_delivery_fee": "0",
+    "mm_payment_credit_flags": "",
+    "mm_in_store_modes": "[\"mm_kiosk\", \"mm_table\"]",
+    "mm_delivery_minimum_value_enabled": "false",
+    "mm_delivery_fee_enabled": "false",
+    "mm_takeaway_time": "",
+    "mm_in_store_service_tax": "0",
+    "mm_payment_cash_enabled": "true",
+    "mm_google_reserve_link_order_food": "true",
+    "mm_takeaway_discount": "0",
+    "mm_facebook_pixel_dns_code": "",
+    "mm_delivery_zone_options_static": "",
+    "mm_order_show_orders_count": "true",
+    "mm_in_store_enable_service_tax": "false",
+    "mm_delivery_enabled": "true",
+    "mm_takeaway_enabled": "true",
+    "mm_whatsapp_phone_number": "",
+    "mm_temporarily_closed": "false",
+    "mm_timezone": "{\"id\":21,\"code\":\"BRT\",\"iana\":\"America/Sao_Paulo\",\"name\":\"Brasília Time\",\"label\":\"Horário de Brasília\",\"utc\":\"-03:00\",\"enabled\":true}",
+    "mm_delivery_zone_options_dynamic": "[]",
+    "mm_in_store_validate_distance_enabled": "false",
+    "mm_payment_mpago_qrcode_enabled": "false",
+    "mm_facebook_pixel_id": "",
+    "mm_order_show_codes": "false",
+    "mm_payment_qrcode_voucher_enabled": "false",
+    "mm_payment_debit_flags": "",
+    "mm_payment_qrcode_credit_flags": "",
+    "mm_whatsapp_order_enabled": "false",
+    "mm_receipt_ask_for_cpf": "false",
+    "mm_change_new_menu_count": "0",
+    "mm_payment_qrcode_cash_enabled": "false",
+    "mm_payment_mpago_store_public_key": "",
+    "mm_payment_pix_enabled": "false",
+    "mm_payment_mpago_marketplace_fee": "3.6",
+    "mm_ask_for_phone": "optional",
+    "mm_payment_qrcode_debit_enabled": "false",
+    "mm_delivery_minimum_value": "0",
+    "mm_order_show_observations": "true",
+    "mm_payment_mpago_checkout_enabled": "false",
+    "mm_feature_gnl_tab_operation_enabled": true,
+    "mm_feature_pwa_enabled": true,
+    "mm_feature_orders_pulling_off_enabled": true,
+    "mm_feature_legacy_payment_manual_pix_enabled": true,
+    "mm_feature_subscription_trial_enabled": "false",
+    "mm_feature_subscription_pack_type": "pro",
+    "mm_feature_subscription_ggo_enabled": "",
+    "mm_feature_subscription_freemium_status": "inactive"
+  }
+}

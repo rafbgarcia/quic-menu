@@ -2,15 +2,35 @@
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
+
+type MenuGroup {
+  # id: ID!
+  name: String!
+  items: [MenuItem]
+}
+
+type ItemImages {
+  small: String
+  medium: String
+  large: String
+}
+
+type MenuItem {
+  # id: ID!
+  name: String!
+  price: Float!
+  discountPrice: Float
+  description: String
+  images: ItemImages
+  hide: Boolean
+  hideFromDelivery: Boolean
+}
+
 type Place @model {
   id: ID!
   name: String!
-}
-
-type ScrapedPlace {
-  name: String
-}
-
-type Query {
-  scrapeGoomer(url: String!): ScrapedPlace @function(name: "scrapeGoomer")
+  category: String
+  about: String
+  menu: [MenuGroup]
+  minimumAge: Int
 }
