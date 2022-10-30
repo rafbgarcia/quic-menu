@@ -10,6 +10,11 @@
       "StackName": "amplify-quicmenu-dev-154550",
       "StackId": "arn:aws:cloudformation:sa-east-1:128777745898:stack/amplify-quicmenu-dev-154550/e9c17750-57b9-11ed-ac07-06e9cfdfcfb6",
       "AmplifyAppId": "d2b0zrn8orov76"
+    },
+    "categories": {
+      "auth": {
+        "quicmenud3bddd24": {}
+      }
     }
   }
 }
