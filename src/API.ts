@@ -135,39 +135,6 @@ export type DeletePlaceInput = {
   _version?: number | null,
 };
 
-export type ModelPlaceFilterInput = {
-  id?: ModelIDInput | null,
-  name?: ModelStringInput | null,
-  category?: ModelStringInput | null,
-  about?: ModelStringInput | null,
-  and?: Array< ModelPlaceFilterInput | null > | null,
-  or?: Array< ModelPlaceFilterInput | null > | null,
-  not?: ModelPlaceFilterInput | null,
-};
-
-export type ModelIDInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
-  size?: ModelSizeInput | null,
-};
-
-export type ModelPlaceConnection = {
-  __typename: "ModelPlaceConnection",
-  items:  Array<Place | null >,
-  nextToken?: string | null,
-  startedAt?: number | null,
-};
-
 export type ModelSubscriptionPlaceFilterInput = {
   id?: ModelSubscriptionIDInput | null,
   name?: ModelSubscriptionStringInput | null,
@@ -299,59 +266,6 @@ export type GetPlaceQuery = {
     _version: number,
     _deleted?: boolean | null,
     _lastChangedAt: number,
-  } | null,
-};
-
-export type ListPlacesQueryVariables = {
-  filter?: ModelPlaceFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-};
-
-export type ListPlacesQuery = {
-  listPlaces?:  {
-    __typename: "ModelPlaceConnection",
-    items:  Array< {
-      __typename: "Place",
-      id: string,
-      name: string,
-      category?: string | null,
-      about?: string | null,
-      createdAt: string,
-      updatedAt: string,
-      _version: number,
-      _deleted?: boolean | null,
-      _lastChangedAt: number,
-    } | null >,
-    nextToken?: string | null,
-    startedAt?: number | null,
-  } | null,
-};
-
-export type SyncPlacesQueryVariables = {
-  filter?: ModelPlaceFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-  lastSync?: number | null,
-};
-
-export type SyncPlacesQuery = {
-  syncPlaces?:  {
-    __typename: "ModelPlaceConnection",
-    items:  Array< {
-      __typename: "Place",
-      id: string,
-      name: string,
-      category?: string | null,
-      about?: string | null,
-      createdAt: string,
-      updatedAt: string,
-      _version: number,
-      _deleted?: boolean | null,
-      _lastChangedAt: number,
-    } | null >,
-    nextToken?: string | null,
-    startedAt?: number | null,
   } | null,
 };
 

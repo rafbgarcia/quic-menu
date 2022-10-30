@@ -13,6 +13,8 @@ import {
 import { useState } from 'react';
 import { useParams } from 'react-router';
 import { API } from "aws-amplify"
+import QRCode from "react-qr-code";
+
 import * as types from "../API"
 import { createPlace } from "../graphql/mutations"
 import './Home.css';
@@ -97,7 +99,7 @@ export const HomePage: React.FC = () => {
         </IonHeader>
 
         <IonContent className="ion-padding">
-
+          <QRCode value="http://10.0.0.149:8100/menu" />
         </IonContent>
       </IonContent>
     </IonPage>
