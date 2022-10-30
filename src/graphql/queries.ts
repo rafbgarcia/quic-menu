@@ -2,15 +2,18 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getBlog = /* GraphQL */ `
-  query GetBlog($id: ID!) {
-    getBlog(id: $id) {
+export const scrapeGoomer = /* GraphQL */ `
+  query ScrapeGoomer($url: String!) {
+    scrapeGoomer(url: $url) {
+      name
+    }
+  }
+`;
+export const getPlace = /* GraphQL */ `
+  query GetPlace($id: ID!) {
+    getPlace(id: $id) {
       id
       name
-      posts {
-        nextToken
-        startedAt
-      }
       createdAt
       updatedAt
       _version
@@ -19,13 +22,13 @@ export const getBlog = /* GraphQL */ `
     }
   }
 `;
-export const listBlogs = /* GraphQL */ `
-  query ListBlogs(
-    $filter: ModelBlogFilterInput
+export const listPlaces = /* GraphQL */ `
+  query ListPlaces(
+    $filter: ModelPlaceFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listBlogs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listPlaces(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
@@ -40,14 +43,14 @@ export const listBlogs = /* GraphQL */ `
     }
   }
 `;
-export const syncBlogs = /* GraphQL */ `
-  query SyncBlogs(
-    $filter: ModelBlogFilterInput
+export const syncPlaces = /* GraphQL */ `
+  query SyncPlaces(
+    $filter: ModelPlaceFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncBlogs(
+    syncPlaces(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
@@ -61,157 +64,6 @@ export const syncBlogs = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
-      id
-      title
-      blog {
-        id
-        name
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-      }
-      comments {
-        nextToken
-        startedAt
-      }
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      blogPostsId
-    }
-  }
-`;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        title
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        blogPostsId
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const syncPosts = /* GraphQL */ `
-  query SyncPosts(
-    $filter: ModelPostFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncPosts(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
-        id
-        title
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        blogPostsId
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const getComment = /* GraphQL */ `
-  query GetComment($id: ID!) {
-    getComment(id: $id) {
-      id
-      post {
-        id
-        title
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        blogPostsId
-      }
-      content
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      postCommentsId
-    }
-  }
-`;
-export const listComments = /* GraphQL */ `
-  query ListComments(
-    $filter: ModelCommentFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        content
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        postCommentsId
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const syncComments = /* GraphQL */ `
-  query SyncComments(
-    $filter: ModelCommentFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncComments(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
-        id
-        content
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        postCommentsId
       }
       nextToken
       startedAt
