@@ -12,7 +12,6 @@ export const getPlace = /* GraphQL */ `
       menu {
         name
       }
-      minimumAge
       createdAt
       updatedAt
       _version
@@ -33,7 +32,6 @@ export const listPlaces = /* GraphQL */ `
         name
         category
         about
-        minimumAge
         createdAt
         updatedAt
         _version
@@ -63,7 +61,6 @@ export const syncPlaces = /* GraphQL */ `
         name
         category
         about
-        minimumAge
         createdAt
         updatedAt
         _version

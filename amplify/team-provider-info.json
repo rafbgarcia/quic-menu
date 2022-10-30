@@ -12,8 +12,14 @@
       "AmplifyAppId": "d2b0zrn8orov76"
     },
     "categories": {
+      "function": {
+        "scrapeGoomer": {}
+      },
       "auth": {
-        "quicmenud3bddd24": {}
+        "quicmenua8c9f4ff": {}
+      },
+      "api": {
+        "quicmenu": {}
       }
     }
   }

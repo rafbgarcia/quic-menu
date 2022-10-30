@@ -12,7 +12,6 @@ export const onCreatePlace = /* GraphQL */ `
       menu {
         name
       }
-      minimumAge
       createdAt
       updatedAt
       _version
@@ -31,7 +30,6 @@ export const onUpdatePlace = /* GraphQL */ `
       menu {
         name
       }
-      minimumAge
       createdAt
       updatedAt
       _version
@@ -50,7 +48,6 @@ export const onDeletePlace = /* GraphQL */ `
       menu {
         name
       }
-      minimumAge
       createdAt
       updatedAt
       _version

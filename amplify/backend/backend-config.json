@@ -9,7 +9,9 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
+              "apiKeyExpirationDays": 365,
+              "apiKeyExpirationDate": "2023-10-30T17:11:18.588Z",
+              "description": "peguei no amplify push"
             }
           },
           "additionalAuthenticationProviders": []
@@ -19,15 +21,13 @@
   },
   "function": {},
   "auth": {
-    "quicmenud3bddd24": {
+    "quicmenua8c9f4ff": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
-        "socialProviders": [
-          "FACEBOOK"
-        ],
+        "socialProviders": [],
         "usernameAttributes": [
           "EMAIL",
           "PHONE_NUMBER"
@@ -49,11 +49,5 @@
       }
     }
   },
-  "storage": {
-    "s3": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
-    }
-  }
+  "storage": {}
 }

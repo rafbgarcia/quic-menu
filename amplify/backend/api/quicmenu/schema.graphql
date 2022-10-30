@@ -2,7 +2,6 @@
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
-
 type MenuGroup {
   # id: ID!
   name: String!
@@ -24,6 +23,7 @@ type MenuItem {
   images: ItemImages
   hide: Boolean
   hideFromDelivery: Boolean
+  minimumAge: Int
 }
 
 type Place @model {
@@ -32,5 +32,4 @@ type Place @model {
   category: String
   about: String
   menu: [MenuGroup]
-  minimumAge: Int
 }

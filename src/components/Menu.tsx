@@ -62,7 +62,7 @@ const appPages: AppPage[] = [
 
 const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
-const Menu: React.FC = () => {
+export const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
@@ -96,5 +96,3 @@ const Menu: React.FC = () => {
     </IonMenu>
   );
 };
-
-export default Menu;

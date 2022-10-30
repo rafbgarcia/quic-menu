@@ -1,8 +1,6 @@
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
-import Menu from './components/Menu';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,6 +21,14 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import awsExports from './aws-exports';
+import { Amplify } from 'aws-amplify'
+import { Menu } from './components/Menu';
+import { MenuPage } from './pages/MenuPage';
+import { HomePage } from './pages/HomePage';
+import { ImportPage } from './pages/ImportPage';
+
+Amplify.configure(awsExports);
 setupIonicReact();
 
 const App: React.FC = () => {
@@ -33,7 +39,13 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Home />
+              <HomePage />
+            </Route>
+            <Route path="/menu" exact={true}>
+              <MenuPage />
+            </Route>
+            <Route path="/import" exact={true}>
+              <ImportPage />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

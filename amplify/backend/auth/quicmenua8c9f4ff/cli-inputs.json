@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "quicmenud3bddd24_identitypool_d3bddd24",
+    "identityPoolName": "quicmenua8c9f4ff_identitypool_a8c9f4ff",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "quicmed3bddd24",
-    "userPoolName": "quicmenud3bddd24_userpool_d3bddd24",
+    "resourceNameTruncated": "quicmea8c9f4ff",
+    "userPoolName": "quicmenua8c9f4ff_userpool_a8c9f4ff",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,22 +31,15 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "quicmed3bddd24_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "quicmea8c9f4ff_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "d3bddd24",
-    "resourceName": "quicmenud3bddd24",
+    "sharedId": "a8c9f4ff",
+    "resourceName": "quicmenua8c9f4ff",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "defaultSocial",
-    "hostedUI": true,
+    "useDefault": "manual",
     "usernameAttributes": [
       "email, phone_number"
     ],
-    "hostedUIDomainName": "quic",
-    "authProvidersUserPool": [
-      "Facebook"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://quic.place/auth-success/\"],\"LogoutURLs\":[\"https://quic.place/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
@@ -64,6 +57,16 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": []
+    "dependsOn": [],
+    "thirdPartyAuth": false,
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {},
+    "hostedUI": false,
+    "authProviders": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
   }
-}
+} 

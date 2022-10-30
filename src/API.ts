@@ -8,7 +8,6 @@ export type CreatePlaceInput = {
   category?: string | null,
   about?: string | null,
   menu?: Array< MenuGroupInput | null > | null,
-  minimumAge?: number | null,
   _version?: number | null,
 };
 
@@ -25,6 +24,7 @@ export type MenuItemInput = {
   images?: ItemImagesInput | null,
   hide?: boolean | null,
   hideFromDelivery?: boolean | null,
+  minimumAge?: number | null,
 };
 
 export type ItemImagesInput = {
@@ -37,7 +37,6 @@ export type ModelPlaceConditionInput = {
   name?: ModelStringInput | null,
   category?: ModelStringInput | null,
   about?: ModelStringInput | null,
-  minimumAge?: ModelIntInput | null,
   and?: Array< ModelPlaceConditionInput | null > | null,
   or?: Array< ModelPlaceConditionInput | null > | null,
   not?: ModelPlaceConditionInput | null,
@@ -83,18 +82,6 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
-export type ModelIntInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
-};
-
 export type Place = {
   __typename: "Place",
   id: string,
@@ -102,7 +89,6 @@ export type Place = {
   category?: string | null,
   about?: string | null,
   menu?:  Array<MenuGroup | null > | null,
-  minimumAge?: number | null,
   createdAt: string,
   updatedAt: string,
   _version: number,
@@ -125,6 +111,7 @@ export type MenuItem = {
   images?: ItemImages | null,
   hide?: boolean | null,
   hideFromDelivery?: boolean | null,
+  minimumAge?: number | null,
 };
 
 export type ItemImages = {
@@ -140,7 +127,6 @@ export type UpdatePlaceInput = {
   category?: string | null,
   about?: string | null,
   menu?: Array< MenuGroupInput | null > | null,
-  minimumAge?: number | null,
   _version?: number | null,
 };
 
@@ -154,7 +140,6 @@ export type ModelPlaceFilterInput = {
   name?: ModelStringInput | null,
   category?: ModelStringInput | null,
   about?: ModelStringInput | null,
-  minimumAge?: ModelIntInput | null,
   and?: Array< ModelPlaceFilterInput | null > | null,
   or?: Array< ModelPlaceFilterInput | null > | null,
   not?: ModelPlaceFilterInput | null,
@@ -188,7 +173,6 @@ export type ModelSubscriptionPlaceFilterInput = {
   name?: ModelSubscriptionStringInput | null,
   category?: ModelSubscriptionStringInput | null,
   about?: ModelSubscriptionStringInput | null,
-  minimumAge?: ModelSubscriptionIntInput | null,
   and?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
   or?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
 };
@@ -223,18 +207,6 @@ export type ModelSubscriptionStringInput = {
   notIn?: Array< string | null > | null,
 };
 
-export type ModelSubscriptionIntInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
-  in?: Array< number | null > | null,
-  notIn?: Array< number | null > | null,
-};
-
 export type CreatePlaceMutationVariables = {
   input: CreatePlaceInput,
   condition?: ModelPlaceConditionInput | null,
@@ -251,7 +223,6 @@ export type CreatePlaceMutation = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -276,7 +247,6 @@ export type UpdatePlaceMutation = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -301,7 +271,6 @@ export type DeletePlaceMutation = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -325,7 +294,6 @@ export type GetPlaceQuery = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -349,7 +317,6 @@ export type ListPlacesQuery = {
       name: string,
       category?: string | null,
       about?: string | null,
-      minimumAge?: number | null,
       createdAt: string,
       updatedAt: string,
       _version: number,
@@ -377,7 +344,6 @@ export type SyncPlacesQuery = {
       name: string,
       category?: string | null,
       about?: string | null,
-      minimumAge?: number | null,
       createdAt: string,
       updatedAt: string,
       _version: number,
@@ -404,7 +370,6 @@ export type OnCreatePlaceSubscription = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -428,7 +393,6 @@ export type OnUpdatePlaceSubscription = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
@@ -452,7 +416,6 @@ export type OnDeletePlaceSubscription = {
       __typename: "MenuGroup",
       name: string,
     } | null > | null,
-    minimumAge?: number | null,
     createdAt: string,
     updatedAt: string,
     _version: number,
