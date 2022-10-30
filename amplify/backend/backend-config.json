@@ -17,11 +17,5 @@
       }
     }
   },
-  "function": {
-    "scrapeGoomer": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  }
+  "function": {}
 }
