@@ -3,11 +3,8 @@
 input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
 
-type Query {
-  getPlace(id: ID!): Place
-}
 
-type Place @model(queries: {}) {
+type Place @model {
   id: ID!
   name: String!
   category: String
@@ -16,7 +13,6 @@ type Place @model(queries: {}) {
 }
 
 type MenuGroup {
-  # id: ID!
   name: String!
   items: [MenuItem]
 }
@@ -28,7 +24,6 @@ type ItemImages {
 }
 
 type MenuItem {
-  # id: ID!
   name: String!
   price: Float!
   discountPrice: Float

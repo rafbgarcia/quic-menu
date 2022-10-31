@@ -21,7 +21,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { API } from "aws-amplify"
 import * as types from "../API"
-import { getPlace } from "../graphql/custom_queries"
+import { getPlace } from "../graphql/queries"
 
 const fetchPlace = async (id: string, setPlace: any) => {
   const json = await API.graphql({ query: getPlace, variables: { id } })
@@ -31,7 +31,7 @@ const fetchPlace = async (id: string, setPlace: any) => {
 export const MenuPage: React.FC = () => {
   const [place, setPlace] = useState<types.Place>()
   useEffect(() => {
-    const id = "b6ba80cc-538a-46fd-9893-8797266ae0da"
+    const id = "b0a40bdd-54fc-43b4-9232-1b055696e64a"
     fetchPlace(id, setPlace)
   }, [])
 

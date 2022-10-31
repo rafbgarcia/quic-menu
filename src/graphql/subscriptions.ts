@@ -11,6 +11,20 @@ export const onCreatePlace = /* GraphQL */ `
       about
       menu {
         name
+        items {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
       }
       createdAt
       updatedAt
@@ -29,6 +43,20 @@ export const onUpdatePlace = /* GraphQL */ `
       about
       menu {
         name
+        items {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
       }
       createdAt
       updatedAt
@@ -47,6 +75,20 @@ export const onDeletePlace = /* GraphQL */ `
       about
       menu {
         name
+        items {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
       }
       createdAt
       updatedAt
