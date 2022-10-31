@@ -28,9 +28,6 @@ export const getPlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -65,58 +62,8 @@ export const listPlaces = /* GraphQL */ `
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       nextToken
-      startedAt
-    }
-  }
-`;
-export const syncPlaces = /* GraphQL */ `
-  query SyncPlaces(
-    $filter: ModelPlaceFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncPlaces(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
-        id
-        name
-        category
-        about
-        menu {
-          name
-          items {
-            name
-            price
-            discountPrice
-            description
-            images {
-              small
-              medium
-              large
-            }
-            hide
-            hideFromDelivery
-            minimumAge
-          }
-        }
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-      }
-      nextToken
-      startedAt
     }
   }
 `;

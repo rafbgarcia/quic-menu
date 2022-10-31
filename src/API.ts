@@ -8,7 +8,6 @@ export type CreatePlaceInput = {
   category?: string | null,
   about?: string | null,
   menu?: Array< MenuGroupInput | null > | null,
-  _version?: number | null,
 };
 
 export type MenuGroupInput = {
@@ -91,9 +90,6 @@ export type Place = {
   menu?:  Array<MenuGroup | null > | null,
   createdAt: string,
   updatedAt: string,
-  _version: number,
-  _deleted?: boolean | null,
-  _lastChangedAt: number,
 };
 
 export type MenuGroup = {
@@ -127,12 +123,10 @@ export type UpdatePlaceInput = {
   category?: string | null,
   about?: string | null,
   menu?: Array< MenuGroupInput | null > | null,
-  _version?: number | null,
 };
 
 export type DeletePlaceInput = {
   id: string,
-  _version?: number | null,
 };
 
 export type ModelPlaceFilterInput = {
@@ -165,7 +159,6 @@ export type ModelPlaceConnection = {
   __typename: "ModelPlaceConnection",
   items:  Array<Place | null >,
   nextToken?: string | null,
-  startedAt?: number | null,
 };
 
 export type ModelSubscriptionPlaceFilterInput = {
@@ -241,9 +234,6 @@ export type CreatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -281,9 +271,6 @@ export type UpdatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -321,9 +308,6 @@ export type DeletePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -360,9 +344,6 @@ export type GetPlaceQuery = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -403,59 +384,8 @@ export type ListPlacesQuery = {
       } | null > | null,
       createdAt: string,
       updatedAt: string,
-      _version: number,
-      _deleted?: boolean | null,
-      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
-    startedAt?: number | null,
-  } | null,
-};
-
-export type SyncPlacesQueryVariables = {
-  filter?: ModelPlaceFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-  lastSync?: number | null,
-};
-
-export type SyncPlacesQuery = {
-  syncPlaces?:  {
-    __typename: "ModelPlaceConnection",
-    items:  Array< {
-      __typename: "Place",
-      id: string,
-      name: string,
-      category?: string | null,
-      about?: string | null,
-      menu?:  Array< {
-        __typename: "MenuGroup",
-        name: string,
-        items?:  Array< {
-          __typename: "MenuItem",
-          name: string,
-          price: number,
-          discountPrice?: number | null,
-          description?: string | null,
-          images?:  {
-            __typename: "ItemImages",
-            small?: string | null,
-            medium?: string | null,
-            large?: string | null,
-          } | null,
-          hide?: boolean | null,
-          hideFromDelivery?: boolean | null,
-          minimumAge?: number | null,
-        } | null > | null,
-      } | null > | null,
-      createdAt: string,
-      updatedAt: string,
-      _version: number,
-      _deleted?: boolean | null,
-      _lastChangedAt: number,
-    } | null >,
-    nextToken?: string | null,
-    startedAt?: number | null,
   } | null,
 };
 
@@ -492,9 +422,6 @@ export type OnCreatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -531,9 +458,6 @@ export type OnUpdatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
 
@@ -570,8 +494,5 @@ export type OnDeletePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    _version: number,
-    _deleted?: boolean | null,
-    _lastChangedAt: number,
   } | null,
 };
