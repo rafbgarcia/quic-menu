@@ -41,7 +41,7 @@ const App: React.FC = () => {
             <Route path="/" exact={true}>
               <HomePage />
             </Route>
-            <Route path="/menu" exact={true}>
+            <Route path="/menu/:placeId" exact={true}>
               <MenuPage />
             </Route>
             <Route path="/import" exact={true}>

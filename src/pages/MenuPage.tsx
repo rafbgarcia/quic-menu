@@ -30,9 +30,9 @@ const fetchPlace = async (id: string, setPlace: any) => {
 
 export const MenuPage: React.FC = () => {
   const [place, setPlace] = useState<types.Place>()
+  const { placeId } = useParams<{ placeId: string }>()
   useEffect(() => {
-    const id = "b0a40bdd-54fc-43b4-9232-1b055696e64a"
-    fetchPlace(id, setPlace)
+    fetchPlace(placeId, setPlace)
   }, [])
 
   return (
