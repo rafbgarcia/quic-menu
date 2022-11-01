@@ -1,70 +1,41 @@
 import {
-  IonContent,
-  IonIcon,
-  IonItem,
   IonLabel,
   IonList,
-  IonListHeader,
-  IonMenu,
-  IonMenuToggle,
-  IonNote,
+  IonItem,
+  IonItemGroup,
+  IonItemDivider,
+  IonThumbnail,
 } from '@ionic/react';
+import * as types from "../API"
 
-import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
-import './Menu.css';
-
-interface AppPage {
-  url: string;
-  iosIcon: string;
-  mdIcon: string;
-  title: string;
+type MenuProps = {
+  place: types.CreatePlaceInput | types.Place
 }
 
-const appPages: AppPage[] = [
-  {
-    title: 'Home',
-    url: '/home',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
-  },
-  {
-    title: 'Import',
-    url: '/import',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
-  },
-  {
-    title: 'Menu',
-    url: '/menu',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
-  },
-];
-
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-
-export const Menu: React.FC = () => {
-  const location = useLocation();
-
+export const Menu = ({ place }: MenuProps) => {
   return (
-    <IonMenu contentId="main" type="overlay">
-      <IonContent>
-        <IonList id="inbox-list">
-          <IonListHeader>Rafael</IonListHeader>
-          <IonNote>Administrador</IonNote>
-          {appPages.map((appPage, index) => {
-            return (
-              <IonMenuToggle key={index} autoHide={false}>
-                <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                  <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
-                  <IonLabel>{appPage.title}</IonLabel>
-                </IonItem>
-              </IonMenuToggle>
-            );
-          })}
-        </IonList>
-      </IonContent>
-    </IonMenu>
+    <IonList>
+      {place?.menu?.map((group) => (
+        <IonItemGroup key={group?.name}>
+          <IonItemDivider color="light" sticky>
+            <IonLabel>{group?.name}</IonLabel>
+          </IonItemDivider>
+          {group?.items?.map((item) => (
+            <IonItem key={item?.name}>
+              <IonLabel>
+                <h3>{item?.name}</h3>
+
+                <p>{item?.description}</p>
+                <p>{item?.price && new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.price)}</p>
+              </IonLabel>
+              <IonThumbnail slot="end">
+                <img src="https://via.placeholder.com/150" />
+                {/* <img src={item?.images?.small || undefined} /> */}
+              </IonThumbnail>
+            </IonItem>
+          ))}
+        </IonItemGroup>
+      ))}
+    </IonList>
   );
 };

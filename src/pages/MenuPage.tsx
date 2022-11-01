@@ -22,6 +22,7 @@ import { useParams } from 'react-router';
 import { API } from "aws-amplify"
 import * as types from "../API"
 import { getPlace } from "../graphql/queries"
+import { Menu } from '../components/Menu';
 
 const fetchPlace = async (id: string, setPlace: any) => {
   const json = await API.graphql({ query: getPlace, variables: { id } })
@@ -47,37 +48,7 @@ export const MenuPage: React.FC = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">{place?.name}</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
-        <IonContent>
-          <IonList>
-            {place?.menu?.map((group) => (
-              <IonItemGroup key={group?.name}>
-                <IonItemDivider color="light" sticky>
-                  <IonLabel>{group?.name}</IonLabel>
-                </IonItemDivider>
-                {group?.items?.map((item) => (
-                  <IonItem key={item?.name}>
-                    <IonLabel>
-                      <h3>{item?.name}</h3>
-
-                      <p>{item?.description}</p>
-                      <p>{item?.price && new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.price)}</p>
-                    </IonLabel>
-                    <IonThumbnail slot="end">
-                      <img src="https://via.placeholder.com/150" />
-                      {/* <img src={item?.images?.small || undefined} /> */}
-                    </IonThumbnail>
-                  </IonItem>
-                ))}
-              </IonItemGroup>
-            ))}
-          </IonList>
-        </IonContent>
+        {place && <Menu place={place} />}
       </IonContent>
     </IonPage >
   );

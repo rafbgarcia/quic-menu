@@ -28,6 +28,7 @@ export const getPlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -62,6 +63,7 @@ export const listPlaces = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       nextToken
     }

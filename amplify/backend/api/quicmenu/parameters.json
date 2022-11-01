@@ -2,5 +2,11 @@
   "AppSyncApiName": "quicmenu",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2022-10-30T17:11:21.350Z"
+  "AuthModeLastUpdated": "2022-10-30T17:11:21.350Z",
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authquicmenua8c9f4ff",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

@@ -90,6 +90,7 @@ export type Place = {
   menu?:  Array<MenuGroup | null > | null,
   createdAt: string,
   updatedAt: string,
+  owner?: string | null,
 };
 
 export type MenuGroup = {
@@ -234,6 +235,7 @@ export type CreatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
@@ -271,6 +273,7 @@ export type UpdatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
@@ -308,6 +311,7 @@ export type DeletePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
@@ -344,6 +348,7 @@ export type GetPlaceQuery = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
@@ -384,6 +389,7 @@ export type ListPlacesQuery = {
       } | null > | null,
       createdAt: string,
       updatedAt: string,
+      owner?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
@@ -391,6 +397,7 @@ export type ListPlacesQuery = {
 
 export type OnCreatePlaceSubscriptionVariables = {
   filter?: ModelSubscriptionPlaceFilterInput | null,
+  owner?: string | null,
 };
 
 export type OnCreatePlaceSubscription = {
@@ -422,11 +429,13 @@ export type OnCreatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
 export type OnUpdatePlaceSubscriptionVariables = {
   filter?: ModelSubscriptionPlaceFilterInput | null,
+  owner?: string | null,
 };
 
 export type OnUpdatePlaceSubscription = {
@@ -458,11 +467,13 @@ export type OnUpdatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };
 
 export type OnDeletePlaceSubscriptionVariables = {
   filter?: ModelSubscriptionPlaceFilterInput | null,
+  owner?: string | null,
 };
 
 export type OnDeletePlaceSubscription = {
@@ -494,5 +505,6 @@ export type OnDeletePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
+    owner?: string | null,
   } | null,
 };

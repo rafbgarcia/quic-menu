@@ -21,34 +21,58 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/* App specific */
+import { Amplify } from 'aws-amplify';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import { I18n } from 'aws-amplify';
+import { translations } from '@aws-amplify/ui-react';
+
 import awsExports from './aws-exports';
-import { Amplify } from 'aws-amplify'
-import { Menu } from './components/Menu';
+import { Sidebar } from './components/Sidebar';
 import { MenuPage } from './pages/MenuPage';
-import { HomePage } from './pages/HomePage';
+import { DashboardPage } from './pages/DashboardPage';
 import { ImportPage } from './pages/ImportPage';
 
 Amplify.configure(awsExports);
 setupIonicReact();
+I18n.putVocabularies(translations);
+I18n.setLanguage('pt');
+I18n.putVocabularies({
+  pt: {
+    "Your code is on the way. To log in, enter the code we emailed to": "Um código de verificação foi enviado para",
+    "Your code is on the way. To log in, enter the code we texted to": "Um código de verificação foi enviado para",
+    "Your code is on the way. To log in, enter the code we sent you. It may take a minute to arrive.": "Enviamos um código de verificação para fazer login. Pode levar um minuto para chegar.",
+    "It may take a minute to arrive.": "Pode levar um minuto para chegar.",
+  },
+});
+
+const UserRoutes = () => {
+  return (
+    <IonSplitPane contentId="authenticated">
+      <Sidebar />
+
+      <IonRouterOutlet id="authenticated">
+        <Route path="/" exact={true} component={DashboardPage} />
+        <Route path="/menu" exact={true} component={MenuPage} />
+      </IonRouterOutlet>
+    </IonSplitPane>
+  )
+}
 
 const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <Menu />
-          <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
-              <HomePage />
-            </Route>
-            <Route path="/menu/:placeId" exact={true}>
-              <MenuPage />
-            </Route>
-            <Route path="/import" exact={true}>
-              <ImportPage />
-            </Route>
-          </IonRouterOutlet>
-        </IonSplitPane>
+        <Authenticator initialState="signUp" loginMechanisms={['email']} variation="modal">
+          {() => (
+            <IonRouterOutlet id="main">
+
+              <Route path="/" exact={true} component={UserRoutes} />
+              <Route path="/:placeId/menu" exact={true} component={MenuPage} />
+            </IonRouterOutlet>
+          )}
+        </Authenticator>
       </IonReactRouter>
     </IonApp>
   );

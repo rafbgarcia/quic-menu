@@ -31,6 +31,7 @@ export const createPlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -63,6 +64,7 @@ export const updatePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -95,6 +97,7 @@ export const deletePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;

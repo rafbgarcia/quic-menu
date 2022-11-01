@@ -3,8 +3,11 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreatePlace = /* GraphQL */ `
-  subscription OnCreatePlace($filter: ModelSubscriptionPlaceFilterInput) {
-    onCreatePlace(filter: $filter) {
+  subscription OnCreatePlace(
+    $filter: ModelSubscriptionPlaceFilterInput
+    $owner: String
+  ) {
+    onCreatePlace(filter: $filter, owner: $owner) {
       id
       name
       category
@@ -28,12 +31,16 @@ export const onCreatePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onUpdatePlace = /* GraphQL */ `
-  subscription OnUpdatePlace($filter: ModelSubscriptionPlaceFilterInput) {
-    onUpdatePlace(filter: $filter) {
+  subscription OnUpdatePlace(
+    $filter: ModelSubscriptionPlaceFilterInput
+    $owner: String
+  ) {
+    onUpdatePlace(filter: $filter, owner: $owner) {
       id
       name
       category
@@ -57,12 +64,16 @@ export const onUpdatePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onDeletePlace = /* GraphQL */ `
-  subscription OnDeletePlace($filter: ModelSubscriptionPlaceFilterInput) {
-    onDeletePlace(filter: $filter) {
+  subscription OnDeletePlace(
+    $filter: ModelSubscriptionPlaceFilterInput
+    $owner: String
+  ) {
+    onDeletePlace(filter: $filter, owner: $owner) {
       id
       name
       category
@@ -86,6 +97,7 @@ export const onDeletePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;

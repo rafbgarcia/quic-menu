@@ -2,7 +2,7 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "quicmenua8c9f4ff_identitypool_a8c9f4ff",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "quicmea8c9f4ff",
     "userPoolName": "quicmenua8c9f4ff_userpool_a8c9f4ff",
     "autoVerifiedAttributes": [
@@ -36,7 +36,7 @@
     "sharedId": "a8c9f4ff",
     "resourceName": "quicmenua8c9f4ff",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "manual",
+    "useDefault": "default",
     "usernameAttributes": [
       "email, phone_number"
     ],
@@ -58,15 +58,14 @@
     },
     "breakCircularDependency": true,
     "dependsOn": [],
-    "thirdPartyAuth": false,
     "userPoolGroups": false,
     "adminQueries": false,
     "triggers": {},
     "hostedUI": false,
-    "authProviders": [],
     "parentStack": {
       "Ref": "AWS::StackId"
     },
-    "permissions": []
+    "permissions": [],
+    "authProviders": []
   }
-} 
+}
