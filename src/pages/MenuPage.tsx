@@ -7,15 +7,14 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react"
-import { useEffect, useState } from "react"
-import { useParams } from "react-router"
-import { API } from "aws-amplify"
-import * as types from "../API"
-import { getPlace } from "../graphql/queries"
 import { Menu } from "../components/Menu"
+import { usePlace } from "../hooks/usePlace"
 
 export const MenuPage: React.FC = () => {
-  const place: any = {}
+  const { place, loading } = usePlace()
+
+  if (loading || !place) return null
+
   return (
     <IonPage>
       <IonHeader>
@@ -23,7 +22,7 @@ export const MenuPage: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{place?.name}</IonTitle>
+          <IonTitle>{place.name}</IonTitle>
         </IonToolbar>
       </IonHeader>
 

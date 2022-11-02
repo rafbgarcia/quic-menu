@@ -8,12 +8,12 @@ export type CreatePlaceInput = {
   name: string,
   category?: string | null,
   about?: string | null,
-  menu?: Array< MenuGroupInput | null > | null,
+  menu: Array< MenuGroupInput >,
 };
 
 export type MenuGroupInput = {
   name: string,
-  items?: Array< MenuItemInput | null > | null,
+  items: Array< MenuItemInput >,
 };
 
 export type MenuItemInput = {
@@ -90,7 +90,7 @@ export type Place = {
   name: string,
   category?: string | null,
   about?: string | null,
-  menu?:  Array<MenuGroup | null > | null,
+  menu:  Array<MenuGroup >,
   createdAt: string,
   updatedAt: string,
 };
@@ -98,7 +98,7 @@ export type Place = {
 export type MenuGroup = {
   __typename: "MenuGroup",
   name: string,
-  items?:  Array<MenuItem | null > | null,
+  items:  Array<MenuItem >,
 };
 
 export type MenuItem = {
@@ -126,7 +126,7 @@ export type UpdatePlaceInput = {
   name?: string | null,
   category?: string | null,
   about?: string | null,
-  menu?: Array< MenuGroupInput | null > | null,
+  menu?: Array< MenuGroupInput > | null,
 };
 
 export type DeletePlaceInput = {
@@ -218,10 +218,10 @@ export type CreatePlaceMutation = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -236,8 +236,8 @@ export type CreatePlaceMutation = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -256,10 +256,10 @@ export type UpdatePlaceMutation = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -274,8 +274,8 @@ export type UpdatePlaceMutation = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -294,10 +294,10 @@ export type DeletePlaceMutation = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -312,8 +312,8 @@ export type DeletePlaceMutation = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -331,10 +331,10 @@ export type GetPlaceQuery = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -349,8 +349,8 @@ export type GetPlaceQuery = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -372,10 +372,10 @@ export type ListPlacesQuery = {
       name: string,
       category?: string | null,
       about?: string | null,
-      menu?:  Array< {
+      menu:  Array< {
         __typename: "MenuGroup",
         name: string,
-        items?:  Array< {
+        items:  Array< {
           __typename: "MenuItem",
           name: string,
           price: number,
@@ -390,8 +390,8 @@ export type ListPlacesQuery = {
           hide?: boolean | null,
           hideFromDelivery?: boolean | null,
           minimumAge?: number | null,
-        } | null > | null,
-      } | null > | null,
+        } >,
+      } >,
       createdAt: string,
       updatedAt: string,
     } | null >,
@@ -412,10 +412,10 @@ export type OnCreatePlaceSubscription = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -430,8 +430,8 @@ export type OnCreatePlaceSubscription = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -450,10 +450,10 @@ export type OnUpdatePlaceSubscription = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -468,8 +468,8 @@ export type OnUpdatePlaceSubscription = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -488,10 +488,10 @@ export type OnDeletePlaceSubscription = {
     name: string,
     category?: string | null,
     about?: string | null,
-    menu?:  Array< {
+    menu:  Array< {
       __typename: "MenuGroup",
       name: string,
-      items?:  Array< {
+      items:  Array< {
         __typename: "MenuItem",
         name: string,
         price: number,
@@ -506,8 +506,8 @@ export type OnDeletePlaceSubscription = {
         hide?: boolean | null,
         hideFromDelivery?: boolean | null,
         minimumAge?: number | null,
-      } | null > | null,
-    } | null > | null,
+      } >,
+    } >,
     createdAt: string,
     updatedAt: string,
   } | null,

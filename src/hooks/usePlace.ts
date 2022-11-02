@@ -10,7 +10,7 @@ export const usePlace = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetchPlace(user.getUsername(), setLoading, setPlaces)
+    fetchPlaces(user.getUsername(), setLoading, setPlaces)
   }, [])
 
   return {
@@ -18,7 +18,8 @@ export const usePlace = () => {
     loading,
   }
 }
-const fetchPlace = async (username: string, setLoading: any, setPlace: any) => {
+
+const fetchPlaces = async (username: string, setLoading: any, setPlace: any) => {
   const res: any = await API.graphql({
     query: listPlaces,
     variables: { limit: 1, filter: { owner: { beginsWith: username } } },

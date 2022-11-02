@@ -8,22 +8,18 @@
 
 type Place
   @model
-  @auth(rules: [
-    {allow: owner},
-    {allow: public, operations: [read]},
-  ])
-{
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
   id: ID!
   owner: String
   name: String!
   category: String
   about: String
-  menu: [MenuGroup]
+  menu: [MenuGroup!]!
 }
 
 type MenuGroup {
   name: String!
-  items: [MenuItem]
+  items: [MenuItem!]!
 }
 
 type ItemImages {

@@ -80,7 +80,7 @@ const App: React.FC = () => {
           variation="modal"
         >
           <IonRouterOutlet id="main">
-            <Route path="/" exact={true} component={UserRoutes} />
+            <Route path="/" component={UserRoutes} />
             <Route path="/:placeId/menu" exact={true} component={MenuPage} />
           </IonRouterOutlet>
         </Authenticator>

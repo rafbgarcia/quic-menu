@@ -5,28 +5,34 @@ import {
   IonItemGroup,
   IonItemDivider,
   IonThumbnail,
-} from '@ionic/react';
+} from "@ionic/react"
 import * as types from "../API"
 
 type MenuProps = {
-  place: types.CreatePlaceInput | types.Place
+  place: types.Place
 }
 
 export const Menu = ({ place }: MenuProps) => {
   return (
     <IonList>
-      {place?.menu?.map((group) => (
-        <IonItemGroup key={group?.name}>
+      {place.menu.map((group) => (
+        <IonItemGroup key={group.name}>
           <IonItemDivider color="light" sticky>
-            <IonLabel>{group?.name}</IonLabel>
+            <IonLabel>{group.name}</IonLabel>
           </IonItemDivider>
-          {group?.items?.map((item) => (
-            <IonItem key={item?.name}>
+          {group.items.map((item) => (
+            <IonItem key={`${item.name}_${item.description}`}>
               <IonLabel>
-                <h3>{item?.name}</h3>
+                <h3>{item.name}</h3>
 
-                <p>{item?.description}</p>
-                <p>{item?.price && new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.price)}</p>
+                <p>{item.description}</p>
+                <p>
+                  {item.price &&
+                    new Intl.NumberFormat("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                    }).format(item.price)}
+                </p>
               </IonLabel>
               <IonThumbnail slot="end">
                 <img src="https://via.placeholder.com/150" />
@@ -37,5 +43,5 @@ export const Menu = ({ place }: MenuProps) => {
         </IonItemGroup>
       ))}
     </IonList>
-  );
-};
+  )
+}

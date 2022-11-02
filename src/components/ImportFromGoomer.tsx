@@ -14,8 +14,6 @@ import { API } from "aws-amplify"
 import * as types from "../API"
 import { createPlace } from "../graphql/mutations"
 import { getGroups, goomerInfoUrl } from "../pages/ImportPageHelpers"
-import { Menu } from "./Menu"
-import { useAuthenticator } from "@aws-amplify/ui-react"
 import { useHistory } from "react-router"
 
 const info: any = {
@@ -2263,7 +2261,6 @@ export const ImportFromGoomer = () => {
         >
           Importar
         </IonButton>
-        {place && <Menu place={place} />}
       </IonCardContent>
     </IonCard>
   )
