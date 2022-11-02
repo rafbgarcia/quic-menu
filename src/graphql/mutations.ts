@@ -9,6 +9,7 @@ export const createPlace = /* GraphQL */ `
   ) {
     createPlace(input: $input, condition: $condition) {
       id
+      owner
       name
       category
       about
@@ -31,7 +32,6 @@ export const createPlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -42,6 +42,7 @@ export const updatePlace = /* GraphQL */ `
   ) {
     updatePlace(input: $input, condition: $condition) {
       id
+      owner
       name
       category
       about
@@ -64,7 +65,6 @@ export const updatePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -75,6 +75,7 @@ export const deletePlace = /* GraphQL */ `
   ) {
     deletePlace(input: $input, condition: $condition) {
       id
+      owner
       name
       category
       about
@@ -97,7 +98,6 @@ export const deletePlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      owner
     }
   }
 `;

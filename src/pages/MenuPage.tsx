@@ -6,23 +6,13 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  IonInput,
-  IonLabel,
-  IonButton,
-  IonList,
-  IonItem,
-  IonItemGroup,
-  IonItemDivider,
-  IonAvatar,
-  IonThumbnail,
-  IonNote
-} from '@ionic/react';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+} from "@ionic/react"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router"
 import { API } from "aws-amplify"
 import * as types from "../API"
 import { getPlace } from "../graphql/queries"
-import { Menu } from '../components/Menu';
+import { Menu } from "../components/Menu"
 
 const fetchPlace = async (id: string, setPlace: any) => {
   const json = await API.graphql({ query: getPlace, variables: { id } })
@@ -47,9 +37,7 @@ export const MenuPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
-        {place && <Menu place={place} />}
-      </IonContent>
-    </IonPage >
-  );
-};
+      <IonContent fullscreen>{place && <Menu place={place} />}</IonContent>
+    </IonPage>
+  )
+}

@@ -6,6 +6,7 @@ export const getPlace = /* GraphQL */ `
   query GetPlace($id: ID!) {
     getPlace(id: $id) {
       id
+      owner
       name
       category
       about
@@ -28,7 +29,6 @@ export const getPlace = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -41,6 +41,7 @@ export const listPlaces = /* GraphQL */ `
     listPlaces(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
+        owner
         name
         category
         about
@@ -63,7 +64,6 @@ export const listPlaces = /* GraphQL */ `
         }
         createdAt
         updatedAt
-        owner
       }
       nextToken
     }

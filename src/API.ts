@@ -4,6 +4,7 @@
 
 export type CreatePlaceInput = {
   id?: string | null,
+  owner?: string | null,
   name: string,
   category?: string | null,
   about?: string | null,
@@ -33,6 +34,7 @@ export type ItemImagesInput = {
 };
 
 export type ModelPlaceConditionInput = {
+  owner?: ModelStringInput | null,
   name?: ModelStringInput | null,
   category?: ModelStringInput | null,
   about?: ModelStringInput | null,
@@ -84,13 +86,13 @@ export type ModelSizeInput = {
 export type Place = {
   __typename: "Place",
   id: string,
+  owner?: string | null,
   name: string,
   category?: string | null,
   about?: string | null,
   menu?:  Array<MenuGroup | null > | null,
   createdAt: string,
   updatedAt: string,
-  owner?: string | null,
 };
 
 export type MenuGroup = {
@@ -120,6 +122,7 @@ export type ItemImages = {
 
 export type UpdatePlaceInput = {
   id: string,
+  owner?: string | null,
   name?: string | null,
   category?: string | null,
   about?: string | null,
@@ -132,6 +135,7 @@ export type DeletePlaceInput = {
 
 export type ModelPlaceFilterInput = {
   id?: ModelIDInput | null,
+  owner?: ModelStringInput | null,
   name?: ModelStringInput | null,
   category?: ModelStringInput | null,
   about?: ModelStringInput | null,
@@ -210,6 +214,7 @@ export type CreatePlaceMutation = {
   createPlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -235,7 +240,6 @@ export type CreatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -248,6 +252,7 @@ export type UpdatePlaceMutation = {
   updatePlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -273,7 +278,6 @@ export type UpdatePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -286,6 +290,7 @@ export type DeletePlaceMutation = {
   deletePlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -311,7 +316,6 @@ export type DeletePlaceMutation = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -323,6 +327,7 @@ export type GetPlaceQuery = {
   getPlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -348,7 +353,6 @@ export type GetPlaceQuery = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -364,6 +368,7 @@ export type ListPlacesQuery = {
     items:  Array< {
       __typename: "Place",
       id: string,
+      owner?: string | null,
       name: string,
       category?: string | null,
       about?: string | null,
@@ -389,7 +394,6 @@ export type ListPlacesQuery = {
       } | null > | null,
       createdAt: string,
       updatedAt: string,
-      owner?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
@@ -404,6 +408,7 @@ export type OnCreatePlaceSubscription = {
   onCreatePlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -429,7 +434,6 @@ export type OnCreatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -442,6 +446,7 @@ export type OnUpdatePlaceSubscription = {
   onUpdatePlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -467,7 +472,6 @@ export type OnUpdatePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
 
@@ -480,6 +484,7 @@ export type OnDeletePlaceSubscription = {
   onDeletePlace?:  {
     __typename: "Place",
     id: string,
+    owner?: string | null,
     name: string,
     category?: string | null,
     about?: string | null,
@@ -505,6 +510,5 @@ export type OnDeletePlaceSubscription = {
     } | null > | null,
     createdAt: string,
     updatedAt: string,
-    owner?: string | null,
   } | null,
 };
