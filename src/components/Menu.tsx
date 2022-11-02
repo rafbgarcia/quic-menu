@@ -5,8 +5,13 @@ import {
   IonItemGroup,
   IonItemDivider,
   IonThumbnail,
+  IonNavLink,
 } from "@ionic/react"
 import * as types from "../API"
+import { DashboardPage } from "../pages/DashboardPage"
+import { MenuPage } from "../pages/MenuPage"
+import { OnsiteMenuPage } from "../pages/OnsiteMenuPage"
+import { OnsiteMenuPageItem } from "../pages/OnsiteMenuPageItem"
 
 type MenuProps = {
   place: types.Place
@@ -21,24 +26,30 @@ export const Menu = ({ place }: MenuProps) => {
             <IonLabel>{group.name}</IonLabel>
           </IonItemDivider>
           {group.items.map((item) => (
-            <IonItem key={`${item.name}_${item.description}`}>
-              <IonLabel>
-                <h3>{item.name}</h3>
+            <IonNavLink
+              routerDirection="forward"
+              component={() => <OnsiteMenuPageItem />}
+              key={`${item.name}_${item.description}`}
+            >
+              <IonItem class="cursor-pointer bg-hover">
+                <IonLabel>
+                  <h3>{item.name}</h3>
 
-                <p>{item.description}</p>
-                <p>
-                  {item.price &&
-                    new Intl.NumberFormat("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    }).format(item.price)}
-                </p>
-              </IonLabel>
-              <IonThumbnail slot="end">
-                <img src="https://via.placeholder.com/150" />
-                {/* <img src={item?.images?.small || undefined} /> */}
-              </IonThumbnail>
-            </IonItem>
+                  <p>{item.description}</p>
+                  <p>
+                    {item.price &&
+                      new Intl.NumberFormat("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      }).format(item.price)}
+                  </p>
+                </IonLabel>
+                <IonThumbnail slot="end">
+                  <img alt="" src="https://via.placeholder.com/150" />
+                  {/* <img src={item?.images?.small || undefined} /> */}
+                </IonThumbnail>
+              </IonItem>
+            </IonNavLink>
           ))}
         </IonItemGroup>
       ))}

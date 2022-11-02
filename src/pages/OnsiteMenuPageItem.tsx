@@ -12,7 +12,7 @@ import { useLocation, useParams } from "react-router"
 import { Menu } from "../components/Menu"
 import { usePlaceById } from "../hooks/usePlace"
 
-export const OnsiteMenuPage: React.FC = () => {
+export const OnsiteMenuPageItem: React.FC = () => {
   const { placeId } = useParams<{ placeId: string }>()
   const { place, loading } = usePlaceById(placeId)
   const { search } = useLocation()
@@ -25,13 +25,14 @@ export const OnsiteMenuPage: React.FC = () => {
     <>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton />
+          </IonButtons>
           <IonTitle>{place.name}</IonTitle>
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
-        <Menu place={place} />
-      </IonContent>
+      <IonContent fullscreen></IonContent>
     </>
   )
 }

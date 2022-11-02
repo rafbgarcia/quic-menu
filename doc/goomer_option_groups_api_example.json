@@ -1,0 +1,27 @@
+{
+  "option_groups": [
+    {
+      "id": 1559394,
+      "name": "[Goomer] Seletor de op\u00e7\u00f5es exemplo",
+      "min": 0,
+      "max": 3,
+      "repeat": 1,
+      "options": [
+        { "id": 6324897, "name": "Exemplo 1", "price": 2, "code": null },
+        { "id": 6324898, "name": "Exemplo 2", "price": 2, "code": null },
+        { "id": 6324899, "name": "Exemplo 3", "price": 2, "code": null }
+      ]
+    },
+    {
+      "type": "simple",
+      "options": [
+        {
+          "id": 6324896,
+          "name": "[Goomer] Opcional simples exemplo",
+          "price": 1.5,
+          "code": null
+        }
+      ]
+    }
+  ]
+}

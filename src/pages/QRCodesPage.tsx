@@ -17,8 +17,8 @@ export const QRCodesPage: React.FC = () => {
   const { place, loading } = usePlace()
   const [count, setCount] = useState("1")
 
-  if (count == "") setCount("1")
-  if (!place || loading || count == "") return null
+  if (count === "") setCount("1")
+  if (!place || loading || count === "") return null
 
   return (
     <IonPage>
@@ -45,7 +45,7 @@ export const QRCodesPage: React.FC = () => {
             .map((_, i) => (
               <div>
                 <QRCode
-                  value={`https://quic.place/${place.id}/onsite-menu?mesa=${
+                  value={`http://10.0.0.149:8100/${place.id}/onsite-menu?mesa=${
                     i + 1
                   }`}
                 />

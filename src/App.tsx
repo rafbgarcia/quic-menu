@@ -5,7 +5,7 @@ import {
   setupIonicReact,
 } from "@ionic/react"
 import { IonReactRouter } from "@ionic/react-router"
-import { Redirect, Route } from "react-router-dom"
+import { Route } from "react-router-dom"
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css"
@@ -25,8 +25,11 @@ import "@ionic/react/css/display.css"
 
 /* Theme variables */
 import "./theme/variables.css"
+import "./theme/common.css"
 
 /* App specific */
+import { IonNav } from "@ionic/react"
+
 import { Amplify } from "aws-amplify"
 import { Authenticator } from "@aws-amplify/ui-react"
 import "@aws-amplify/ui-react/styles.css"
@@ -77,20 +80,18 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <Authenticator
-          initialState="signIn"
-          loginMechanisms={["email"]}
-          variation="modal"
-        >
-          <IonRouterOutlet id="main">
+        <IonRouterOutlet id="main">
+          <Authenticator
+            initialState="signIn"
+            loginMechanisms={["email"]}
+            variation="modal"
+          >
             <Route path="/" component={UserRoutes} />
-            <Route
-              path="/:placeId/onsite-menu"
-              exact={true}
-              component={OnsiteMenuPage}
-            />
-          </IonRouterOutlet>
-        </Authenticator>
+          </Authenticator>
+          <Route path="/:placeId/onsite-menu" exact={true}>
+            <IonNav root={() => <OnsiteMenuPage />}></IonNav>
+          </Route>
+        </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
   )
