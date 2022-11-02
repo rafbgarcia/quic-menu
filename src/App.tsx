@@ -37,7 +37,6 @@ import awsExports from "./aws-exports"
 import { Sidebar } from "./components/Sidebar"
 import { MenuPage } from "./pages/MenuPage"
 import { DashboardPage } from "./pages/DashboardPage"
-import { ImportFromGoomer } from "./components/ImportFromGoomer"
 
 Amplify.configure(awsExports)
 setupIonicReact()
@@ -45,6 +44,9 @@ I18n.putVocabularies(translations)
 I18n.setLanguage("pt")
 I18n.putVocabularies({
   pt: {
+    "Your passwords must match": "As senhas não são iguais",
+    Email: "E-mail",
+    "Incorrect username or password.": "E-mail ou senha incorretos",
     "Your code is on the way. To log in, enter the code we emailed to":
       "Um código de verificação foi enviado para",
     "Your code is on the way. To log in, enter the code we texted to":
@@ -77,12 +79,10 @@ const App: React.FC = () => {
           loginMechanisms={["email"]}
           variation="modal"
         >
-          {() => (
-            <IonRouterOutlet id="main">
-              <Route path="/" exact={true} component={UserRoutes} />
-              <Route path="/:placeId/menu" exact={true} component={MenuPage} />
-            </IonRouterOutlet>
-          )}
+          <IonRouterOutlet id="main">
+            <Route path="/" exact={true} component={UserRoutes} />
+            <Route path="/:placeId/menu" exact={true} component={MenuPage} />
+          </IonRouterOutlet>
         </Authenticator>
       </IonReactRouter>
     </IonApp>

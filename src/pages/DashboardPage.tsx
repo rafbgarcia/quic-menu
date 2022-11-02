@@ -1,4 +1,3 @@
-import { useAuthenticator } from "@aws-amplify/ui-react"
 import {
   IonButtons,
   IonContent,
@@ -8,32 +7,13 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react"
-import { API } from "aws-amplify"
-import { useEffect, useState } from "react"
 import * as types from "../API"
-import { listPlaces } from "../graphql/queries"
 import { ImportFromGoomer } from "../components/ImportFromGoomer"
+import { Wait } from "../components/Wait"
+import { usePlace } from "../hooks/usePlace"
 
-const fetchPlace = async (username: string, setPlace: any) => {
-  const res: any = await API.graphql({
-    query: listPlaces,
-    variables: { limit: 1, filter: { owner: { beginsWith: username } } },
-  })
-  setPlace(res.data.listPlaces.items)
-}
-
-const Loading = ({ children, value }: any) => {
-  if (!value) return null
-  return children
-}
-
-export const DashboardPage: React.FC = () => {
-  const { user } = useAuthenticator((context) => [context.user])
-  const [places, setPlaces] = useState<types.Place[]>()
-
-  useEffect(() => {
-    fetchPlace(user.getUsername(), setPlaces)
-  }, [])
+export const DashboardPage = () => {
+  const { place, loading } = usePlace()
 
   return (
     <IonPage>
@@ -47,17 +27,14 @@ export const DashboardPage: React.FC = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-        <Loading value={places}>
-          {places && places.length > 0 ? (
-            <Dashboard place={places[0]} />
-          ) : (
-            <ImportFromGoomer setPlaces={setPlaces} />
-          )}
-        </Loading>
+        <Wait until={loading === false}>
+          {place ? <Dashboard place={place} /> : <ImportFromGoomer />}
+        </Wait>
       </IonContent>
     </IonPage>
   )
 }
+
 const Dashboard = ({ place }: { place: types.Place }) => {
   return (
     <IonContent className="ion-padding">

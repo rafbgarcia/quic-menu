@@ -16,6 +16,7 @@ import { createPlace } from "../graphql/mutations"
 import { getGroups, goomerInfoUrl } from "../pages/ImportPageHelpers"
 import { Menu } from "./Menu"
 import { useAuthenticator } from "@aws-amplify/ui-react"
+import { useHistory } from "react-router"
 
 const info: any = {
   version: "2.0",
@@ -2206,10 +2207,11 @@ const menu: any = {
   ],
 }
 
-export const ImportFromGoomer = ({ setPlaces }: { setPlaces: any }) => {
+export const ImportFromGoomer = () => {
   const [place, setPlace] = useState<types.CreatePlaceInput>()
   const [goomerLink, setGoomerLink] = useState("")
   const [creating, setCreating] = useState(false)
+  const history = useHistory()
 
   const importFromGoomer = async () => {
     // const { settings } = await fetch(goomerInfoUrl(goomerLink)).then(res => res.json())
@@ -2224,12 +2226,12 @@ export const ImportFromGoomer = ({ setPlaces }: { setPlaces: any }) => {
     }
     setPlace(place)
 
-    const res: any = await API.graphql({
+    await API.graphql({
       query: createPlace,
       variables: { input: newPlace },
       authMode: "AMAZON_COGNITO_USER_POOLS",
     })
-    setPlaces([res.data.createPlace])
+    history.go(0)
   }
 
   const didClickImportFromGoomer = () => {

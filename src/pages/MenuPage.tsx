@@ -14,18 +14,8 @@ import * as types from "../API"
 import { getPlace } from "../graphql/queries"
 import { Menu } from "../components/Menu"
 
-const fetchPlace = async (id: string, setPlace: any) => {
-  const json = await API.graphql({ query: getPlace, variables: { id } })
-  setPlace((json as any).data.getPlace)
-}
-
 export const MenuPage: React.FC = () => {
-  const [place, setPlace] = useState<types.Place>()
-  const { placeId } = useParams<{ placeId: string }>()
-  useEffect(() => {
-    fetchPlace(placeId, setPlace)
-  }, [])
-
+  const place: any = {}
   return (
     <IonPage>
       <IonHeader>
@@ -37,7 +27,9 @@ export const MenuPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>{place && <Menu place={place} />}</IonContent>
+      <IonContent fullscreen>
+        <Menu place={place} />
+      </IonContent>
     </IonPage>
   )
 }
