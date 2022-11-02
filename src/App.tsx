@@ -37,6 +37,8 @@ import awsExports from "./aws-exports"
 import { Sidebar } from "./components/Sidebar"
 import { MenuPage } from "./pages/MenuPage"
 import { DashboardPage } from "./pages/DashboardPage"
+import { OnsiteMenuPage } from "./pages/OnsiteMenuPage"
+import { QRCodesPage } from "./pages/QRCodesPage"
 
 Amplify.configure(awsExports)
 setupIonicReact()
@@ -65,6 +67,7 @@ const UserRoutes = () => {
       <IonRouterOutlet id="authenticated">
         <Route path="/" exact={true} component={DashboardPage} />
         <Route path="/menu" exact={true} component={MenuPage} />
+        <Route path="/qrcodes" exact={true} component={QRCodesPage} />
       </IonRouterOutlet>
     </IonSplitPane>
   )
@@ -81,7 +84,11 @@ const App: React.FC = () => {
         >
           <IonRouterOutlet id="main">
             <Route path="/" component={UserRoutes} />
-            <Route path="/:placeId/menu" exact={true} component={MenuPage} />
+            <Route
+              path="/:placeId/onsite-menu"
+              exact={true}
+              component={OnsiteMenuPage}
+            />
           </IonRouterOutlet>
         </Authenticator>
       </IonReactRouter>

@@ -13,7 +13,7 @@ import { API } from "aws-amplify"
 
 import * as types from "../API"
 import { createPlace } from "../graphql/mutations"
-import { getGroups, goomerInfoUrl } from "../pages/ImportPageHelpers"
+import { getGroups, goomerInfoUrl } from "../lib/import_from_goomer_helpers"
 import { useHistory } from "react-router"
 
 const info: any = {

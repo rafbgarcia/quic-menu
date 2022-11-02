@@ -22,7 +22,9 @@ export const DashboardPage = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Dashboard</IonTitle>
+          <IonTitle>
+            Dashboard <small>({place?.id})</small>
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -37,8 +39,8 @@ export const DashboardPage = () => {
 
 const Dashboard = ({ place }: { place: types.Place }) => {
   return (
-    <IonContent className="ion-padding">
+    <div className="ion-padding">
       <h3>{place.name}</h3>
-    </IonContent>
+    </div>
   )
 }

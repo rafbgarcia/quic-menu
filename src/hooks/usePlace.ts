@@ -1,8 +1,23 @@
 import { API } from "aws-amplify"
 import { useAuthenticator } from "@aws-amplify/ui-react"
 import { useEffect, useState } from "react"
-import { listPlaces } from "../graphql/queries"
+import { getPlace, listPlaces } from "../graphql/queries"
 import * as types from "../API"
+
+export const usePlaceById = (id: string) => {
+  const [place, setPlace] = useState<types.Place>()
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchPlaceById(id, setLoading, setPlace)
+  }, [])
+
+  return {
+    place,
+    loading,
+  }
+
+}
 
 export const usePlace = () => {
   const { user } = useAuthenticator((context) => [context.user])
@@ -19,6 +34,14 @@ export const usePlace = () => {
   }
 }
 
+const fetchPlaceById = async (id: string, setLoading: any, setPlace: any) => {
+  const res: any = await API.graphql({
+    query: getPlace,
+    variables: { id },
+  })
+  setPlace(res.data.getPlace)
+  setLoading(false)
+}
 const fetchPlaces = async (username: string, setLoading: any, setPlace: any) => {
   const res: any = await API.graphql({
     query: listPlaces,
