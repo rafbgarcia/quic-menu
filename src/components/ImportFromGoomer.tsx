@@ -12,7 +12,7 @@ import { useState } from "react"
 import { API } from "aws-amplify"
 
 import * as types from "../API"
-import { createPlace } from "../graphql/mutations"
+import { createMenuGroup, createPlace } from "../graphql/mutations"
 import { getGroups, goomerInfoUrl } from "../lib/import_from_goomer_helpers"
 import { useHistory } from "react-router"
 
@@ -2206,7 +2206,6 @@ const menu: any = {
 }
 
 export const ImportFromGoomer = () => {
-  const [place, setPlace] = useState<types.CreatePlaceInput>()
   const [goomerLink, setGoomerLink] = useState("")
   const [creating, setCreating] = useState(false)
   const history = useHistory()
@@ -2215,20 +2214,27 @@ export const ImportFromGoomer = () => {
     // const { settings } = await fetch(goomerInfoUrl(goomerLink)).then(res => res.json())
     // const menu = await fetch(settings.mm_onsite_menu_url).then(res => res.json())
 
-    const groups = getGroups(menu.products)
-
     const newPlace: types.CreatePlaceInput = {
       name: settings.name,
       category: settings.specialty_name,
-      menu: groups,
     }
-    setPlace(place)
 
-    await API.graphql({
+    const json: any = await API.graphql({
       query: createPlace,
       variables: { input: newPlace },
       authMode: "AMAZON_COGNITO_USER_POOLS",
     })
+
+    const groups = getGroups(json.data.createPlace.id, menu.products)
+
+    groups.forEach(async (group) => {
+      await API.graphql({
+        query: createMenuGroup,
+        variables: { input: group },
+        authMode: "AMAZON_COGNITO_USER_POOLS",
+      })
+    })
+
     history.go(0)
   }
 

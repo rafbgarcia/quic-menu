@@ -8,28 +8,36 @@ export const onCreatePlace = /* GraphQL */ `
     $owner: String
   ) {
     onCreatePlace(filter: $filter, owner: $owner) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
     }
@@ -41,28 +49,36 @@ export const onUpdatePlace = /* GraphQL */ `
     $owner: String
   ) {
     onUpdatePlace(filter: $filter, owner: $owner) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
     }
@@ -74,30 +90,125 @@ export const onDeletePlace = /* GraphQL */ `
     $owner: String
   ) {
     onDeletePlace(filter: $filter, owner: $owner) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
+    }
+  }
+`;
+export const onCreateMenuGroup = /* GraphQL */ `
+  subscription OnCreateMenuGroup(
+    $filter: ModelSubscriptionMenuGroupFilterInput
+    $owner: String
+  ) {
+    onCreateMenuGroup(filter: $filter, owner: $owner) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
+    }
+  }
+`;
+export const onUpdateMenuGroup = /* GraphQL */ `
+  subscription OnUpdateMenuGroup(
+    $filter: ModelSubscriptionMenuGroupFilterInput
+    $owner: String
+  ) {
+    onUpdateMenuGroup(filter: $filter, owner: $owner) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
+    }
+  }
+`;
+export const onDeleteMenuGroup = /* GraphQL */ `
+  subscription OnDeleteMenuGroup(
+    $filter: ModelSubscriptionMenuGroupFilterInput
+    $owner: String
+  ) {
+    onDeleteMenuGroup(filter: $filter, owner: $owner) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
     }
   }
 `;

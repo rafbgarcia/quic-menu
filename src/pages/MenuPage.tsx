@@ -7,7 +7,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react"
-import { Menu } from "../components/Menu"
 import { usePlace } from "../hooks/usePlace"
 
 export const MenuPage: React.FC = () => {
@@ -26,9 +25,7 @@ export const MenuPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
-        <Menu place={place} />
-      </IonContent>
+      <IonContent fullscreen>{/* <Menu place={place} /> */}</IonContent>
     </IonPage>
   )
 }

@@ -8,20 +8,22 @@ const goomerStoreSlug = (link: string) => (
   link.split('//')[1].split('.')[0]
 )
 
-export const getGroups = (products: any, groups: types.MenuGroupInput[] = []): types.MenuGroupInput[] => {
+export const getGroups = (placeId: string, products: any, groups: types.CreateMenuGroupInput[] = []): types.CreateMenuGroupInput[] => {
   if (products.length == 0) {
     return groups
   }
 
-  const group: types.MenuGroupInput = {
+  const group: types.CreateMenuGroupInput = {
     name: products[0].group_name,
     items: [],
+    placeMenuGroupsId: placeId,
   }
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i]
     if (product.group_name !== group.name) continue
 
+    if (!product.images) debugger
     const item: types.MenuItemInput = {
       name: product.name,
       description: product.description,
@@ -39,5 +41,5 @@ export const getGroups = (products: any, groups: types.MenuGroupInput[] = []): t
 
   groups.push(group)
 
-  return getGroups(products, groups)
+  return getGroups(placeId, products, groups)
 }

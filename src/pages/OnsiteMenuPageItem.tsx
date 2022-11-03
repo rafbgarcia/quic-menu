@@ -1,38 +1,52 @@
 import {
-  IonBackButton,
+  IonFabButton,
+  IonButton,
   IonButtons,
   IonContent,
   IonHeader,
-  IonMenuButton,
-  IonPage,
+  IonModal,
   IonTitle,
   IonToolbar,
+  IonFab,
+  IonIcon,
+  IonMenuButton,
+  IonBackButton,
 } from "@ionic/react"
-import { useLocation, useParams } from "react-router"
-import { Menu } from "../components/Menu"
-import { usePlaceById } from "../hooks/usePlace"
+import { chevronBackOutline } from "ionicons/icons"
+import { MenuItem } from "../API"
 
-export const OnsiteMenuPageItem: React.FC = () => {
-  const { placeId } = useParams<{ placeId: string }>()
-  const { place, loading } = usePlaceById(placeId)
-  const { search } = useLocation()
+type Props = {
+  item?: MenuItem
+  setItem: (item?: MenuItem) => void
+  pageRef: any
+}
 
-  const query = new URLSearchParams(search)
-
-  if (loading || !place) return null
-
+export const OnsiteMenuPageItem: React.FC<Props> = ({
+  item,
+  setItem,
+  pageRef,
+}) => {
   return (
-    <>
+    <IonModal
+      swipeToClose
+      isOpen={item !== undefined}
+      onWillDismiss={() => setItem(undefined)}
+      presentingElement={pageRef!}
+    >
       <IonHeader>
         <IonToolbar>
+          <IonTitle>Modal</IonTitle>
           <IonButtons slot="start">
+            <IonButton onClick={() => setItem(undefined)}>
+              <IonIcon icon={chevronBackOutline} />
+            </IonButton>
             <IonBackButton />
           </IonButtons>
-          <IonTitle>{place.name}</IonTitle>
         </IonToolbar>
       </IonHeader>
-
-      <IonContent fullscreen></IonContent>
-    </>
+      <IonContent className="ion-padding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum
+      </IonContent>
+    </IonModal>
   )
 }

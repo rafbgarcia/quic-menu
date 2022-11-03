@@ -88,9 +88,11 @@ const App: React.FC = () => {
           >
             <Route path="/" component={UserRoutes} />
           </Authenticator>
-          <Route path="/:placeId/onsite-menu" exact={true}>
-            <IonNav root={() => <OnsiteMenuPage />}></IonNav>
-          </Route>
+          <Route
+            path="/:placeId/onsite-menu"
+            exact={true}
+            component={OnsiteMenuPage}
+          />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

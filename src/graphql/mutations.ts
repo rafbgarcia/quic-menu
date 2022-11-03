@@ -8,28 +8,36 @@ export const createPlace = /* GraphQL */ `
     $condition: ModelPlaceConditionInput
   ) {
     createPlace(input: $input, condition: $condition) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
     }
@@ -41,28 +49,36 @@ export const updatePlace = /* GraphQL */ `
     $condition: ModelPlaceConditionInput
   ) {
     updatePlace(input: $input, condition: $condition) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
     }
@@ -74,30 +90,125 @@ export const deletePlace = /* GraphQL */ `
     $condition: ModelPlaceConditionInput
   ) {
     deletePlace(input: $input, condition: $condition) {
-      id
       owner
       name
       category
       about
-      menu {
-        name
+      menuGroups {
         items {
           name
-          price
-          discountPrice
-          description
-          images {
-            small
-            medium
-            large
+          items {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
           }
-          hide
-          hideFromDelivery
-          minimumAge
+          id
+          createdAt
+          updatedAt
+          placeMenuGroupsId
+          owner
         }
+        nextToken
       }
+      id
       createdAt
       updatedAt
+    }
+  }
+`;
+export const createMenuGroup = /* GraphQL */ `
+  mutation CreateMenuGroup(
+    $input: CreateMenuGroupInput!
+    $condition: ModelMenuGroupConditionInput
+  ) {
+    createMenuGroup(input: $input, condition: $condition) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
+    }
+  }
+`;
+export const updateMenuGroup = /* GraphQL */ `
+  mutation UpdateMenuGroup(
+    $input: UpdateMenuGroupInput!
+    $condition: ModelMenuGroupConditionInput
+  ) {
+    updateMenuGroup(input: $input, condition: $condition) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
+    }
+  }
+`;
+export const deleteMenuGroup = /* GraphQL */ `
+  mutation DeleteMenuGroup(
+    $input: DeleteMenuGroupInput!
+    $condition: ModelMenuGroupConditionInput
+  ) {
+    deleteMenuGroup(input: $input, condition: $condition) {
+      name
+      items {
+        name
+        price
+        discountPrice
+        description
+        images {
+          small
+          medium
+          large
+        }
+        hide
+        hideFromDelivery
+        minimumAge
+      }
+      id
+      createdAt
+      updatedAt
+      placeMenuGroupsId
+      owner
     }
   }
 `;
