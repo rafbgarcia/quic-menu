@@ -11,9 +11,20 @@ import {
   IonIcon,
   IonMenuButton,
   IonBackButton,
+  IonImg,
+  IonLabel,
+  IonFooter,
 } from "@ionic/react"
-import { arrowBackOutline, chevronBackOutline } from "ionicons/icons"
+import {
+  addOutline,
+  arrowBackOutline,
+  chevronBackOutline,
+  chevronDownOutline,
+  removeOutline,
+} from "ionicons/icons"
+import { useRef, useState } from "react"
 import { MenuItem } from "../API"
+import { formatPrice } from "../lib/formatPrice"
 
 type Props = {
   item?: MenuItem
@@ -26,26 +37,74 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
   setItem,
   pageRef,
 }) => {
+  const modalRef = useRef<HTMLIonModalElement>(null)
+  const [orderItem, setOrderItem] = useState<any>({ quantity: 1 })
+  const updateOrderItem = (field: string, value: any) => {
+    setOrderItem({ ...orderItem, [field]: value })
+  }
+
+  if (!item) {
+    return null
+  }
   return (
     <IonModal
+      ref={modalRef}
       canDismiss
       isOpen={item !== undefined}
       onWillDismiss={() => setItem(undefined)}
       presentingElement={pageRef!}
     >
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Modal</IonTitle>
-          <IonButtons slot="start">
-            <IonButton onClick={() => setItem(undefined)}>
-              <IonIcon ios={chevronBackOutline} md={arrowBackOutline} />
+      <IonContent>
+        <IonFab vertical="top" horizontal="start">
+          <IonFabButton
+            color="light"
+            style={{ opacity: 0.5 }}
+            size="small"
+            onClick={() => modalRef!.current!.dismiss()}
+          >
+            <IonIcon icon={chevronDownOutline} />
+          </IonFabButton>
+        </IonFab>
+        <div style={{ height: "45vh", overflow: "hidden" }}>
+          <IonImg alt="" src={item?.images?.large!} />
+        </div>
+        <div className="ion-padding">
+          <IonLabel>
+            <h1>{item.name}</h1>
+            <p>{item.description}</p>
+            <br />
+            <p>{formatPrice(item.price)}</p>
+          </IonLabel>
+        </div>
+        <div className="ion-padding">
+          <div
+            style={{
+              border: "1px solid #d1d5db",
+              borderRadius: 4,
+              padding: 3,
+              display: "inline-flex",
+            }}
+          >
+            <IonButton
+              fill="clear"
+              onClick={() =>
+                updateOrderItem("quantity", orderItem.quantity - 1)
+              }
+              disabled={orderItem.quantity === 1}
+            >
+              <IonIcon icon={removeOutline} />
             </IonButton>
-            <IonBackButton />
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent className="ion-padding">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum
+            <IonLabel>{orderItem.quantity}</IonLabel>
+            <IonButton
+              fill="clear"
+              onClick={() =>
+                updateOrderItem("quantity", orderItem.quantity + 1)
+              }
+            >
+              <IonIcon icon={addOutline} />
+            </IonButton>
+          </div>
+        </div>
       </IonContent>
     </IonModal>
   )

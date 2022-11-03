@@ -11,11 +11,13 @@ import {
   IonThumbnail,
   IonNavLink,
   IonPage,
+  IonImg,
 } from "@ionic/react"
 import { useEffect, useRef, useState } from "react"
 import { useLocation, useParams } from "react-router"
 import { MenuItem } from "../API"
 import { usePlaceById } from "../hooks/usePlace"
+import { formatPrice } from "../lib/formatPrice"
 import { OnsiteMenuPageItem } from "./OnsiteMenuPageItem"
 
 export const OnsiteMenuPage: React.FC = () => {
@@ -60,19 +62,12 @@ export const OnsiteMenuPage: React.FC = () => {
                     >
                       <IonLabel>
                         <h3>{item.name}</h3>
-
                         <p>{item.description}</p>
-                        <p>
-                          {item.price &&
-                            new Intl.NumberFormat("pt-BR", {
-                              style: "currency",
-                              currency: "BRL",
-                            }).format(item.price)}
-                        </p>
+                        <p>{formatPrice(item.price)}</p>
                       </IonLabel>
                       <IonThumbnail slot="end">
-                        <img alt="" src="https://via.placeholder.com/150" />
-                        {/* <img src={item?.images?.small || undefined} /> */}
+                        <IonImg alt="" src="https://via.placeholder.com/150" />
+                        {/* <IonImg alt="" src={item?.images?.small || undefined} /> */}
                       </IonThumbnail>
                     </IonItem>
                   ))}

@@ -1,3 +1,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+ion-thumbnail {
+  --border-radius: 4px;
+}
