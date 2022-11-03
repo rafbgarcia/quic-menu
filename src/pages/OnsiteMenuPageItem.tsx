@@ -12,7 +12,7 @@ import {
   IonMenuButton,
   IonBackButton,
 } from "@ionic/react"
-import { chevronBackOutline } from "ionicons/icons"
+import { arrowBackOutline, chevronBackOutline } from "ionicons/icons"
 import { MenuItem } from "../API"
 
 type Props = {
@@ -28,7 +28,7 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
 }) => {
   return (
     <IonModal
-      swipeToClose
+      canDismiss
       isOpen={item !== undefined}
       onWillDismiss={() => setItem(undefined)}
       presentingElement={pageRef!}
@@ -38,7 +38,7 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
           <IonTitle>Modal</IonTitle>
           <IonButtons slot="start">
             <IonButton onClick={() => setItem(undefined)}>
-              <IonIcon icon={chevronBackOutline} />
+              <IonIcon ios={chevronBackOutline} md={arrowBackOutline} />
             </IonButton>
             <IonBackButton />
           </IonButtons>
