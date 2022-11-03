@@ -76,7 +76,7 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
             <p>{formatPrice(item.price)}</p>
           </IonLabel>
         </div>
-        <div className="ion-padding">
+        <div className="ion-padding" style={{ paddingBottom: 100 }}>
           <div
             style={{
               border: "1px solid #d1d5db",
