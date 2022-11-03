@@ -66,7 +66,11 @@ export const OnsiteMenuPage: React.FC = () => {
                         <p>{formatPrice(item.price)}</p>
                       </IonLabel>
                       <IonThumbnail slot="end">
-                        <IonImg alt="" src="https://via.placeholder.com/150" />
+                        <IonImg
+                          className="rounded-md"
+                          alt=""
+                          src="https://via.placeholder.com/150"
+                        />
                         {/* <IonImg alt="" src={item?.images?.small || undefined} /> */}
                       </IonThumbnail>
                     </IonItem>

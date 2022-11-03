@@ -58,14 +58,14 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
         <IonFab vertical="top" horizontal="start">
           <IonFabButton
             color="light"
-            style={{ opacity: 0.5 }}
+            className="opacity-50"
             size="small"
             onClick={() => modalRef!.current!.dismiss()}
           >
             <IonIcon icon={chevronDownOutline} />
           </IonFabButton>
         </IonFab>
-        <div style={{ height: "45vh", overflow: "hidden" }}>
+        <div className="h-[45vh] overflow-hidden">
           <IonImg alt="" src={item?.images?.large!} />
         </div>
         <div className="ion-padding">
@@ -76,15 +76,8 @@ export const OnsiteMenuPageItem: React.FC<Props> = ({
             <p>{formatPrice(item.price)}</p>
           </IonLabel>
         </div>
-        <div className="ion-padding" style={{ paddingBottom: 100 }}>
-          <div
-            style={{
-              border: "1px solid #d1d5db",
-              borderRadius: 4,
-              padding: 3,
-              display: "inline-flex",
-            }}
-          >
+        <div className="ion-padding pb-[100px]">
+          <div className="border rounded-md inline-flex">
             <IonButton
               fill="clear"
               onClick={() =>

@@ -25,7 +25,7 @@ import "@ionic/react/css/display.css"
 
 /* Theme variables */
 import "./theme/variables.css"
-import "./theme/common.css"
+import "./theme/tailwind.css"
 
 /* App specific */
 import { IonNav } from "@ionic/react"

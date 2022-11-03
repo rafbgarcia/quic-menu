@@ -61,7 +61,7 @@ export const Sidebar: React.FC = () => {
           <IonListHeader>{user.attributes?.email}</IonListHeader>
           <IonNote>
             Administrador |{" "}
-            <a style={{ cursor: "pointer" }} onClick={signOut}>
+            <a className="cursor-pointer" onClick={signOut}>
               Sair
             </a>
           </IonNote>

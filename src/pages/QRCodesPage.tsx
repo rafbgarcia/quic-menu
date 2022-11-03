@@ -39,7 +39,7 @@ export const QRCodesPage: React.FC = () => {
           placeholder="Ex: 10"
           clearInput
         />
-        <div style={{ columns: 3 }}>
+        <div className="columns-3">
           {Array(parseInt(count))
             .fill(1)
             .map((_, i) => (
