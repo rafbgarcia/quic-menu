@@ -1,9 +1,4 @@
-import {
-  IonApp,
-  IonRouterOutlet,
-  IonSplitPane,
-  setupIonicReact,
-} from "@ionic/react"
+import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from "@ionic/react"
 import { IonReactRouter } from "@ionic/react-router"
 import { Route } from "react-router-dom"
 
@@ -28,8 +23,6 @@ import "./theme/variables.css"
 import "./theme/tailwind.css"
 
 /* App specific */
-import { IonNav } from "@ionic/react"
-
 import { Amplify } from "aws-amplify"
 import { Authenticator } from "@aws-amplify/ui-react"
 import "@aws-amplify/ui-react/styles.css"
@@ -81,18 +74,10 @@ const App: React.FC = () => {
     <IonApp>
       <IonReactRouter>
         <IonRouterOutlet id="main">
-          <Authenticator
-            initialState="signIn"
-            loginMechanisms={["email"]}
-            variation="modal"
-          >
+          <Authenticator initialState="signIn" loginMechanisms={["email"]} variation="modal">
             <Route path="/" component={UserRoutes} />
           </Authenticator>
-          <Route
-            path="/:placeId/onsite-menu"
-            exact={true}
-            component={OnsiteMenuPage}
-          />
+          <Route path="/:placeId/onsite-menu" exact={true} component={OnsiteMenuPage} />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

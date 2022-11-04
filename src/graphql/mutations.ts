@@ -2,6 +2,111 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const createOrder = /* GraphQL */ `
+  mutation CreateOrder(
+    $input: CreateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    createOrder(input: $input, condition: $condition) {
+      items {
+        meta {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
+        quantity
+        notes
+      }
+      status
+      toGo
+      meta {
+        table
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateOrder = /* GraphQL */ `
+  mutation UpdateOrder(
+    $input: UpdateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    updateOrder(input: $input, condition: $condition) {
+      items {
+        meta {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
+        quantity
+        notes
+      }
+      status
+      toGo
+      meta {
+        table
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteOrder = /* GraphQL */ `
+  mutation DeleteOrder(
+    $input: DeleteOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    deleteOrder(input: $input, condition: $condition) {
+      items {
+        meta {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
+        quantity
+        notes
+      }
+      status
+      toGo
+      meta {
+        table
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
 export const createPlace = /* GraphQL */ `
   mutation CreatePlace(
     $input: CreatePlaceInput!

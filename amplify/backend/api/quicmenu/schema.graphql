@@ -2,9 +2,7 @@
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
-type Place
-  @model
-  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+type Place @model @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
   owner: String
   name: String!
   category: String
@@ -12,9 +10,7 @@ type Place
   menuGroups: [MenuGroup] @hasMany
 }
 
-type MenuGroup
-  @model
-  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+type MenuGroup @model @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
   name: String!
   items: [MenuItem!]!
 }
@@ -34,4 +30,31 @@ type MenuItem {
   hide: Boolean
   hideFromDelivery: Boolean
   minimumAge: Int
+}
+
+#########
+# Order #
+#########
+
+type Order @model @auth(rules: [{ allow: public }]) {
+  items: [OrderItem!]!
+  status: OrderStatus!
+  toGo: Boolean
+  meta: OrderMetadata
+}
+
+type OrderItem {
+  meta: MenuItem!
+  quantity: Int!
+  notes: String
+}
+
+enum OrderStatus {
+  requested
+  acknowledged
+  complete
+}
+
+type OrderMetadata {
+  table: String
 }

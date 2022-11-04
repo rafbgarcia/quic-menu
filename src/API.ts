@@ -2,6 +2,136 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
+export type CreateOrderInput = {
+  items: Array< OrderItemInput >,
+  status: OrderStatus,
+  toGo?: boolean | null,
+  meta?: OrderMetadataInput | null,
+  id?: string | null,
+};
+
+export type OrderItemInput = {
+  meta: MenuItemInput,
+  quantity: number,
+  notes?: string | null,
+};
+
+export type MenuItemInput = {
+  name: string,
+  price: number,
+  discountPrice?: number | null,
+  description?: string | null,
+  images?: ItemImagesInput | null,
+  hide?: boolean | null,
+  hideFromDelivery?: boolean | null,
+  minimumAge?: number | null,
+};
+
+export type ItemImagesInput = {
+  small?: string | null,
+  medium?: string | null,
+  large?: string | null,
+};
+
+export enum OrderStatus {
+  requested = "requested",
+  acknowledged = "acknowledged",
+  complete = "complete",
+}
+
+
+export type OrderMetadataInput = {
+  table?: string | null,
+};
+
+export type ModelOrderConditionInput = {
+  status?: ModelOrderStatusInput | null,
+  toGo?: ModelBooleanInput | null,
+  and?: Array< ModelOrderConditionInput | null > | null,
+  or?: Array< ModelOrderConditionInput | null > | null,
+  not?: ModelOrderConditionInput | null,
+};
+
+export type ModelOrderStatusInput = {
+  eq?: OrderStatus | null,
+  ne?: OrderStatus | null,
+};
+
+export type ModelBooleanInput = {
+  ne?: boolean | null,
+  eq?: boolean | null,
+  attributeExists?: boolean | null,
+  attributeType?: ModelAttributeTypes | null,
+};
+
+export enum ModelAttributeTypes {
+  binary = "binary",
+  binarySet = "binarySet",
+  bool = "bool",
+  list = "list",
+  map = "map",
+  number = "number",
+  numberSet = "numberSet",
+  string = "string",
+  stringSet = "stringSet",
+  _null = "_null",
+}
+
+
+export type Order = {
+  __typename: "Order",
+  items:  Array<OrderItem >,
+  status: OrderStatus,
+  toGo?: boolean | null,
+  meta?: OrderMetadata | null,
+  id: string,
+  createdAt: string,
+  updatedAt: string,
+};
+
+export type OrderItem = {
+  __typename: "OrderItem",
+  meta: MenuItem,
+  quantity: number,
+  notes?: string | null,
+};
+
+export type MenuItem = {
+  __typename: "MenuItem",
+  name: string,
+  price: number,
+  discountPrice?: number | null,
+  description?: string | null,
+  images?: ItemImages | null,
+  hide?: boolean | null,
+  hideFromDelivery?: boolean | null,
+  minimumAge?: number | null,
+};
+
+export type ItemImages = {
+  __typename: "ItemImages",
+  small?: string | null,
+  medium?: string | null,
+  large?: string | null,
+};
+
+export type OrderMetadata = {
+  __typename: "OrderMetadata",
+  table?: string | null,
+};
+
+export type UpdateOrderInput = {
+  items?: Array< OrderItemInput > | null,
+  status?: OrderStatus | null,
+  toGo?: boolean | null,
+  meta?: OrderMetadataInput | null,
+  id: string,
+};
+
+export type DeleteOrderInput = {
+  id: string,
+};
+
 export type CreatePlaceInput = {
   owner?: string | null,
   name: string,
@@ -35,20 +165,6 @@ export type ModelStringInput = {
   attributeType?: ModelAttributeTypes | null,
   size?: ModelSizeInput | null,
 };
-
-export enum ModelAttributeTypes {
-  binary = "binary",
-  binarySet = "binarySet",
-  bool = "bool",
-  list = "list",
-  map = "map",
-  number = "number",
-  numberSet = "numberSet",
-  string = "string",
-  stringSet = "stringSet",
-  _null = "_null",
-}
-
 
 export type ModelSizeInput = {
   ne?: number | null,
@@ -89,25 +205,6 @@ export type MenuGroup = {
   owner?: string | null,
 };
 
-export type MenuItem = {
-  __typename: "MenuItem",
-  name: string,
-  price: number,
-  discountPrice?: number | null,
-  description?: string | null,
-  images?: ItemImages | null,
-  hide?: boolean | null,
-  hideFromDelivery?: boolean | null,
-  minimumAge?: number | null,
-};
-
-export type ItemImages = {
-  __typename: "ItemImages",
-  small?: string | null,
-  medium?: string | null,
-  large?: string | null,
-};
-
 export type UpdatePlaceInput = {
   owner?: string | null,
   name?: string | null,
@@ -125,23 +222,6 @@ export type CreateMenuGroupInput = {
   items: Array< MenuItemInput >,
   id?: string | null,
   placeMenuGroupsId?: string | null,
-};
-
-export type MenuItemInput = {
-  name: string,
-  price: number,
-  discountPrice?: number | null,
-  description?: string | null,
-  images?: ItemImagesInput | null,
-  hide?: boolean | null,
-  hideFromDelivery?: boolean | null,
-  minimumAge?: number | null,
-};
-
-export type ItemImagesInput = {
-  small?: string | null,
-  medium?: string | null,
-  large?: string | null,
 };
 
 export type ModelMenuGroupConditionInput = {
@@ -179,6 +259,20 @@ export type DeleteMenuGroupInput = {
   id: string,
 };
 
+export type ModelOrderFilterInput = {
+  status?: ModelOrderStatusInput | null,
+  toGo?: ModelBooleanInput | null,
+  and?: Array< ModelOrderFilterInput | null > | null,
+  or?: Array< ModelOrderFilterInput | null > | null,
+  not?: ModelOrderFilterInput | null,
+};
+
+export type ModelOrderConnection = {
+  __typename: "ModelOrderConnection",
+  items:  Array<Order | null >,
+  nextToken?: string | null,
+};
+
 export type ModelPlaceFilterInput = {
   owner?: ModelStringInput | null,
   name?: ModelStringInput | null,
@@ -203,12 +297,11 @@ export type ModelMenuGroupFilterInput = {
   placeMenuGroupsId?: ModelIDInput | null,
 };
 
-export type ModelSubscriptionPlaceFilterInput = {
-  name?: ModelSubscriptionStringInput | null,
-  category?: ModelSubscriptionStringInput | null,
-  about?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
-  or?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
+export type ModelSubscriptionOrderFilterInput = {
+  status?: ModelSubscriptionStringInput | null,
+  toGo?: ModelSubscriptionBooleanInput | null,
+  and?: Array< ModelSubscriptionOrderFilterInput | null > | null,
+  or?: Array< ModelSubscriptionOrderFilterInput | null > | null,
 };
 
 export type ModelSubscriptionStringInput = {
@@ -226,10 +319,146 @@ export type ModelSubscriptionStringInput = {
   notIn?: Array< string | null > | null,
 };
 
+export type ModelSubscriptionBooleanInput = {
+  ne?: boolean | null,
+  eq?: boolean | null,
+};
+
+export type ModelSubscriptionPlaceFilterInput = {
+  name?: ModelSubscriptionStringInput | null,
+  category?: ModelSubscriptionStringInput | null,
+  about?: ModelSubscriptionStringInput | null,
+  and?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
+  or?: Array< ModelSubscriptionPlaceFilterInput | null > | null,
+};
+
 export type ModelSubscriptionMenuGroupFilterInput = {
   name?: ModelSubscriptionStringInput | null,
   and?: Array< ModelSubscriptionMenuGroupFilterInput | null > | null,
   or?: Array< ModelSubscriptionMenuGroupFilterInput | null > | null,
+};
+
+export type CreateOrderMutationVariables = {
+  input: CreateOrderInput,
+  condition?: ModelOrderConditionInput | null,
+};
+
+export type CreateOrderMutation = {
+  createOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type UpdateOrderMutationVariables = {
+  input: UpdateOrderInput,
+  condition?: ModelOrderConditionInput | null,
+};
+
+export type UpdateOrderMutation = {
+  updateOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type DeleteOrderMutationVariables = {
+  input: DeleteOrderInput,
+  condition?: ModelOrderConditionInput | null,
+};
+
+export type DeleteOrderMutation = {
+  deleteOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
 };
 
 export type CreatePlaceMutationVariables = {
@@ -472,6 +701,92 @@ export type DeleteMenuGroupMutation = {
   } | null,
 };
 
+export type GetOrderQueryVariables = {
+  id: string,
+};
+
+export type GetOrderQuery = {
+  getOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type ListOrdersQueryVariables = {
+  filter?: ModelOrderFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+};
+
+export type ListOrdersQuery = {
+  listOrders?:  {
+    __typename: "ModelOrderConnection",
+    items:  Array< {
+      __typename: "Order",
+      items:  Array< {
+        __typename: "OrderItem",
+        meta:  {
+          __typename: "MenuItem",
+          name: string,
+          price: number,
+          discountPrice?: number | null,
+          description?: string | null,
+          images?:  {
+            __typename: "ItemImages",
+            small?: string | null,
+            medium?: string | null,
+            large?: string | null,
+          } | null,
+          hide?: boolean | null,
+          hideFromDelivery?: boolean | null,
+          minimumAge?: number | null,
+        },
+        quantity: number,
+        notes?: string | null,
+      } >,
+      status: OrderStatus,
+      toGo?: boolean | null,
+      meta?:  {
+        __typename: "OrderMetadata",
+        table?: string | null,
+      } | null,
+      id: string,
+      createdAt: string,
+      updatedAt: string,
+    } | null >,
+    nextToken?: string | null,
+  } | null,
+};
+
 export type GetPlaceQueryVariables = {
   id: string,
 };
@@ -637,6 +952,126 @@ export type ListMenuGroupsQuery = {
       owner?: string | null,
     } | null >,
     nextToken?: string | null,
+  } | null,
+};
+
+export type OnCreateOrderSubscriptionVariables = {
+  filter?: ModelSubscriptionOrderFilterInput | null,
+};
+
+export type OnCreateOrderSubscription = {
+  onCreateOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnUpdateOrderSubscriptionVariables = {
+  filter?: ModelSubscriptionOrderFilterInput | null,
+};
+
+export type OnUpdateOrderSubscription = {
+  onUpdateOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnDeleteOrderSubscriptionVariables = {
+  filter?: ModelSubscriptionOrderFilterInput | null,
+};
+
+export type OnDeleteOrderSubscription = {
+  onDeleteOrder?:  {
+    __typename: "Order",
+    items:  Array< {
+      __typename: "OrderItem",
+      meta:  {
+        __typename: "MenuItem",
+        name: string,
+        price: number,
+        discountPrice?: number | null,
+        description?: string | null,
+        images?:  {
+          __typename: "ItemImages",
+          small?: string | null,
+          medium?: string | null,
+          large?: string | null,
+        } | null,
+        hide?: boolean | null,
+        hideFromDelivery?: boolean | null,
+        minimumAge?: number | null,
+      },
+      quantity: number,
+      notes?: string | null,
+    } >,
+    status: OrderStatus,
+    toGo?: boolean | null,
+    meta?:  {
+      __typename: "OrderMetadata",
+      table?: string | null,
+    } | null,
+    id: string,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 

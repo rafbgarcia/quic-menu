@@ -2,6 +2,77 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getOrder = /* GraphQL */ `
+  query GetOrder($id: ID!) {
+    getOrder(id: $id) {
+      items {
+        meta {
+          name
+          price
+          discountPrice
+          description
+          images {
+            small
+            medium
+            large
+          }
+          hide
+          hideFromDelivery
+          minimumAge
+        }
+        quantity
+        notes
+      }
+      status
+      toGo
+      meta {
+        table
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listOrders = /* GraphQL */ `
+  query ListOrders(
+    $filter: ModelOrderFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listOrders(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        items {
+          meta {
+            name
+            price
+            discountPrice
+            description
+            images {
+              small
+              medium
+              large
+            }
+            hide
+            hideFromDelivery
+            minimumAge
+          }
+          quantity
+          notes
+        }
+        status
+        toGo
+        meta {
+          table
+        }
+        id
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
 export const getPlace = /* GraphQL */ `
   query GetPlace($id: ID!) {
     getPlace(id: $id) {

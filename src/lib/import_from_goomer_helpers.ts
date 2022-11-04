@@ -1,14 +1,15 @@
 import * as types from "../API"
 
-export const goomerInfoUrl = (link: string) => (
+export const goomerInfoUrl = (link: string) =>
   `https://api-go.goomer.app/v2/establishments/${goomerStoreSlug(link)}/info?mode=slug&provider=ggo`
-)
 
-const goomerStoreSlug = (link: string) => (
-  link.split('//')[1].split('.')[0]
-)
+const goomerStoreSlug = (link: string) => link.split("//")[1].split(".")[0]
 
-export const getGroups = (placeId: string, products: any, groups: types.CreateMenuGroupInput[] = []): types.CreateMenuGroupInput[] => {
+export const getGroups = (
+  placeId: string,
+  products: any,
+  groups: types.CreateMenuGroupInput[] = []
+): types.CreateMenuGroupInput[] => {
   if (products.length == 0) {
     return groups
   }
