@@ -1,0 +1,243 @@
+{
+  "id": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af",
+  "shortId": 1132801,
+  "name": "Estação 393 Burguer & Skewers",
+  "description": "carne hamburguer lanche burguer fit comida gostosa low carb refrigerante",
+  "companyCode": "IFO",
+  "address": {
+    "district": "Centro",
+    "city": "JARAGUA DO SUL",
+    "state": "SC",
+    "country": "BR",
+    "latitude": -26.491057,
+    "longitude": -49.069672,
+    "timezone": "Etc/GMT+3",
+    "zipCode": "89251260",
+    "streetName": "Rua Argentina",
+    "streetNumber": "95"
+  },
+  "resources": [
+    { "type": "LOGO", "fileName": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202006081907_VVGP_i.jpg" }
+  ],
+  "takeoutTime": 0,
+  "deliveryTime": 0,
+  "minimumOrderValue": 25,
+  "enabled": true,
+  "phoneIf": "999249033",
+  "tags": [
+    "QTAL",
+    "RESTAURANTES_BRASIL",
+    "DEVLOG_JBB_BURGER",
+    "AQS_RESTAURANTES_ELEGIVEIS_CUPONS_V3",
+    "AQS_RESTAURANTES_ELEGIVEIS_CUPONS_V2",
+    "COMBOSCOCAJUNHO",
+    "RESTAURANTES-IFOOD-FEV22",
+    "ITENS_HAMBURGUER",
+    "jetski_burger_ago20",
+    "SO_TEM_NO_IFOOD",
+    "CPGN_USER_DISCOUNT_BR_LIST",
+    "FAMOSOS_IFOOD_JAN22",
+    "FAMOSOSNOIFOOD_AGO22",
+    "COCA_ITENS",
+    "MELHORES_RESTAURANTES_CHURN_ABR21",
+    "REC_VL_REST",
+    "AQS_RESTAURANTES_ELEGIVEIS_SEM_CID_MADURAS",
+    "JET_WPP_FREQ_23_03_TO_26_03",
+    "NOVIDADE_IFOOD_DEZ20 ",
+    "DEVLOG_TOP_ITEM_DINNER",
+    "RESTAURANTES_PGTO_OFF_CHURN_ABR21",
+    "COCA_ITENS_3",
+    "FAMOSOS",
+    "HIGH_REPUTATION_RESTAURANTS",
+    "JETSKI_BURGER_20AGO",
+    "COCA_ITENS_2",
+    "RESTAURANTES_COCA_CLUBE_SET_22",
+    "PRATOS_VEGETARIANOS_FEV21",
+    "DEVLOG_TOP100_CITY_DINNER_REST",
+    "RESTAURANTES_CLUBE",
+    "GROCERIES_STOCK_CONTROL",
+    "SEMANA_DO_HAMBURGER_PLANCOM",
+    "GUARANAANTARCTICA_ITENS",
+    "QTAL_GENERAL",
+    "HAS_FEED_CONTENT",
+    "PRATOS_VEGETARIANOS_MAR21",
+    "RES_AGO21_COCA_EG",
+    "DIA_MAES_REST_MAI2022",
+    "DEVLOG_JBB_BURGER_200",
+    "SMALL_ORDER_FEE",
+    "SUPER_RESTAURANT",
+    "RES_ADS_NOV21_COCA_CARROSSEL",
+    "AQS_RESTAURANTES_ELEGIVEIS_CUPONS",
+    "RESTAURANTES",
+    "CPGN_USER_DISCOUNT_6_LIST",
+    "MENUINDIVIDUAL_JUN22",
+    "BACON_RESTS_AGO21",
+    "CONTA_ESTRATEGICA",
+    "CLUBEVIP_FOOD",
+    "RESTAURANTE VOUCHER5 GUARANA",
+    "GUIDED_HELP_TYPE",
+    "SMART_CAMPAIGN_FOOD_DELIVERY",
+    "ADS_COCASEMACUCAR",
+    "COCA_CATEGORIA_COMBOS_JAN22",
+    "RESTAURANTES_FDSOUT",
+    "MER_ESPETINHO",
+    "GRANDES_MARCAS_MARCO",
+    "RANKING_FASTFOODS_FEV21",
+    "ADDRESS_PREFORM_TYPE",
+    "DEVLOG_TOP_REST_DINNER_V2",
+    "NATURE_FRIENDLY_OPTIONAL",
+    "JETSKI_WPP_FREQ",
+    "PRATOS_ESPETINHOS"
+  ],
+  "merchantChain": {},
+  "groups": [
+    { "id": "d107726d-f66f-4c25-bd82-edca0bbacbd2", "type": "COMPANY", "externalId": "IFO", "name": "IFOOD" },
+    {
+      "id": "2b69a2f0-6ac8-4eda-b4b2-9d9d5f578054",
+      "type": "STORE_TYPE",
+      "externalId": "RESTAURANT",
+      "name": "RESTAURANT"
+    },
+    {
+      "id": "56396d4b-50c9-40a3-b964-218eda18924b",
+      "type": "BUSINESS_MODEL",
+      "externalId": "MKT",
+      "name": "Marketplace"
+    },
+    {
+      "id": "e37f8b6a-25a3-4f1e-b0ee-3348b7c32698",
+      "type": "CHAIN",
+      "externalId": "a3n6S000000sHduQAE",
+      "name": "Estação 393 Burguer & Skewers-"
+    }
+  ],
+  "shifts": [
+    { "dayOfWeek": "FRIDAY", "start": "17:45:00", "duration": 285 },
+    { "dayOfWeek": "WEDNESDAY", "start": "17:45:00", "duration": 285 },
+    { "dayOfWeek": "SATURDAY", "start": "17:45:00", "duration": 285 },
+    { "dayOfWeek": "THURSDAY", "start": "17:45:00", "duration": 285 },
+    { "dayOfWeek": "TUESDAY", "start": "17:45:00", "duration": 285 },
+    { "dayOfWeek": "SUNDAY", "start": "17:45:00", "duration": 285 }
+  ],
+  "priceRange": "MODERATE",
+  "mainCategory": { "code": "LCH", "description": "Lanches", "friendlyName": "Lanches" },
+  "categories": [
+    { "code": "LCH", "description": "Lanches", "friendlyName": "Lanches" },
+    { "code": "CAR", "description": "Carnes", "friendlyName": "Carnes" },
+    { "code": "VAR", "description": "Variada", "friendlyName": "Comida Variada" },
+    { "code": "BUR", "description": "Hambúrguer", "friendlyName": "Hambúrguer" }
+  ],
+  "features": ["DELIVERY", "TAKEOUT", "CANCELABLE", "CHAT_CONSUMER_ENABLED"],
+  "configs": { "orderNoteLength": 140, "chargeDifferentToppingsMode": "GREATER" },
+  "userRatingCount": 77.0,
+  "locale": "pt_BR",
+  "type": "RESTAURANT",
+  "documents": {
+    "CNPJ": { "type": "CNPJ", "value": "36985030000141" },
+    "MCC": { "type": "MCC", "value": "5499" }
+  },
+  "metadata": {
+    "ifoodClub": {
+      "banner": {
+        "image": "https://static-images.ifood.com.br/image/upload/:resolution/ifood-club/ClubiFoodVoucher.png",
+        "title": "Cupons de até 25% OFF por R$ 1,99",
+        "action": "webmiddleware?page=https%3A%2F%2Fwebmiddleware.ifood.com.br%2Fsubscription%2Fclub%3Fref%3Dcatalogo_lingueta_all",
+        "priority": "voucher_light"
+      }
+    }
+  },
+  "test": "NOT_APPLICABLE",
+  "preparationTime": 0,
+  "setups": [
+    {
+      "setupId": "850a44be-264a-483d-abe6-5f4d3bca9997",
+      "operation": { "id": "aba3c1a2-8d97-4c13-b863-eaf1e9382158", "name": "delivery" },
+      "salesChannel": { "id": "f0a87601-be7b-47dd-85d5-5a6f4c9334ce", "name": "whitelabel" },
+      "openingHours": [
+        {
+          "id": "9c6d25b1-c8c4-4a50-80f4-99e011207d43",
+          "dayOfWeek": "SUNDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "f6ab22f5-644a-4dea-8541-0d33bed7e2d6",
+          "dayOfWeek": "TUESDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "69f9f48d-dcdb-499b-95db-62cb8bcf5ed3",
+          "dayOfWeek": "THURSDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "2947b767-24a5-4fc7-bf52-de6dc1d0353d",
+          "dayOfWeek": "SATURDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "2790fb80-4e43-4115-9fd3-ed66eeca2791",
+          "dayOfWeek": "WEDNESDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "c3260fa8-0633-4727-8e64-d8b4dba3c78a",
+          "dayOfWeek": "FRIDAY",
+          "start": "17:45:00",
+          "duration": 285
+        }
+      ],
+      "preparationTime": 0,
+      "minimumOrderValue": 20.0
+    },
+    {
+      "setupId": "c2ee6471-805c-43b4-b21c-d3e6ac7941d5",
+      "operation": { "id": "aba3c1a2-8d97-4c13-b863-eaf1e9382158", "name": "delivery" },
+      "salesChannel": { "id": "01667b79-f98b-4742-9a55-b482066cbfed", "name": "ifood-app" },
+      "openingHours": [
+        {
+          "id": "10b806fa-a63f-4e16-a6e9-ca90f49cce74",
+          "dayOfWeek": "FRIDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "efbf11d4-8a5c-42f5-bd94-f504157d800e",
+          "dayOfWeek": "WEDNESDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "1686b081-2a98-479b-be8e-c12a0cdbe804",
+          "dayOfWeek": "SATURDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "b88cd751-a115-4580-9b51-315d26fe95c7",
+          "dayOfWeek": "THURSDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "7d195f18-5db9-46f1-8915-f96d2b191114",
+          "dayOfWeek": "TUESDAY",
+          "start": "17:45:00",
+          "duration": 285
+        },
+        {
+          "id": "25cff504-588f-44f7-a783-ae82a5a527bf",
+          "dayOfWeek": "SUNDAY",
+          "start": "17:45:00",
+          "duration": 285
+        }
+      ],
+      "preparationTime": 0,
+      "minimumOrderValue": 25.0
+    }
+  ]
+}

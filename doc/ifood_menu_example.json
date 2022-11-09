@@ -1,0 +1,4190 @@
+{
+  "code": "00",
+  "data": {
+    "menu": [
+      {
+        "code": "8bbe9c78-2390-476c-8eea-0fe86d596cd4",
+        "name": "Queridinhos Do Estação",
+        "itens": [
+          {
+            "id": "f0d11adf-90d6-4dfe-8128-bb7765ba5dfb",
+            "code": "f0d11adf-90d6-4dfe-8128-bb7765ba5dfb",
+            "description": "Estação Helsinque",
+            "details": "Pão Baguete, Maionese tradicional, Alface Americano, tomate, Hambúrguer de Costela, Queijo Cheddar, Bacon Fatiado. Acompanha Batata Frita",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202111022117_8RJU_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "62053B",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "78639632-0621-487d-bc6b-fae6effd7c84",
+                    "code": "78639632-0621-487d-bc6b-fae6effd7c84",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ce68c5c1-cf41-42ec-b6bc-699f433aadf3",
+                    "code": "ce68c5c1-cf41-42ec-b6bc-699f433aadf3",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "da02d606-3031-4423-b136-bacd79c252b0",
+                    "code": "da02d606-3031-4423-b136-bacd79c252b0",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "8473F9",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "85fdb06d-fa2f-409d-b7c7-a4620bd158a4",
+                    "code": "85fdb06d-fa2f-409d-b7c7-a4620bd158a4",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "f03cfb00-875c-4bf0-8602-1721ac0a22bf",
+                    "code": "f03cfb00-875c-4bf0-8602-1721ac0a22bf",
+                    "description": "Batata rústica",
+                    "details": "Batata rústica",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "5AA713",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "6c4d3ca2-cfef-4d57-8178-fcadd037a73a",
+                    "code": "6c4d3ca2-cfef-4d57-8178-fcadd037a73a",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "c0a0d04b-1e5b-4082-9ec3-9ce4b7c127a7",
+                    "code": "c0a0d04b-1e5b-4082-9ec3-9ce4b7c127a7",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b5c262b2-625e-4451-ad2d-6f15007f5518",
+                    "code": "b5c262b2-625e-4451-ad2d-6f15007f5518",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "6057d8a2-da26-4e5e-8b81-abef0af7b06a",
+                    "code": "6057d8a2-da26-4e5e-8b81-abef0af7b06a",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "b9f3eb38-d692-4105-88de-25786ca4c6a6",
+                    "code": "b9f3eb38-d692-4105-88de-25786ca4c6a6",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "818cdb72-b7f1-4859-a589-69a5707d8b0d",
+                    "code": "818cdb72-b7f1-4859-a589-69a5707d8b0d",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "5eb88aab-f46c-443b-a0b8-e30313715158",
+                    "code": "5eb88aab-f46c-443b-a0b8-e30313715158",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "bb937b29-77ac-41f7-8149-35e281deefa1",
+                    "code": "bb937b29-77ac-41f7-8149-35e281deefa1",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "dba68ff8-0e5d-473b-8c83-3534e8327116",
+                    "code": "dba68ff8-0e5d-473b-8c83-3534e8327116",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "47c07038-e399-493a-a44e-904c14ec4094",
+                    "code": "47c07038-e399-493a-a44e-904c14ec4094",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "59fef951-17f6-446b-af4e-c34f902300cd",
+                    "code": "59fef951-17f6-446b-af4e-c34f902300cd",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "d176bf6c-21c8-4b5e-8902-d48b87d81d71",
+                    "code": "d176bf6c-21c8-4b5e-8902-d48b87d81d71",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "f8590397-1423-4868-aecf-ceade9434515",
+                    "code": "f8590397-1423-4868-aecf-ceade9434515",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "eadec12d-46e5-4967-857e-e3e44783e286",
+                    "code": "eadec12d-46e5-4967-857e-e3e44783e286",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 40.9,
+            "unitMinPrice": 40.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }]
+          },
+          {
+            "id": "ff978b6f-478a-4a84-b9e3-6329ee68c2c6",
+            "code": "ff978b6f-478a-4a84-b9e3-6329ee68c2c6",
+            "description": "Kuala lumpur",
+            "details": "Pão baguete, maionese defumada, alface americana, tomate, hamburguer de picanha 160g, fatia de queijo coalho e geléia de bacon, Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110051151_A4J8_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "F279D7",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "e8b3498b-9dd0-4033-8f10-3531dac728e8",
+                    "code": "e8b3498b-9dd0-4033-8f10-3531dac728e8",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "d20796b2-66e2-41cc-8968-74876afbd38c",
+                    "code": "d20796b2-66e2-41cc-8968-74876afbd38c",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "89e81ba1-7866-403f-9fdb-70b5924bd862",
+                    "code": "89e81ba1-7866-403f-9fdb-70b5924bd862",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "451C0F",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "6af43892-abef-4190-b41c-9e711039808a",
+                    "code": "6af43892-abef-4190-b41c-9e711039808a",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "c9141aea-f945-47d0-b797-5ee81dcc267f",
+                    "code": "c9141aea-f945-47d0-b797-5ee81dcc267f",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "683A8A",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 10,
+                "garnishItens": [
+                  {
+                    "id": "dc8d40f9-609b-4fec-b960-63592cfdb991",
+                    "code": "dc8d40f9-609b-4fec-b960-63592cfdb991",
+                    "description": "Bacon Extra",
+                    "details": "Bacon 50g fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "3286e49f-6dc6-41de-a19c-abe1cf53b3c9",
+                    "code": "3286e49f-6dc6-41de-a19c-abe1cf53b3c9",
+                    "description": "Queijo prato Extra",
+                    "details": "2 fatias Queijo prato",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "db79e6fa-75ff-48c6-84fc-069842e18f91",
+                    "code": "db79e6fa-75ff-48c6-84fc-069842e18f91",
+                    "description": "Queijo cheddar Extra",
+                    "details": "2 fatias Queijo cheddar",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "69d104b0-75bd-48a5-832b-308d8a4a71bf",
+                    "code": "69d104b0-75bd-48a5-832b-308d8a4a71bf",
+                    "description": "Ovo Frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "d83c9f54-0b8e-4b6a-be2b-8f56167576fc",
+                    "code": "d83c9f54-0b8e-4b6a-be2b-8f56167576fc",
+                    "description": "Tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "8107b8af-a9de-4310-b498-5e60e490c7f1",
+                    "code": "8107b8af-a9de-4310-b498-5e60e490c7f1",
+                    "description": "Alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "2838ee2a-ffdf-4072-befe-18b23ad366f5",
+                    "code": "2838ee2a-ffdf-4072-befe-18b23ad366f5",
+                    "description": "Relish de pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cae9bc39-d8a3-4419-b6c5-dfbc0af430f6",
+                    "code": "cae9bc39-d8a3-4419-b6c5-dfbc0af430f6",
+                    "description": "Cebola Caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "9edebcd5-1819-45c6-bf4d-d024220796a4",
+                    "code": "9edebcd5-1819-45c6-bf4d-d024220796a4",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "3424497d-246a-4c21-8574-ea58053b3c47",
+                    "code": "3424497d-246a-4c21-8574-ea58053b3c47",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "ce1b8917-ae8e-4bd2-bae7-269aa58b98ad",
+                    "code": "ce1b8917-ae8e-4bd2-bae7-269aa58b98ad",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "42024a80-bbd4-4476-896a-26ede88ff301",
+                    "code": "42024a80-bbd4-4476-896a-26ede88ff301",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "0ec5e6cf-9b67-42d4-b188-c4c6ced165e3",
+                    "code": "0ec5e6cf-9b67-42d4-b188-c4c6ced165e3",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "6496bb77-bb87-4121-be00-cf0d65e2ade7",
+                    "code": "6496bb77-bb87-4121-be00-cf0d65e2ade7",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "0a126d9f-b542-414f-b81f-010c9466ba59",
+                    "code": "0a126d9f-b542-414f-b81f-010c9466ba59",
+                    "description": "Geleia Pimenta e Abacaxi",
+                    "details": "Geleia Pimenta e Abacaxi",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "59f3fead-5f26-465e-b251-7a20e0ac502f",
+                    "code": "59f3fead-5f26-465e-b251-7a20e0ac502f",
+                    "description": "Geleia Bacon",
+                    "details": "Geleia Bacon",
+                    "unitPrice": 3.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 46.9,
+            "unitMinPrice": 46.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "ff978b6f-478a-4a84-b9e3-6329ee68c2c6", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "9f012e4c-cb8f-4191-ab64-59706860da19",
+            "code": "9f012e4c-cb8f-4191-ab64-59706860da19",
+            "description": "Strasbourg",
+            "details": "Pão Australiano, molho Barbecue, hambúrguer tradicional de 160g, queijo cheddar, Rúcula, relish de pepino e bacon. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011547_7AY2_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "891F2D",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "752b2de9-5e8c-406c-865d-599326f4a755",
+                    "code": "752b2de9-5e8c-406c-865d-599326f4a755",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "dda6b05d-e6a9-4c9d-b8d8-182bf9a0e0bb",
+                    "code": "dda6b05d-e6a9-4c9d-b8d8-182bf9a0e0bb",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "575c68ad-458a-43b5-8688-11f736ec2caf",
+                    "code": "575c68ad-458a-43b5-8688-11f736ec2caf",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "CD5AA6",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "d869f606-27f7-4471-a1fb-ee8776c43721",
+                    "code": "d869f606-27f7-4471-a1fb-ee8776c43721",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "615D94",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "2cd77e5d-bc97-46b7-ab0a-76fc8fa7d6dc",
+                    "code": "2cd77e5d-bc97-46b7-ab0a-76fc8fa7d6dc",
+                    "description": "Adicional bacon Extra",
+                    "details": "50gramas bacon fatiado",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "f501d3d9-42b5-4652-aad1-94fbcd1e34ca",
+                    "code": "f501d3d9-42b5-4652-aad1-94fbcd1e34ca",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "c777f38f-fa94-419e-ad54-d1ed05fa3300",
+                    "code": "c777f38f-fa94-419e-ad54-d1ed05fa3300",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "62e6d54b-11aa-4dba-9a65-c0e7191bec3f",
+                    "code": "62e6d54b-11aa-4dba-9a65-c0e7191bec3f",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "e7f95ed3-6bed-413b-bff5-0365f7ff0864",
+                    "code": "e7f95ed3-6bed-413b-bff5-0365f7ff0864",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "5745b823-e5de-435d-990b-26021b086af1",
+                    "code": "5745b823-e5de-435d-990b-26021b086af1",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "929f27f5-9d40-4e9b-a502-ce6dc3a74572",
+                    "code": "929f27f5-9d40-4e9b-a502-ce6dc3a74572",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "0d62501e-b0ed-42b9-9994-1149e46ad3b0",
+                    "code": "0d62501e-b0ed-42b9-9994-1149e46ad3b0",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "922dafbd-5500-432f-805f-e9d2b808ea54",
+                    "code": "922dafbd-5500-432f-805f-e9d2b808ea54",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "e48d269c-54d4-468b-944b-4b4d76d9b7d9",
+                    "code": "e48d269c-54d4-468b-944b-4b4d76d9b7d9",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "c827dc89-b877-4c00-b844-0f53520381e6",
+                    "code": "c827dc89-b877-4c00-b844-0f53520381e6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "2128a2f3-bab8-4db5-b759-20a9db4441a8",
+                    "code": "2128a2f3-bab8-4db5-b759-20a9db4441a8",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "8e7bf92e-08c0-43a2-bbe6-73f140e283d0",
+                    "code": "8e7bf92e-08c0-43a2-bbe6-73f140e283d0",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 38.9,
+            "unitMinPrice": 38.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "9f012e4c-cb8f-4191-ab64-59706860da19", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "1ee012bb-3afc-4190-a300-61cc3c84376c",
+            "code": "1ee012bb-3afc-4190-a300-61cc3c84376c",
+            "description": "West Sommerset",
+            "details": "Pão brioche, molho barbecue, hambúrguer bovino 160g, 4 fatias de queijo cheddar e cebola caramelizada. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011551_F17T_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "927C6D",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "e9175c5d-b677-4107-ac2f-63d85436624d",
+                    "code": "e9175c5d-b677-4107-ac2f-63d85436624d",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "c65528eb-c57d-4fb1-942c-1c245059dff4",
+                    "code": "c65528eb-c57d-4fb1-942c-1c245059dff4",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ffea00af-f8f4-4c7f-9ddc-cac327c4cb50",
+                    "code": "ffea00af-f8f4-4c7f-9ddc-cac327c4cb50",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "20E6EF",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "69fc4a32-3f71-4aac-9aaf-e87ccc99607f",
+                    "code": "69fc4a32-3f71-4aac-9aaf-e87ccc99607f",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "7413d3d2-6794-4c2f-9d97-51fd6fa306c5",
+                    "code": "7413d3d2-6794-4c2f-9d97-51fd6fa306c5",
+                    "description": "Batata rústica",
+                    "details": "Batata rústica",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "D47463",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "f2ea1233-fb68-4217-ac05-735ca7b54157",
+                    "code": "f2ea1233-fb68-4217-ac05-735ca7b54157",
+                    "description": "Adicional bacon Extra",
+                    "details": "50gramas bacon fatias",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "9b7684f2-6ad6-4715-80bb-a8a67f719fe1",
+                    "code": "9b7684f2-6ad6-4715-80bb-a8a67f719fe1",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias queijo prato adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "ecd114d6-3ad3-40f7-8276-4e36a5e95f0e",
+                    "code": "ecd114d6-3ad3-40f7-8276-4e36a5e95f0e",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias Queijo Cheddar Adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "8cb97683-0048-44de-98a1-d51513c165ff",
+                    "code": "8cb97683-0048-44de-98a1-d51513c165ff",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.5
+                  },
+                  {
+                    "id": "2c3b614d-8451-4fd9-9d9a-ee2df6484d23",
+                    "code": "2c3b614d-8451-4fd9-9d9a-ee2df6484d23",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "7d810621-cf01-4031-80bf-a0fe62e59801",
+                    "code": "7d810621-cf01-4031-80bf-a0fe62e59801",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "c81ebae0-771e-445a-89ac-46b81b70e754",
+                    "code": "c81ebae0-771e-445a-89ac-46b81b70e754",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "5332318b-68a2-40e1-b389-c8668e98a071",
+                    "code": "5332318b-68a2-40e1-b389-c8668e98a071",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "3fc37618-e193-4368-917d-ca67dfee3d6b",
+                    "code": "3fc37618-e193-4368-917d-ca67dfee3d6b",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "2199c20a-dfff-4b77-ae79-f291383686b7",
+                    "code": "2199c20a-dfff-4b77-ae79-f291383686b7",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a20b43f1-7eeb-43fa-b6a1-ebf6b1dc51ca",
+                    "code": "a20b43f1-7eeb-43fa-b6a1-ebf6b1dc51ca",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "d33ee83b-42d1-4d13-85ff-2c437c93a2ce",
+                    "code": "d33ee83b-42d1-4d13-85ff-2c437c93a2ce",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "9820c5c3-0800-44d3-b4f5-29b7d4e7c41a",
+                    "code": "9820c5c3-0800-44d3-b4f5-29b7d4e7c41a",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "8c2d1b57-56de-4510-b910-ba6c7b478704",
+                    "code": "8c2d1b57-56de-4510-b910-ba6c7b478704",
+                    "description": "Adicional Hamburguer Costela",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 37.9,
+            "unitMinPrice": 37.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }]
+          }
+        ]
+      },
+      {
+        "code": "7925ddf0-563a-4971-b12c-a8682fa90c3a",
+        "name": "Espetinhos",
+        "itens": [
+          {
+            "id": "95466546-356b-44f2-ae03-23f2eebe611d",
+            "code": "95466546-356b-44f2-ae03-23f2eebe611d",
+            "description": "Bananinha",
+            "details": "1 unidade de espetinho de bananinha da Costela.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202006121726_AH2W_1.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "99A74C",
+                "name": "Porção de batata frita",
+                "min": 0,
+                "max": 5,
+                "garnishItens": [
+                  {
+                    "id": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "code": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "description": "Porçao extra de batata palito",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "code": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "description": "Porção extra de batata rústica",
+                    "unitPrice": 5.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 8.9,
+            "unitMinPrice": 8.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "95466546-356b-44f2-ae03-23f2eebe611d", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "013ce5b3-b2d8-4e31-9bda-88764fb79a21",
+            "code": "013ce5b3-b2d8-4e31-9bda-88764fb79a21",
+            "description": "Alcatra",
+            "details": "1 unidade de espetinho, aprox. 100g de carne temperada.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202006121722_vdeq_1.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "9950B9",
+                "name": "Porção de batata frita",
+                "min": 0,
+                "max": 5,
+                "garnishItens": [
+                  {
+                    "id": "8e562b47-de4b-48a5-90f2-860bde328381",
+                    "code": "8e562b47-de4b-48a5-90f2-860bde328381",
+                    "description": "Porçao extra de batata palito",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "5ffc0f8a-84f9-4a0b-bdee-cb9595d23733",
+                    "code": "5ffc0f8a-84f9-4a0b-bdee-cb9595d23733",
+                    "description": "Porçao extra de batata Rústca",
+                    "unitPrice": 5.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 8.9,
+            "unitMinPrice": 8.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "013ce5b3-b2d8-4e31-9bda-88764fb79a21", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "ed9e669a-8e00-423a-b1d7-634a9403388a",
+            "code": "ed9e669a-8e00-423a-b1d7-634a9403388a",
+            "description": "Coração de frango",
+            "details": "1 unidade de espetinho, aprox. 90g de coração de frango temperado.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202006121724_eKNi_4.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "4CE0A7",
+                "name": "Porção de batata frita",
+                "min": 0,
+                "max": 5,
+                "garnishItens": [
+                  {
+                    "id": "e408bf99-a9dd-4cd8-af72-c40ef58d0a1e",
+                    "code": "e408bf99-a9dd-4cd8-af72-c40ef58d0a1e",
+                    "description": "Porçao extra de batata palito",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "21380a0c-eef8-4ad1-a0bc-620a59105ae8",
+                    "code": "21380a0c-eef8-4ad1-a0bc-620a59105ae8",
+                    "description": "Porção extra de batata rústica",
+                    "unitPrice": 5.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 7.9,
+            "unitMinPrice": 7.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "ed9e669a-8e00-423a-b1d7-634a9403388a", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "f85cffca-6f4b-47bb-a93b-d40669051057",
+            "code": "f85cffca-6f4b-47bb-a93b-d40669051057",
+            "description": "Frango",
+            "details": "1 unidade de espetinho, aprox. 100g de pedaços de frango temperado.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202006121725_5MPL_1.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "99A74C",
+                "name": "Porção de batata frita",
+                "min": 0,
+                "max": 5,
+                "garnishItens": [
+                  {
+                    "id": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "code": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "description": "Porçao extra de batata palito",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "code": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "description": "Porção extra de batata rústica",
+                    "unitPrice": 5.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 6.9,
+            "unitMinPrice": 6.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "f85cffca-6f4b-47bb-a93b-d40669051057", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "7628deee-b426-47d5-9e5d-41a480559edf",
+            "code": "7628deee-b426-47d5-9e5d-41a480559edf",
+            "description": "Queijo Coalho",
+            "details": "1 Unidade de Espetinho de Queijo Coalho",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202211061606_D4A1_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "99A74C",
+                "name": "Porção de batata frita",
+                "min": 0,
+                "max": 5,
+                "garnishItens": [
+                  {
+                    "id": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "code": "561735cf-c39c-4864-a730-d2540e7beb7c",
+                    "description": "Porçao extra de batata palito",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "code": "e052d7d2-5ec2-4726-96ba-ec4ab59a7e91",
+                    "description": "Porção extra de batata rústica",
+                    "unitPrice": 5.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 7.9,
+            "unitMinPrice": 7.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "7628deee-b426-47d5-9e5d-41a480559edf", "quantity": 0, "unit": "g" }
+          }
+        ]
+      },
+      {
+        "code": "3dd84311-732b-42c3-a232-d5c7b502e58a",
+        "name": "COMBOS",
+        "itens": [
+          {
+            "id": "50b722be-fd5f-4b15-9ca7-509f914292d3",
+            "code": "50b722be-fd5f-4b15-9ca7-509f914292d3",
+            "description": "Combo 1 king's cross + 1 Estação Keleti + pote 140ml molho do chef",
+            "details": "Combo 1 king's cross + 1 Estação Keleti + 1 pote de 140ml molho do chef - (os dois lanhes acompanham Batata)",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202107131445_ET8D_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "2693BB",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "7f036505-2ce8-4998-86f4-e077c2c17ebc",
+                    "code": "7f036505-2ce8-4998-86f4-e077c2c17ebc",
+                    "description": "Bacon (50g)",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "11b1c59e-009f-42dc-83a9-7c5996199782",
+                    "code": "11b1c59e-009f-42dc-83a9-7c5996199782",
+                    "description": "Queijo prato (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "ae705242-0fc1-4cb3-93c5-fb928ff63a95",
+                    "code": "ae705242-0fc1-4cb3-93c5-fb928ff63a95",
+                    "description": "Queijo cheddar (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "9dcb1775-f82f-4170-9823-d91e64ebcbdc",
+                    "code": "9dcb1775-f82f-4170-9823-d91e64ebcbdc",
+                    "description": "Ovo frito",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "296a612e-596a-4b0a-92ac-9b75ba69d7f7",
+                    "code": "296a612e-596a-4b0a-92ac-9b75ba69d7f7",
+                    "description": "Molho barbecue artesanal",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "5322f607-a7a8-4caa-ab74-3dbfbf633f95",
+                    "code": "5322f607-a7a8-4caa-ab74-3dbfbf633f95",
+                    "description": "Molho de cogumelos",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "06b1b68e-b88a-4bdb-b40a-5b0f63c57bf3",
+                    "code": "06b1b68e-b88a-4bdb-b40a-5b0f63c57bf3",
+                    "description": "Cebola caramelizada",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "0b50c643-cd44-4981-af80-a56571be0d43",
+                    "code": "0b50c643-cd44-4981-af80-a56571be0d43",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "f3a3355e-f6a5-4b34-b9dc-e4b099dae261",
+                    "code": "f3a3355e-f6a5-4b34-b9dc-e4b099dae261",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              },
+              {
+                "code": "347D04",
+                "name": "Opção de Batata",
+                "min": 0,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "a5e70a42-2ee7-48de-aeb3-035ccd2b47cc",
+                    "code": "a5e70a42-2ee7-48de-aeb3-035ccd2b47cc",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "a32fcf64-8930-4d27-8fa7-cc3ea055c340",
+                    "code": "a32fcf64-8930-4d27-8fa7-cc3ea055c340",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 63.9,
+            "unitMinPrice": 63.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_2"] }],
+            "productInfo": { "id": "50b722be-fd5f-4b15-9ca7-509f914292d3", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "2c94d5fd-f427-4dbd-8b46-0f59acd1fbcf",
+            "code": "2c94d5fd-f427-4dbd-8b46-0f59acd1fbcf",
+            "description": "Combo 1 king's cross + 1 union + 1 pote de 140ml molho do chef",
+            "details": "Combo 1 king's cross + 1 union + molho do chef",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202007091750_12wg_c.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "372A14",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "75a2f29b-1884-48eb-bb52-8992cf8aca05",
+                    "code": "75a2f29b-1884-48eb-bb52-8992cf8aca05",
+                    "description": "Bacon (50g)",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "037df3c0-6b99-4933-b466-40b5e24ab74f",
+                    "code": "037df3c0-6b99-4933-b466-40b5e24ab74f",
+                    "description": "Queijo prato (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "949c455d-6088-4be0-859e-1e1426b6c46b",
+                    "code": "949c455d-6088-4be0-859e-1e1426b6c46b",
+                    "description": "Queijo cheddar (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "8bcde5e2-d721-474d-9d0b-0baa0726bc71",
+                    "code": "8bcde5e2-d721-474d-9d0b-0baa0726bc71",
+                    "description": "Ovo frito",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "99a06941-a580-473f-8509-f900332393c6",
+                    "code": "99a06941-a580-473f-8509-f900332393c6",
+                    "description": "Molho do chef",
+                    "details": "(leite, óleo vegetal, ovo cozido, mostarda, cheiro verde, sal e pimenta.)",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "135237e3-8054-4ed1-bdfb-b448a9755ed0",
+                    "code": "135237e3-8054-4ed1-bdfb-b448a9755ed0",
+                    "description": "Molho barbecue artesanal",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "ed88149a-c0cc-4b5f-af14-418f96456601",
+                    "code": "ed88149a-c0cc-4b5f-af14-418f96456601",
+                    "description": "Molho de cogumelos",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "b8929358-a4ad-466c-8511-92ba550898ac",
+                    "code": "b8929358-a4ad-466c-8511-92ba550898ac",
+                    "description": "Cebola caramelizada",
+                    "unitPrice": 3.0
+                  }
+                ]
+              },
+              {
+                "code": "9AE46D",
+                "name": "Opção de batata",
+                "min": 1,
+                "max": 2,
+                "garnishItens": [
+                  {
+                    "id": "56805035-1656-4079-a3f6-31d56098576c",
+                    "code": "56805035-1656-4079-a3f6-31d56098576c",
+                    "description": "Batata palito",
+                    "details": "Batata palito",
+                    "unitPrice": 0.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 75.9,
+            "unitMinPrice": 75.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_2"] }],
+            "productInfo": { "id": "2c94d5fd-f427-4dbd-8b46-0f59acd1fbcf", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "dceddf46-e2ae-418f-8ad2-7c709e4ec837",
+            "code": "dceddf46-e2ae-418f-8ad2-7c709e4ec837",
+            "description": "Combo 1 San Antonio + 1 San Antonio + 1 pote de 140ml molho do chef",
+            "details": "Combo 1 San Antonio + 1 San Antonio + 1 pote de 140ml molho do chef (os dois lanches acompanham Batata)",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202109212157_6JK4_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "643612",
+                "name": "Opção de Batata",
+                "min": 0,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "26c4d137-d330-4c32-a0c9-a1211bea65f1",
+                    "code": "26c4d137-d330-4c32-a0c9-a1211bea65f1",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "B463C8",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "81c70ad4-6f30-4a4a-9811-6ce449caf2ea",
+                    "code": "81c70ad4-6f30-4a4a-9811-6ce449caf2ea",
+                    "description": "Bacon (50g)",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "e19c59be-0cb3-49f5-8a76-00ebbdf65327",
+                    "code": "e19c59be-0cb3-49f5-8a76-00ebbdf65327",
+                    "description": "Queijo prato (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "f86d2952-6d77-4c94-92b6-4d50b8f0098d",
+                    "code": "f86d2952-6d77-4c94-92b6-4d50b8f0098d",
+                    "description": "Queijo cheddar (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "4a08b09c-9300-4e47-8917-d3297c41775b",
+                    "code": "4a08b09c-9300-4e47-8917-d3297c41775b",
+                    "description": "Ovo frito",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "3d35245b-af34-498f-8b89-3e327afa0a63",
+                    "code": "3d35245b-af34-498f-8b89-3e327afa0a63",
+                    "description": "Molho barbecue artesanal",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "8e619908-f3d4-4d25-9f41-0b72a7dad81a",
+                    "code": "8e619908-f3d4-4d25-9f41-0b72a7dad81a",
+                    "description": "Molho de cogumelos",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a713aa04-9fb9-484c-9ec1-32aeb7301f7d",
+                    "code": "a713aa04-9fb9-484c-9ec1-32aeb7301f7d",
+                    "description": "Cebola caramelizada",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "1614b14f-d2bc-4243-b513-956b53c1241e",
+                    "code": "1614b14f-d2bc-4243-b513-956b53c1241e",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 79.9,
+            "unitMinPrice": 79.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_2"] }],
+            "productInfo": { "id": "dceddf46-e2ae-418f-8ad2-7c709e4ec837", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "932b4312-510e-4d3a-8996-1cabdf4c047c",
+            "code": "932b4312-510e-4d3a-8996-1cabdf4c047c",
+            "description": "Combo 1 San Antonio + West Somerset + 1 pote de 140ml molho do chef",
+            "details": "Combo 1 San Antonio + 1 West Somerset + 1 pote de 140ml molho do chef (os dois lanches acompanham Batata)",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202109212155_YS3R_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "96D38F",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "89708aef-b691-4ca5-8fd1-e7e55faf93cc",
+                    "code": "89708aef-b691-4ca5-8fd1-e7e55faf93cc",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "BE1F88",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "041aae6f-39a6-4341-938f-0753753e25db",
+                    "code": "041aae6f-39a6-4341-938f-0753753e25db",
+                    "description": "Bacon (50g)",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "c13bda5e-5f81-4bfd-9f03-b78e99b4ee0e",
+                    "code": "c13bda5e-5f81-4bfd-9f03-b78e99b4ee0e",
+                    "description": "Queijo prato (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "264b5473-4e79-453f-9636-5c55b7b422dc",
+                    "code": "264b5473-4e79-453f-9636-5c55b7b422dc",
+                    "description": "Queijo cheddar (2 fatias)",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "9706aba2-b1fc-4d0e-bab9-1fc785578ae1",
+                    "code": "9706aba2-b1fc-4d0e-bab9-1fc785578ae1",
+                    "description": "Ovo frito",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "7dcdb8bd-7877-4d2a-98c0-4b14e3ea25e1",
+                    "code": "7dcdb8bd-7877-4d2a-98c0-4b14e3ea25e1",
+                    "description": "Molho barbecue artesanal",
+                    "unitPrice": 5.0
+                  },
+                  {
+                    "id": "000d4b33-6108-422f-9b60-e9c3b8ad76da",
+                    "code": "000d4b33-6108-422f-9b60-e9c3b8ad76da",
+                    "description": "Molho de cogumelos",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "66790157-9a87-47d5-a230-43c35b89ac76",
+                    "code": "66790157-9a87-47d5-a230-43c35b89ac76",
+                    "description": "Cebola caramelizada",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "423344ff-19b3-4a76-9cec-3eae359139af",
+                    "code": "423344ff-19b3-4a76-9cec-3eae359139af",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "abf6dfd5-e777-4bb1-8a4b-f65157f5383a",
+                    "code": "abf6dfd5-e777-4bb1-8a4b-f65157f5383a",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 78.9,
+            "unitMinPrice": 78.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_2"] }],
+            "productInfo": { "id": "932b4312-510e-4d3a-8996-1cabdf4c047c", "quantity": 0, "unit": "g" }
+          }
+        ]
+      },
+      {
+        "code": "11c0a5ca-49b5-46e9-b1fb-46fb5c9a89d9",
+        "name": "Lanches",
+        "itens": [
+          {
+            "id": "83a872dc-f1a5-4f81-897e-8823027b7c8b",
+            "code": "83a872dc-f1a5-4f81-897e-8823027b7c8b",
+            "description": "Estação Helsinque",
+            "details": "Pão Baguete, Maionese tradicional, Alface Americano, tomate, Hambúrguer de Costela, Queijo Cheddar, Bacon Fatiado. Acompanha Batata Frita",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202111022117_8RJU_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "B94910",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "code": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "code": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "code": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "01CD82",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "code": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "code": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "code": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "code": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "code": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "code": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "code": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "code": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "code": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "code": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "code": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "code": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "code": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "code": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 40.9,
+            "unitMinPrice": 40.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }]
+          },
+          {
+            "id": "6fe8f27e-0a7d-47d7-8c7c-fba8bb625b25",
+            "code": "6fe8f27e-0a7d-47d7-8c7c-fba8bb625b25",
+            "description": "King's Cross",
+            "details": "Pão rustico, molho do chef, hambúrguer bovino de 160g, queijo prato gratinado, mix de alface e tomate. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011553_N0A4_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "B94910",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "code": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "code": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "code": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "01CD82",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "code": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "code": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "code": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "code": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "code": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "code": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "code": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "code": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "code": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "code": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "code": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "code": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "code": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "code": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 32.9,
+            "unitMinPrice": 32.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "6fe8f27e-0a7d-47d7-8c7c-fba8bb625b25", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "f85cef22-03ed-4bb3-8862-656856786a6c",
+            "code": "f85cef22-03ed-4bb3-8862-656856786a6c",
+            "description": "Plataforma 9 3/4 (kids)",
+            "details": "Pão brioche, molho rose, hambúrguer bovino de 120g, queijo prato gratinado. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011549_47I8_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "62053B",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "78639632-0621-487d-bc6b-fae6effd7c84",
+                    "code": "78639632-0621-487d-bc6b-fae6effd7c84",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ce68c5c1-cf41-42ec-b6bc-699f433aadf3",
+                    "code": "ce68c5c1-cf41-42ec-b6bc-699f433aadf3",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "da02d606-3031-4423-b136-bacd79c252b0",
+                    "code": "da02d606-3031-4423-b136-bacd79c252b0",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "8473F9",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "85fdb06d-fa2f-409d-b7c7-a4620bd158a4",
+                    "code": "85fdb06d-fa2f-409d-b7c7-a4620bd158a4",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "f03cfb00-875c-4bf0-8602-1721ac0a22bf",
+                    "code": "f03cfb00-875c-4bf0-8602-1721ac0a22bf",
+                    "description": "Batata rústica",
+                    "details": "Batata rústica",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "5AA713",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "6c4d3ca2-cfef-4d57-8178-fcadd037a73a",
+                    "code": "6c4d3ca2-cfef-4d57-8178-fcadd037a73a",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "c0a0d04b-1e5b-4082-9ec3-9ce4b7c127a7",
+                    "code": "c0a0d04b-1e5b-4082-9ec3-9ce4b7c127a7",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b5c262b2-625e-4451-ad2d-6f15007f5518",
+                    "code": "b5c262b2-625e-4451-ad2d-6f15007f5518",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "6057d8a2-da26-4e5e-8b81-abef0af7b06a",
+                    "code": "6057d8a2-da26-4e5e-8b81-abef0af7b06a",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "b9f3eb38-d692-4105-88de-25786ca4c6a6",
+                    "code": "b9f3eb38-d692-4105-88de-25786ca4c6a6",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "818cdb72-b7f1-4859-a589-69a5707d8b0d",
+                    "code": "818cdb72-b7f1-4859-a589-69a5707d8b0d",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "5eb88aab-f46c-443b-a0b8-e30313715158",
+                    "code": "5eb88aab-f46c-443b-a0b8-e30313715158",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "bb937b29-77ac-41f7-8149-35e281deefa1",
+                    "code": "bb937b29-77ac-41f7-8149-35e281deefa1",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "dba68ff8-0e5d-473b-8c83-3534e8327116",
+                    "code": "dba68ff8-0e5d-473b-8c83-3534e8327116",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "47c07038-e399-493a-a44e-904c14ec4094",
+                    "code": "47c07038-e399-493a-a44e-904c14ec4094",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "59fef951-17f6-446b-af4e-c34f902300cd",
+                    "code": "59fef951-17f6-446b-af4e-c34f902300cd",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "d176bf6c-21c8-4b5e-8902-d48b87d81d71",
+                    "code": "d176bf6c-21c8-4b5e-8902-d48b87d81d71",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "f8590397-1423-4868-aecf-ceade9434515",
+                    "code": "f8590397-1423-4868-aecf-ceade9434515",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "eadec12d-46e5-4967-857e-e3e44783e286",
+                    "code": "eadec12d-46e5-4967-857e-e3e44783e286",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 29.9,
+            "unitMinPrice": 29.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "f85cef22-03ed-4bb3-8862-656856786a6c", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "38ec457e-072a-45c2-a2f2-f9e1f4cb4881",
+            "code": "38ec457e-072a-45c2-a2f2-f9e1f4cb4881",
+            "description": "Strasbourg",
+            "details": "Pão Australiano, molho Barbecue, hambúrguer tradicional de 160g, queijo cheddar, Rúcula, relish de pepino e bacon. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011547_7AY2_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "43FDAC",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "bb736353-2e64-42d2-931b-a2a0b27d99ec",
+                    "code": "bb736353-2e64-42d2-931b-a2a0b27d99ec",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "31ccce27-9d73-45b7-adfc-410d7f0e1d51",
+                    "code": "31ccce27-9d73-45b7-adfc-410d7f0e1d51",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "dba29839-e3ef-452f-ad65-0f0b4d4ec19f",
+                    "code": "dba29839-e3ef-452f-ad65-0f0b4d4ec19f",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "84F752",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "00a90bc4-08bd-4ae7-8c07-1f866136953b",
+                    "code": "00a90bc4-08bd-4ae7-8c07-1f866136953b",
+                    "description": "Adicional bacon Extra",
+                    "details": "50gramas bacon fatiado",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "276246f6-5e65-46af-adeb-287bfac281e5",
+                    "code": "276246f6-5e65-46af-adeb-287bfac281e5",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "8810a15e-3b91-4860-b81c-601215145d9f",
+                    "code": "8810a15e-3b91-4860-b81c-601215145d9f",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "a8320429-ba40-4f3a-b929-7287b0a8eff3",
+                    "code": "a8320429-ba40-4f3a-b929-7287b0a8eff3",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "4e1a2ba7-c9e4-4553-ac8c-8c02a286ddce",
+                    "code": "4e1a2ba7-c9e4-4553-ac8c-8c02a286ddce",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "5fe02ff8-361e-45b2-a2d6-d8be0ca46d3e",
+                    "code": "5fe02ff8-361e-45b2-a2d6-d8be0ca46d3e",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "c70beaa9-bee3-4a79-b296-8168fb039a3c",
+                    "code": "c70beaa9-bee3-4a79-b296-8168fb039a3c",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "0c024e92-a346-4953-80b5-f03544ed1cdf",
+                    "code": "0c024e92-a346-4953-80b5-f03544ed1cdf",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "f467c01e-d06c-4afe-962a-b5e34ac9e9d1",
+                    "code": "f467c01e-d06c-4afe-962a-b5e34ac9e9d1",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "d801dd37-e641-4a1c-b31c-60fc4634a285",
+                    "code": "d801dd37-e641-4a1c-b31c-60fc4634a285",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "08897d7c-a1fc-43db-bded-37b2242f71bc",
+                    "code": "08897d7c-a1fc-43db-bded-37b2242f71bc",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "f5be289a-ea1b-43aa-9d37-f9649b0a339c",
+                    "code": "f5be289a-ea1b-43aa-9d37-f9649b0a339c",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "48646eb3-2882-40e8-92a2-494ff2656301",
+                    "code": "48646eb3-2882-40e8-92a2-494ff2656301",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "89adb064-1d6c-4ec4-8a7a-d00a3ceec66b",
+                    "code": "89adb064-1d6c-4ec4-8a7a-d00a3ceec66b",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 40.9,
+            "unitMinPrice": 40.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "38ec457e-072a-45c2-a2f2-f9e1f4cb4881", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "b0edd808-5c36-4ed4-8b05-a7a08a308f8a",
+            "code": "b0edd808-5c36-4ed4-8b05-a7a08a308f8a",
+            "description": "Fit burguer",
+            "details": "Hambúrguer a sua escolha , salada a sua escolha, fatias de batata doce grelhada e molho",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202007031749_8vYT_f.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "36FA89",
+                "name": "Opção de salada",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "1a6bae30-e4ba-4fd7-86df-a0d31b4973ea",
+                    "code": "1a6bae30-e4ba-4fd7-86df-a0d31b4973ea",
+                    "description": "Salada caesar",
+                    "details": "Mix de folhas verdes, tomate cereja, lascas de parmesão, croutons e molho.",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "347544",
+                "name": "Opção de hambúrguer",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "e213feea-70d0-4459-b2b0-c1bbbe3f3254",
+                    "code": "e213feea-70d0-4459-b2b0-c1bbbe3f3254",
+                    "description": "Hambúrguer tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "c37d3887-32a8-419f-ba92-8c4a52e55662",
+                    "code": "c37d3887-32a8-419f-ba92-8c4a52e55662",
+                    "description": "Hambúrguer de costela",
+                    "details": "Hamburguer de Costela 160gramas",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "cbe81508-a38b-4220-96af-a88afa8167dc",
+                    "code": "cbe81508-a38b-4220-96af-a88afa8167dc",
+                    "description": "Hambúrguer frango crispy",
+                    "details": "Haburguer de Frango Empanado Farinha Panko (Frito)",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "13815c76-62c6-496d-83dc-38dfd665c72e",
+                    "code": "13815c76-62c6-496d-83dc-38dfd665c72e",
+                    "description": "Hamburguer Frango Grelhado",
+                    "details": "Hmburguer de Frango 160gramas Grelhado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "C8A026",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "43aaa041-a4ba-48bb-bce2-a1cbad3443f9",
+                    "code": "43aaa041-a4ba-48bb-bce2-a1cbad3443f9",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "51015934-7a4e-41a7-a3e7-dd81fc5c3898",
+                    "code": "51015934-7a4e-41a7-a3e7-dd81fc5c3898",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "148ea9b0-8f5b-4c1e-aa2e-ddffe12ffaa8",
+                    "code": "148ea9b0-8f5b-4c1e-aa2e-ddffe12ffaa8",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 40.9,
+            "unitMinPrice": 40.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }]
+          },
+          {
+            "id": "268c5a5f-8cc5-4e7d-975a-0ef305a6db36",
+            "code": "268c5a5f-8cc5-4e7d-975a-0ef305a6db36",
+            "description": "Estação da luz",
+            "details": "Pão rústico, molho de mostarda e mel, hambúrguer de batata salsa e batata doce, alface americana, tomate, rúcula e queijo prato. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202007031747_9XVo_b.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "796954",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "1cb3063a-3f0c-42f0-848e-f001627933d6",
+                    "code": "1cb3063a-3f0c-42f0-848e-f001627933d6",
+                    "description": "Bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "159ef8d3-5ce3-4bba-beb1-a2a37f87e90f",
+                    "code": "159ef8d3-5ce3-4bba-beb1-a2a37f87e90f",
+                    "description": "Queijo prato Extra",
+                    "details": "2 fatias queijo adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "3bb4e2e4-a589-46f3-952d-68d6f1147392",
+                    "code": "3bb4e2e4-a589-46f3-952d-68d6f1147392",
+                    "description": "Queijo cheddar Extra",
+                    "details": "2 fatias queijo adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "d84e5e84-f393-41a8-96c9-b27d2750f894",
+                    "code": "d84e5e84-f393-41a8-96c9-b27d2750f894",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.5
+                  },
+                  {
+                    "id": "c20c11ac-4ca4-4479-8195-670eddccdabd",
+                    "code": "c20c11ac-4ca4-4479-8195-670eddccdabd",
+                    "description": "Cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "96d15b73-4f03-44c7-af86-3e477fd26b9d",
+                    "code": "96d15b73-4f03-44c7-af86-3e477fd26b9d",
+                    "description": "Tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "9483133d-7d1e-464c-a02c-4eb3792ca0e2",
+                    "code": "9483133d-7d1e-464c-a02c-4eb3792ca0e2",
+                    "description": "Alface americana Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "a76838dc-a562-4da2-a8ad-56684acd360f",
+                    "code": "a76838dc-a562-4da2-a8ad-56684acd360f",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "f0e41ea0-1448-423a-a003-58c1e4d272b7",
+                    "code": "f0e41ea0-1448-423a-a003-58c1e4d272b7",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "348af670-e94e-4586-9fe2-c93df061f8ea",
+                    "code": "348af670-e94e-4586-9fe2-c93df061f8ea",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "6a05abf8-243e-4596-aa2d-2543f10e7569",
+                    "code": "6a05abf8-243e-4596-aa2d-2543f10e7569",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 32.9,
+            "unitMinPrice": 32.9,
+            "productTags": [
+              { "group": "DIETARY_RESTRICTIONS", "tags": ["VEGETARIAN"] },
+              { "group": "PORTION_SIZE", "tags": ["SERVES_1"] }
+            ],
+            "productInfo": { "id": "268c5a5f-8cc5-4e7d-975a-0ef305a6db36", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "3d5a7475-0fc3-436e-9de3-e64cdab0e6e4",
+            "code": "3d5a7475-0fc3-436e-9de3-e64cdab0e6e4",
+            "description": "Estação Kanazawa",
+            "details": "Pão Brioche, Maionese Tradicional, 2 Hambúrgueres de 120g, Queijo Cheddar e Cebola Crispy",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202111022123_321C_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "B94910",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "code": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "code": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "code": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "01CD82",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "code": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "code": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "code": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "code": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "code": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "code": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "code": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "code": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "code": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "code": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "code": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "code": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "code": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "code": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 36.9,
+            "unitMinPrice": 36.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }]
+          },
+          {
+            "id": "cd82320b-ba36-4abc-acff-96bc264c4b9c",
+            "code": "cd82320b-ba36-4abc-acff-96bc264c4b9c",
+            "description": "Estação Keleti",
+            "details": "Pão Brioche, molho do chef, hambúrguer de frango grelhado, queijo prato, mix de alface, tomate, molho barbecue. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011545_67VJ_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "908C55",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "7736ff4a-abd6-4b9a-9e0c-cd23e470b33a",
+                    "code": "7736ff4a-abd6-4b9a-9e0c-cd23e470b33a",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "05357db7-1bb4-4fbd-98ba-64c4d4fa0938",
+                    "code": "05357db7-1bb4-4fbd-98ba-64c4d4fa0938",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "A170EE",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "ccbf932b-73b8-49f1-9101-2f9322eb10c9",
+                    "code": "ccbf932b-73b8-49f1-9101-2f9322eb10c9",
+                    "description": "Adicional bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "37558f0f-fbda-4f9b-915a-5bfe50f94bb9",
+                    "code": "37558f0f-fbda-4f9b-915a-5bfe50f94bb9",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias de queijo adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "e59b3abb-9fec-4516-97be-bf68cf1400f5",
+                    "code": "e59b3abb-9fec-4516-97be-bf68cf1400f5",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias de queijo cheddar adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "6e8ac342-97a4-4461-bf3a-909ea87a4688",
+                    "code": "6e8ac342-97a4-4461-bf3a-909ea87a4688",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "a7e9a18c-7e2e-4e7b-a548-6d376b90589e",
+                    "code": "a7e9a18c-7e2e-4e7b-a548-6d376b90589e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "eda77828-3eaf-4b69-ba70-77f3ad2a8e6b",
+                    "code": "eda77828-3eaf-4b69-ba70-77f3ad2a8e6b",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "10123aa1-db04-4bba-8525-4d7b569fb47b",
+                    "code": "10123aa1-db04-4bba-8525-4d7b569fb47b",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "c1a3d0db-cec2-4245-b582-25f1c928b309",
+                    "code": "c1a3d0db-cec2-4245-b582-25f1c928b309",
+                    "description": "Adicional de relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "f3b74b08-0d61-4f6c-af9b-2f2da105057e",
+                    "code": "f3b74b08-0d61-4f6c-af9b-2f2da105057e",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "25d8567b-683d-432e-8e97-a934d99da5a7",
+                    "code": "25d8567b-683d-432e-8e97-a934d99da5a7",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "550c144f-7f81-4f91-a28a-e1f08cf3f92b",
+                    "code": "550c144f-7f81-4f91-a28a-e1f08cf3f92b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "f8203f1b-0888-4c4e-8385-371879361487",
+                    "code": "f8203f1b-0888-4c4e-8385-371879361487",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "47ff5b8b-b372-485f-85fb-a6e79eae1cf9",
+                    "code": "47ff5b8b-b372-485f-85fb-a6e79eae1cf9",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Adicional Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "86d714b8-2d34-4066-8528-48dc41c74994",
+                    "code": "86d714b8-2d34-4066-8528-48dc41c74994",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 32.9,
+            "unitMinPrice": 32.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "cd82320b-ba36-4abc-acff-96bc264c4b9c", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "6293a70e-59b3-4530-ba9c-4e4ea6c9abd2",
+            "code": "6293a70e-59b3-4530-ba9c-4e4ea6c9abd2",
+            "description": "Estação St. Pancras",
+            "details": "Pão Australiano, molho Barbecue, hambúrguer Suíno de 160g, queijo prato, Rúcula, cebola roxa e relish de pepino. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011542_5Q2Y_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "06AD19",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "b9ea8579-3252-43a2-ba08-5ce075434ca8",
+                    "code": "b9ea8579-3252-43a2-ba08-5ce075434ca8",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "87e91996-8401-4b9e-b5b3-c6e1e4e8b571",
+                    "code": "87e91996-8401-4b9e-b5b3-c6e1e4e8b571",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "09feb117-8f49-469b-be1f-00db9744f1a0",
+                    "code": "09feb117-8f49-469b-be1f-00db9744f1a0",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "A84AEA",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "b135f17f-3b4d-4d3b-895e-b08df431e7cb",
+                    "code": "b135f17f-3b4d-4d3b-895e-b08df431e7cb",
+                    "description": "Adicional bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "99e7d47a-90e7-4adb-a29a-fd69a6a5e454",
+                    "code": "99e7d47a-90e7-4adb-a29a-fd69a6a5e454",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias de queijo adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "1af6d4cb-18f9-4915-8a81-bfdb366f711d",
+                    "code": "1af6d4cb-18f9-4915-8a81-bfdb366f711d",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias queijo cheddar adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "d3603950-5d32-45b7-a13b-62601edccd0d",
+                    "code": "d3603950-5d32-45b7-a13b-62601edccd0d",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "d543e063-ea55-497f-a201-c3295d67f953",
+                    "code": "d543e063-ea55-497f-a201-c3295d67f953",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "22269da0-80a7-4c5d-8966-d9f9b8306af9",
+                    "code": "22269da0-80a7-4c5d-8966-d9f9b8306af9",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "128e44b7-024b-4eeb-b0d6-c7e1e5d0ef76",
+                    "code": "128e44b7-024b-4eeb-b0d6-c7e1e5d0ef76",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "42a52d95-99e3-4111-9fd7-5146d5da6564",
+                    "code": "42a52d95-99e3-4111-9fd7-5146d5da6564",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "81ae515c-b8dc-48c0-9e03-0785b44bc1b8",
+                    "code": "81ae515c-b8dc-48c0-9e03-0785b44bc1b8",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "1f66469f-fb7d-4615-8fbd-107096ed19ff",
+                    "code": "1f66469f-fb7d-4615-8fbd-107096ed19ff",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção Aprox. 110 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "fe3662fb-ec68-4849-a3f8-40af65cc3444",
+                    "code": "fe3662fb-ec68-4849-a3f8-40af65cc3444",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "a34110d2-007a-4475-aa9e-01f3ee8b1d34",
+                    "code": "a34110d2-007a-4475-aa9e-01f3ee8b1d34",
+                    "description": "Adicional Queijo Brie Empanado",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "d9fde035-dd1b-4cc6-9a2b-d459bc9d5695",
+                    "code": "d9fde035-dd1b-4cc6-9a2b-d459bc9d5695",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "87517838-d50e-4e97-b73d-7abec5e2c36a",
+                    "code": "87517838-d50e-4e97-b73d-7abec5e2c36a",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 33.9,
+            "unitMinPrice": 33.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "6293a70e-59b3-4530-ba9c-4e4ea6c9abd2", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "91eb7248-af31-4994-854f-5b8b49996f8d",
+            "code": "91eb7248-af31-4994-854f-5b8b49996f8d",
+            "description": "Flinders Street Station",
+            "details": "Pão rústico, molho do chef, hambúrguer de frango empanado extremamente crocante, queijo prato, mix de alface, tomate, molho barbecue. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011552_3W5A_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "E0EC90",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "a1fdbb71-5d89-461f-a462-dfe11d69c680",
+                    "code": "a1fdbb71-5d89-461f-a462-dfe11d69c680",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "15b986c6-bcbb-4165-b548-72d40b3542a8",
+                    "code": "15b986c6-bcbb-4165-b548-72d40b3542a8",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "fa5ba024-f517-41e3-9d84-47ea998f9067",
+                    "code": "fa5ba024-f517-41e3-9d84-47ea998f9067",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "B4D53C",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "80e1efbc-f443-4d24-9e78-3bf1cb207270",
+                    "code": "80e1efbc-f443-4d24-9e78-3bf1cb207270",
+                    "description": "Adicional bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "3b65bef2-003e-4561-b35e-79e7ec758ae4",
+                    "code": "3b65bef2-003e-4561-b35e-79e7ec758ae4",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "4bb5813d-299e-49a3-80c5-b324b4dec573",
+                    "code": "4bb5813d-299e-49a3-80c5-b324b4dec573",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "a04de5f6-e273-4214-a1bc-24ec74230a65",
+                    "code": "a04de5f6-e273-4214-a1bc-24ec74230a65",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "294c7cfe-33c8-4138-b430-9f092ec4b09b",
+                    "code": "294c7cfe-33c8-4138-b430-9f092ec4b09b",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "b39371ad-1b4b-40fa-aeb5-510ff757268d",
+                    "code": "b39371ad-1b4b-40fa-aeb5-510ff757268d",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "8dc58a51-1e2c-4327-bd9d-dad88ba35c7d",
+                    "code": "8dc58a51-1e2c-4327-bd9d-dad88ba35c7d",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "66c33edc-ca47-4e70-a63f-669320d5c168",
+                    "code": "66c33edc-ca47-4e70-a63f-669320d5c168",
+                    "description": "Adicional de relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "46e51ee6-2006-4bad-960b-3fc42a911281",
+                    "code": "46e51ee6-2006-4bad-960b-3fc42a911281",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "0c18507d-a388-41e3-923f-45c3635621bf",
+                    "code": "0c18507d-a388-41e3-923f-45c3635621bf",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "83445fed-cd2e-420e-b4db-d8adb86a0975",
+                    "code": "83445fed-cd2e-420e-b4db-d8adb86a0975",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "b9890a6b-0cf5-4ff0-967a-9dbc9166f768",
+                    "code": "b9890a6b-0cf5-4ff0-967a-9dbc9166f768",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "c5207142-b3fd-4818-ab55-303337c46eba",
+                    "code": "c5207142-b3fd-4818-ab55-303337c46eba",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "be115fc9-58cf-4ce5-a32e-6c8bdccc0de9",
+                    "code": "be115fc9-58cf-4ce5-a32e-6c8bdccc0de9",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 35.9,
+            "unitMinPrice": 35.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "91eb7248-af31-4994-854f-5b8b49996f8d", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "9cbce6ef-7e18-4b25-9413-db45e168bc88",
+            "code": "9cbce6ef-7e18-4b25-9413-db45e168bc88",
+            "description": "San Antonio Station",
+            "details": "Pão rústico, molho de cogumelos, hambúrguer de costela puro de 160g, queijo prato, mix de alface, tomate, cebola roxa e relish de pepino. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011544_36JK_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "B411BE",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "5bc526d1-a091-4a42-809b-b0b1804b442e",
+                    "code": "5bc526d1-a091-4a42-809b-b0b1804b442e",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "2ded405b-2414-4523-93bf-3d72e6cc43e4",
+                    "code": "2ded405b-2414-4523-93bf-3d72e6cc43e4",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "cee4ef35-17b3-472b-9b07-d0f0c7814462",
+                    "code": "cee4ef35-17b3-472b-9b07-d0f0c7814462",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "593856",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "2e534260-af46-4524-8524-4f1f1aedb380",
+                    "code": "2e534260-af46-4524-8524-4f1f1aedb380",
+                    "description": "Adicional bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "c1434186-df98-4982-91c0-f243329caa90",
+                    "code": "c1434186-df98-4982-91c0-f243329caa90",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias queijo adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "e5ed8599-4cc2-45bc-b7d3-67c64bd71e33",
+                    "code": "e5ed8599-4cc2-45bc-b7d3-67c64bd71e33",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias queijo adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "13026016-a660-4b0a-85b1-d5e3aeb4dd96",
+                    "code": "13026016-a660-4b0a-85b1-d5e3aeb4dd96",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "29999e88-bf83-4d8a-82d0-17246bac5b5c",
+                    "code": "29999e88-bf83-4d8a-82d0-17246bac5b5c",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "9950c65e-70de-4c18-a3fa-d724a1be0989",
+                    "code": "9950c65e-70de-4c18-a3fa-d724a1be0989",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "1cd09ae6-3e67-4283-aeac-6e5fc47aaf89",
+                    "code": "1cd09ae6-3e67-4283-aeac-6e5fc47aaf89",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "77fc5ac6-d366-4670-839c-10f7f6d7bf66",
+                    "code": "77fc5ac6-d366-4670-839c-10f7f6d7bf66",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "5be525c3-079f-4773-bd05-dec343282a55",
+                    "code": "5be525c3-079f-4773-bd05-dec343282a55",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "7fd3fe02-2a29-48d0-8285-7d4a7d9c0896",
+                    "code": "7fd3fe02-2a29-48d0-8285-7d4a7d9c0896",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "316b0808-b409-41bb-bf88-377c1718edf3",
+                    "code": "316b0808-b409-41bb-bf88-377c1718edf3",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "16da78a4-f6a3-480a-b06f-e793691de1c9",
+                    "code": "16da78a4-f6a3-480a-b06f-e793691de1c9",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "b9fc13dc-ea6c-49c9-88b5-9216299a7c81",
+                    "code": "b9fc13dc-ea6c-49c9-88b5-9216299a7c81",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "d235a4c0-5712-4ba5-be16-2fdda2db1cf8",
+                    "code": "d235a4c0-5712-4ba5-be16-2fdda2db1cf8",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 41.9,
+            "unitMinPrice": 41.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }]
+          },
+          {
+            "id": "124e42c2-a75c-4364-bd12-c18365d542bc",
+            "code": "124e42c2-a75c-4364-bd12-c18365d542bc",
+            "description": "Union Station",
+            "details": "Pão rústico, molho do chef, hambúrguer bovino de 160g, queijo prato, generosas fatias de bacon. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011543_08I7_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "62E32B",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "8f3a2327-ca4d-4a89-9a4f-c7ded364270c",
+                    "code": "8f3a2327-ca4d-4a89-9a4f-c7ded364270c",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "594b96ae-5395-4418-9f4d-ed9db212c34b",
+                    "code": "594b96ae-5395-4418-9f4d-ed9db212c34b",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "8b093b53-c212-48be-958e-61729ae6f186",
+                    "code": "8b093b53-c212-48be-958e-61729ae6f186",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "18F5F8",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "4c7d44a8-3bed-4eac-bc8d-9a8f4862dc74",
+                    "code": "4c7d44a8-3bed-4eac-bc8d-9a8f4862dc74",
+                    "description": "Adicional bacon Extra",
+                    "details": "50gramas bacon fatias",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "080c02e2-792f-41f5-bafa-c9092a2fe817",
+                    "code": "080c02e2-792f-41f5-bafa-c9092a2fe817",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "b0811970-8755-4a06-ba6d-c02e1ca87154",
+                    "code": "b0811970-8755-4a06-ba6d-c02e1ca87154",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "0c526e55-a783-4c45-8d31-8c1ad5e6f75f",
+                    "code": "0c526e55-a783-4c45-8d31-8c1ad5e6f75f",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.5
+                  },
+                  {
+                    "id": "e57ea60f-ba22-44ae-9916-e3e65951ab01",
+                    "code": "e57ea60f-ba22-44ae-9916-e3e65951ab01",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "69cb03b9-dd17-4ef0-9d18-3ff8b810952d",
+                    "code": "69cb03b9-dd17-4ef0-9d18-3ff8b810952d",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "ae1fe142-9e8f-4604-a022-8981620026e4",
+                    "code": "ae1fe142-9e8f-4604-a022-8981620026e4",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "056f0540-56fa-43fb-a23c-b18def2ae560",
+                    "code": "056f0540-56fa-43fb-a23c-b18def2ae560",
+                    "description": "Adicional relish de pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "9795a2bd-c99e-4e77-969b-df1401925727",
+                    "code": "9795a2bd-c99e-4e77-969b-df1401925727",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção Aprox  90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "68a24de7-1f9c-44c4-b067-ac785b938572",
+                    "code": "68a24de7-1f9c-44c4-b067-ac785b938572",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a637389a-347b-4340-aae5-d7c6ca01e027",
+                    "code": "a637389a-347b-4340-aae5-d7c6ca01e027",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "34d85831-9418-4537-9f8c-adcf4b27aec1",
+                    "code": "34d85831-9418-4537-9f8c-adcf4b27aec1",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "fa6238ef-c93e-4692-b1b8-3f3eb2aa2440",
+                    "code": "fa6238ef-c93e-4692-b1b8-3f3eb2aa2440",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "86dc6f76-0244-406f-bef4-d5fa74307ff4",
+                    "code": "86dc6f76-0244-406f-bef4-d5fa74307ff4",
+                    "description": "Adicional Hamb. Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 41.9,
+            "unitMinPrice": 41.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "124e42c2-a75c-4364-bd12-c18365d542bc", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "be616c9b-7436-4c88-b595-e8a08c4896c6",
+            "code": "be616c9b-7436-4c88-b595-e8a08c4896c6",
+            "description": "West Sommerset",
+            "details": "Pão brioche, molho barbecue, hambúrguer bovino 160g, 4 fatias de queijo cheddar e cebola caramelizada. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110011551_F17T_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "1E5648",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "4ea014a2-ed96-47f5-b1b8-d136a59dde02",
+                    "code": "4ea014a2-ed96-47f5-b1b8-d136a59dde02",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "eb36e07e-0092-4eda-ad21-9a704db07ade",
+                    "code": "eb36e07e-0092-4eda-ad21-9a704db07ade",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "5b48de9a-2ec8-46af-ac05-7b9d294e517b",
+                    "code": "5b48de9a-2ec8-46af-ac05-7b9d294e517b",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "AAC762",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "ce7dc035-4854-4cba-8923-c70952c00af2",
+                    "code": "ce7dc035-4854-4cba-8923-c70952c00af2",
+                    "description": "Adicional bacon Extra",
+                    "details": "50gramas bacon fatias",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "9a1b9a3f-fe24-41ac-908b-eb50cb44e4a2",
+                    "code": "9a1b9a3f-fe24-41ac-908b-eb50cb44e4a2",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias queijo prato adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "c777bbed-c560-4d3f-829d-39c455cba6b8",
+                    "code": "c777bbed-c560-4d3f-829d-39c455cba6b8",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias Queijo Cheddar Adicional",
+                    "unitPrice": 4.5
+                  },
+                  {
+                    "id": "53b6c25d-9240-4343-82c5-ce14761b370f",
+                    "code": "53b6c25d-9240-4343-82c5-ce14761b370f",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.5
+                  },
+                  {
+                    "id": "059d479a-3024-414f-82d8-1b3538f102ea",
+                    "code": "059d479a-3024-414f-82d8-1b3538f102ea",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "fc5eee90-e878-4aab-9584-39cd142e488b",
+                    "code": "fc5eee90-e878-4aab-9584-39cd142e488b",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "9aa9eab5-492c-464f-8a2d-886cf1d7d2d7",
+                    "code": "9aa9eab5-492c-464f-8a2d-886cf1d7d2d7",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "02ec4bf2-ed06-4be7-a224-bb03a4acb825",
+                    "code": "02ec4bf2-ed06-4be7-a224-bb03a4acb825",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "9fb308b2-356a-44c3-95c7-92bede733aa7",
+                    "code": "9fb308b2-356a-44c3-95c7-92bede733aa7",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "627d14f6-8c5c-48a4-934b-07f6c914e5c2",
+                    "code": "627d14f6-8c5c-48a4-934b-07f6c914e5c2",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "1373a286-d109-4762-af1a-33bfc3e6d7fa",
+                    "code": "1373a286-d109-4762-af1a-33bfc3e6d7fa",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "2478f439-441f-40eb-96a5-24de656bf577",
+                    "code": "2478f439-441f-40eb-96a5-24de656bf577",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "1915fc6c-099d-4258-90b4-92be5714eaee",
+                    "code": "1915fc6c-099d-4258-90b4-92be5714eaee",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "ecf4f7a5-d04f-4114-90fe-c16b2a46e0fe",
+                    "code": "ecf4f7a5-d04f-4114-90fe-c16b2a46e0fe",
+                    "description": "Adicional Hamburguer Costela",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 39.9,
+            "unitMinPrice": 39.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }]
+          }
+        ]
+      },
+      {
+        "code": "0f7cc82b-19a3-44f2-bf13-2e1e06acdec6",
+        "name": "Linha premium",
+        "itens": [
+          {
+            "id": "da2f70aa-a9cf-49e9-be74-e43153d0fb7e",
+            "code": "da2f70aa-a9cf-49e9-be74-e43153d0fb7e",
+            "description": "Estação Atocha",
+            "details": "Pão Brioche, Maionese Tradicional, Rúcula, Tomate, Hamburguer Recheado Com Gorgonzola De 220g, Queijo Cheddar E Farofa De Bacon E Doritos. Acompanha Batata Frita",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202111022132_TDLP_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "B94910",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "code": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "code": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "code": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "01CD82",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "code": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "code": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "code": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "code": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "code": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "code": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "code": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "code": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "code": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "code": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "code": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "code": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "code": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "code": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 44.9,
+            "unitMinPrice": 44.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "da2f70aa-a9cf-49e9-be74-e43153d0fb7e", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "9a663377-5637-4177-8794-53194feb0570",
+            "code": "9a663377-5637-4177-8794-53194feb0570",
+            "description": "Estação São Bento",
+            "details": "Pão baguete, molho do chef, hambúrguer de 220g recheado com queijo gorgonzola, queijo cheddar, anel de cebola com bacon, cebola crispy. Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110051141_N01Q_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "F4F919",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "f6f9e902-d55d-474a-9dc1-588ed30e1847",
+                    "code": "f6f9e902-d55d-474a-9dc1-588ed30e1847",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "b5714e7a-3305-4932-ae18-237da8aebe87",
+                    "code": "b5714e7a-3305-4932-ae18-237da8aebe87",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "cd698245-9dfd-4830-9810-e97b2d3f89a5",
+                    "code": "cd698245-9dfd-4830-9810-e97b2d3f89a5",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "74DBE2",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 10,
+                "garnishItens": [
+                  {
+                    "id": "83212bd0-3cac-4202-b155-6ea5ee4c1164",
+                    "code": "83212bd0-3cac-4202-b155-6ea5ee4c1164",
+                    "description": "Bacon Extra",
+                    "details": "Bacon fatias 50g",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "58820996-53ca-41c5-861b-879bf5d1b8ce",
+                    "code": "58820996-53ca-41c5-861b-879bf5d1b8ce",
+                    "description": "Queijo prato Extra",
+                    "details": "2 fatias Queijo prato adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "d5ea0da7-2ebc-4edf-b996-280ff2c1adf4",
+                    "code": "d5ea0da7-2ebc-4edf-b996-280ff2c1adf4",
+                    "description": "Queijo cheddar Extra",
+                    "details": "2 fatias Queijo cheddar adicional",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "6be28788-161f-408a-8cc3-a1658e9f4b7b",
+                    "code": "6be28788-161f-408a-8cc3-a1658e9f4b7b",
+                    "description": "Ovo Frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "25b912e6-76d6-4408-8b5a-43a8121849ae",
+                    "code": "25b912e6-76d6-4408-8b5a-43a8121849ae",
+                    "description": "Tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "6c3a4cc9-2d3f-4df6-bf0b-3cdfbca28ff7",
+                    "code": "6c3a4cc9-2d3f-4df6-bf0b-3cdfbca28ff7",
+                    "description": "Alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "0f435f14-2551-449b-a005-5283e5237653",
+                    "code": "0f435f14-2551-449b-a005-5283e5237653",
+                    "description": "Relish de pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "7a0916f6-9ffc-4801-9172-a700a9299f85",
+                    "code": "7a0916f6-9ffc-4801-9172-a700a9299f85",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "5dead675-31a7-4523-9cd8-270cc906e926",
+                    "code": "5dead675-31a7-4523-9cd8-270cc906e926",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "13568b4c-b05d-442e-bb6b-cc83090359bb",
+                    "code": "13568b4c-b05d-442e-bb6b-cc83090359bb",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "f12fc522-b376-4e48-b7b5-64bdc37124fa",
+                    "code": "f12fc522-b376-4e48-b7b5-64bdc37124fa",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "6cdcd872-66c2-4377-9dee-de5e718e262b",
+                    "code": "6cdcd872-66c2-4377-9dee-de5e718e262b",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "69f58017-9115-4e36-b152-28cadf7cf90e",
+                    "code": "69f58017-9115-4e36-b152-28cadf7cf90e",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "5d2d3522-053d-4ea2-96c9-4399bafa3db2",
+                    "code": "5d2d3522-053d-4ea2-96c9-4399bafa3db2",
+                    "description": "Cebola Caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "361f1b35-6e0a-4526-8c97-ed4aa303c889",
+                    "code": "361f1b35-6e0a-4526-8c97-ed4aa303c889",
+                    "description": "Geleia Pimenta e Abacaxi",
+                    "details": "Geleia Pimenta e Abacaxi",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b4016da6-b01d-443a-adb7-a86b544d8b64",
+                    "code": "b4016da6-b01d-443a-adb7-a86b544d8b64",
+                    "description": "Geleia Bacon",
+                    "details": "Geleia Bacon",
+                    "unitPrice": 3.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 46.9,
+            "unitMinPrice": 46.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "9a663377-5637-4177-8794-53194feb0570", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "04ce10eb-9e39-4de9-ac06-5139a5000700",
+            "code": "04ce10eb-9e39-4de9-ac06-5139a5000700",
+            "description": "Grand Central.",
+            "details": "Pão brioche, geléia de abacaxi com pimenta, rúcula, hambúrguer de costela 160g, queijo brie empanado em panko, Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110051155_KT7Y_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "3683D2",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "cd8769ad-d43d-44d8-9fcd-5eff0e21f3a6",
+                    "code": "cd8769ad-d43d-44d8-9fcd-5eff0e21f3a6",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "0db4f3e7-cd86-4805-aa69-20895923a716",
+                    "code": "0db4f3e7-cd86-4805-aa69-20895923a716",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "303c604b-2c15-4db4-afe6-dc82bb1b16fd",
+                    "code": "303c604b-2c15-4db4-afe6-dc82bb1b16fd",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 0,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "B94910",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "code": "303ec05a-d04c-4f5c-8559-f08579e9f6de",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "code": "4d826da7-b7b2-4da1-92e3-4fa79aec6ad2",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "code": "108b2c23-6b34-49fa-8e4b-ad6d3444f41a",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "01CD82",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 8,
+                "garnishItens": [
+                  {
+                    "id": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "code": "34e2ee20-1e89-4986-bd4e-bfc546470418",
+                    "description": "Adicional de bacon Extra",
+                    "details": "50 gramas bacon fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "code": "fdc4dcd4-fb0e-482f-b704-f38384936a7a",
+                    "description": "Adicional queijo prato Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "code": "dfa55cc4-b6ee-4982-971e-559919f4dbb4",
+                    "description": "Adicional queijo cheddar Extra",
+                    "details": "2 fatias adicionais",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "code": "b8035eb7-dee7-4b9d-a3f2-4994906292ac",
+                    "description": "Ovo frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "code": "cd0bf859-ef41-4f0c-9c14-1d328254e84e",
+                    "description": "Adicional cebola caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "code": "592d2d5b-4074-4505-ab1f-585d3cb9fbbf",
+                    "description": "Adicional tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "code": "bafe6cfe-816b-48a6-8f75-5c1d01c295c1",
+                    "description": "Adicional alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "code": "18ddd086-189b-4e8a-9c2f-3b75262623ad",
+                    "description": "Adicional relish pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "code": "05ceb216-0fd3-4929-b6b5-9ad2a8730a9b",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "code": "eb72f0be-6abb-41af-94e7-0069a3aa09f6",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "code": "8b5dd96a-cc30-424f-b8b6-8f893e6469c6",
+                    "description": "Adicional Hamb. Tradicional",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "code": "c1d81588-5c7d-40a6-8c16-ec8db89753e4",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Adicional Hamburguer de Costela 160 gramas",
+                    "unitPrice": 10.5
+                  },
+                  {
+                    "id": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "code": "15b38a23-2c68-404e-8465-336db85af4ae",
+                    "description": "Adicional Batata Palito Extra",
+                    "details": "Porção aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "code": "a657e5fb-9606-45dd-aad9-306d42f87fe8",
+                    "description": "Adicional Batata Rustica Extra",
+                    "details": "Porção aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 46.9,
+            "unitMinPrice": 46.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }]
+          },
+          {
+            "id": "73142fd0-152c-4ec8-8e99-203656810ac5",
+            "code": "73142fd0-152c-4ec8-8e99-203656810ac5",
+            "description": "Kuala lumpur",
+            "details": "Pão baguete, maionese defumada, alface americana, tomate, hamburguer de picanha 160g, fatia de queijo coalho e geléia de bacon, Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110051151_A4J8_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "AD65FE",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "2bb579bf-6a2a-4896-b6d2-b680dd1178a9",
+                    "code": "2bb579bf-6a2a-4896-b6d2-b680dd1178a9",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "5496f729-7078-40a7-a7d1-5f1538ecfcdf",
+                    "code": "5496f729-7078-40a7-a7d1-5f1538ecfcdf",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "a3e29adc-cb74-4acb-bc61-325cade5d04b",
+                    "code": "a3e29adc-cb74-4acb-bc61-325cade5d04b",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "1E8407",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 10,
+                "garnishItens": [
+                  {
+                    "id": "30473364-c493-48de-816d-0e7bf7506e4c",
+                    "code": "30473364-c493-48de-816d-0e7bf7506e4c",
+                    "description": "Bacon Extra",
+                    "details": "Bacon 50g fatias",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "adb0cc9e-85e3-42e1-9275-9407eb5a0ddf",
+                    "code": "adb0cc9e-85e3-42e1-9275-9407eb5a0ddf",
+                    "description": "Queijo prato Extra",
+                    "details": "2 fatias Queijo prato",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "670a464f-a808-4708-bd5b-8194ccba2ad0",
+                    "code": "670a464f-a808-4708-bd5b-8194ccba2ad0",
+                    "description": "Queijo cheddar Extra",
+                    "details": "2 fatias Queijo cheddar",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "06d70549-4e8f-4033-94db-db7bd9ef0123",
+                    "code": "06d70549-4e8f-4033-94db-db7bd9ef0123",
+                    "description": "Ovo Frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "8492d16e-c70d-43ea-8d60-ce0d881109e3",
+                    "code": "8492d16e-c70d-43ea-8d60-ce0d881109e3",
+                    "description": "Tomate Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "0929501d-2cb1-4655-aeac-19897eb640f2",
+                    "code": "0929501d-2cb1-4655-aeac-19897eb640f2",
+                    "description": "Alface americana Extra",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "e4c98c46-0086-4b29-94aa-4e44b57e4e82",
+                    "code": "e4c98c46-0086-4b29-94aa-4e44b57e4e82",
+                    "description": "Relish de pepino Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "ecde27cc-fd3c-4a32-9f0f-f1dc5140e0bb",
+                    "code": "ecde27cc-fd3c-4a32-9f0f-f1dc5140e0bb",
+                    "description": "Cebola Caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "1ecc0464-a2e4-4aa8-8ea8-370016cd0907",
+                    "code": "1ecc0464-a2e4-4aa8-8ea8-370016cd0907",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "f7259114-00f7-4cec-a95a-f1a66e9f6576",
+                    "code": "f7259114-00f7-4cec-a95a-f1a66e9f6576",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "c871a90f-4037-4904-a633-a2b01fe11360",
+                    "code": "c871a90f-4037-4904-a633-a2b01fe11360",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "4a4dfd77-d5ce-47ae-973a-8f6c2338d395",
+                    "code": "4a4dfd77-d5ce-47ae-973a-8f6c2338d395",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "58f0b693-7f50-4846-aac8-6b3462ca2173",
+                    "code": "58f0b693-7f50-4846-aac8-6b3462ca2173",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "9691abaa-1702-4736-bbcd-b4036b5349de",
+                    "code": "9691abaa-1702-4736-bbcd-b4036b5349de",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "9d2d51a1-484c-4457-aab4-8270a6053d84",
+                    "code": "9d2d51a1-484c-4457-aab4-8270a6053d84",
+                    "description": "Geleia Pimenta e Abacaxi",
+                    "details": "Geleia Pimenta e Abacaxi",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "7ca3603a-b9ba-4daa-bbf2-4ce2c38422f8",
+                    "code": "7ca3603a-b9ba-4daa-bbf2-4ce2c38422f8",
+                    "description": "Geleia Bacon",
+                    "details": "Geleia Bacon",
+                    "unitPrice": 3.5
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 47.9,
+            "unitMinPrice": 47.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "73142fd0-152c-4ec8-8e99-203656810ac5", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "0c00c700-41bf-496b-8734-b4f338497baf",
+            "code": "0c00c700-41bf-496b-8734-b4f338497baf",
+            "description": "Southern Cross",
+            "details": "Pão Australiano, maionese defumada, hambúrguer tradicional 160g, queijo cheddar, anel de cebola empanada, creme cheddar, bacon crispy, Acompanha Batata a Sua escolha.",
+            "logoUrl": "71edbaa0-08a3-4a8e-8902-8b176cf5d7af/202110051149_8O35_i.jpg",
+            "needChoices": true,
+            "choices": [
+              {
+                "code": "AAA475",
+                "name": "Ponto da carne",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "3d1214e9-7ec9-4a8d-a35c-5f747eaa5880",
+                    "code": "3d1214e9-7ec9-4a8d-a35c-5f747eaa5880",
+                    "description": "Mal passado",
+                    "details": "Mal passado",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "4c7a008f-b40e-4616-8c4e-d832ffc317d5",
+                    "code": "4c7a008f-b40e-4616-8c4e-d832ffc317d5",
+                    "description": "Ao ponto",
+                    "details": "Ao ponto",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "f3fc106f-938b-4ea3-858f-9559bdb2bb0b",
+                    "code": "f3fc106f-938b-4ea3-858f-9559bdb2bb0b",
+                    "description": "Bem passado",
+                    "details": "Bem passado",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "744539",
+                "name": "Opção de Batata",
+                "min": 1,
+                "max": 1,
+                "garnishItens": [
+                  {
+                    "id": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "code": "86f2fd27-d106-4fe5-a3cf-e2eb4c5cc9c9",
+                    "description": "Batata Palito",
+                    "details": "Aprox. 90g",
+                    "unitPrice": 0.0
+                  },
+                  {
+                    "id": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "code": "ad06fac9-8bf5-4ba2-a5ca-45456e436014",
+                    "description": "Batata Rustica",
+                    "details": "Aprox. 100g",
+                    "unitPrice": 0.0
+                  }
+                ]
+              },
+              {
+                "code": "D3762B",
+                "name": "Adicionais",
+                "min": 0,
+                "max": 10,
+                "garnishItens": [
+                  {
+                    "id": "d813b0d7-11d9-4abb-b332-c8f68641a3e7",
+                    "code": "d813b0d7-11d9-4abb-b332-c8f68641a3e7",
+                    "description": "Bacon Extra",
+                    "details": "Bacon fatias 50g",
+                    "unitPrice": 4.0
+                  },
+                  {
+                    "id": "acce1859-a192-4899-9950-ec0d15aae102",
+                    "code": "acce1859-a192-4899-9950-ec0d15aae102",
+                    "description": "Queijo prato Extra",
+                    "details": "2 fatias Queijo prato",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "fef443e3-afa5-42aa-a4ea-21e1d250d6e4",
+                    "code": "fef443e3-afa5-42aa-a4ea-21e1d250d6e4",
+                    "description": "Queijo cheddar Extra",
+                    "details": "2 fatias Queijo cheddar",
+                    "unitPrice": 3.5
+                  },
+                  {
+                    "id": "2570af93-4bda-408f-ac7b-5835a508c4a3",
+                    "code": "2570af93-4bda-408f-ac7b-5835a508c4a3",
+                    "description": "Ovo Frito Extra",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "3d05dbcb-cca4-4579-a74d-02614b243643",
+                    "code": "3d05dbcb-cca4-4579-a74d-02614b243643",
+                    "description": "Tomate Extra",
+                    "details": "Tomate",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "5a5a8e82-299d-4213-b1e7-4e503f8e38aa",
+                    "code": "5a5a8e82-299d-4213-b1e7-4e503f8e38aa",
+                    "description": "Alface americana Extra",
+                    "details": "Alface americana",
+                    "unitPrice": 1.5
+                  },
+                  {
+                    "id": "9a3b3cfc-782c-4167-bd41-4af3e9410621",
+                    "code": "9a3b3cfc-782c-4167-bd41-4af3e9410621",
+                    "description": "Relish de pepino Extra",
+                    "details": "Relish de pepino",
+                    "unitPrice": 2.0
+                  },
+                  {
+                    "id": "6e3dbd67-76b2-4047-989e-1b3713cf86c2",
+                    "code": "6e3dbd67-76b2-4047-989e-1b3713cf86c2",
+                    "description": "Adicional Cebola Caramelizada Extra",
+                    "unitPrice": 3.0
+                  },
+                  {
+                    "id": "fc016126-c3d8-43d7-81c8-a0b664dbe5d1",
+                    "code": "fc016126-c3d8-43d7-81c8-a0b664dbe5d1",
+                    "description": "Batata Palito Extra",
+                    "details": "Porção Aprox. 90 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "d994fa13-dea7-44c2-8453-9b8d36df315c",
+                    "code": "d994fa13-dea7-44c2-8453-9b8d36df315c",
+                    "description": "Batata Rustica Extra",
+                    "details": "Porção Aprox. 100 gramas",
+                    "unitPrice": 6.0
+                  },
+                  {
+                    "id": "13fe804b-b858-4cbf-b0d9-fc6c1ad3adc5",
+                    "code": "13fe804b-b858-4cbf-b0d9-fc6c1ad3adc5",
+                    "description": "Adicional Queijo Coalho Extra",
+                    "unitPrice": 7.5
+                  },
+                  {
+                    "id": "b25d1eca-f3a4-4529-92cf-42d75591534a",
+                    "code": "b25d1eca-f3a4-4529-92cf-42d75591534a",
+                    "description": "Adicional Queijo Brie Empanado Extra",
+                    "unitPrice": 10.0
+                  },
+                  {
+                    "id": "10af209e-35e5-446d-97c7-593dec6a7093",
+                    "code": "10af209e-35e5-446d-97c7-593dec6a7093",
+                    "description": "Adicional Hamb. Tradicional Extra",
+                    "details": "Hamburguer Tradicional 160gramas",
+                    "unitPrice": 9.0
+                  },
+                  {
+                    "id": "c6f9cfe1-f1e8-4002-996d-633722537e6d",
+                    "code": "c6f9cfe1-f1e8-4002-996d-633722537e6d",
+                    "description": "Adicional Hamburguer Costela Extra",
+                    "details": "Hamburguer Costela 160gramas",
+                    "unitPrice": 10.0
+                  }
+                ]
+              }
+            ],
+            "unitPrice": 46.9,
+            "unitMinPrice": 46.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["SERVES_1"] }],
+            "productInfo": { "id": "0c00c700-41bf-496b-8734-b4f338497baf", "quantity": 0, "unit": "g" }
+          }
+        ]
+      },
+      {
+        "code": "e1f04b4b-372e-4393-9dff-42078d133801",
+        "name": "Molhos (Pote de 140ml)",
+        "itens": [
+          {
+            "id": "17a52127-7886-4a79-a9fb-cf735932d489",
+            "code": "17a52127-7886-4a79-a9fb-cf735932d489",
+            "description": "Potinho de Maionese Tradicional",
+            "details": "Potinho de 140 ml de maionese tradicional",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "17a52127-7886-4a79-a9fb-cf735932d489", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "88d444a6-9c75-4225-be82-b99999b6e49a",
+            "code": "88d444a6-9c75-4225-be82-b99999b6e49a",
+            "description": "Potinho de Molho Do Chef",
+            "details": "Potinho de 140 ml de molho do Chef",
+            "needChoices": false,
+            "unitPrice": 8.9,
+            "unitMinPrice": 8.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "88d444a6-9c75-4225-be82-b99999b6e49a", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "98893294-1621-48a3-a982-be7099b4a8ac",
+            "code": "98893294-1621-48a3-a982-be7099b4a8ac",
+            "description": "Potinho de Maionese de Páprica",
+            "details": "Potinho de 140 ml de maionese de Páprica",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "98893294-1621-48a3-a982-be7099b4a8ac", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "9a4147da-6cec-415c-abec-82c1837c6baf",
+            "code": "9a4147da-6cec-415c-abec-82c1837c6baf",
+            "description": "Pote de Molho Barbecue Artesanal",
+            "details": "Pote de 120 ml de Molho Barbecue Artesanal",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }]
+          },
+          {
+            "id": "ab466b45-6cb5-4c48-9c4e-871e087fac25",
+            "code": "ab466b45-6cb5-4c48-9c4e-871e087fac25",
+            "description": "Potinho de Maionese Defumada",
+            "details": "Potinho de 140 ml de maionese defumada",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "ab466b45-6cb5-4c48-9c4e-871e087fac25", "quantity": 0, "unit": "g" }
+          },
+          {
+            "id": "2840d7f5-9ad2-4a9b-bd0f-09bbe9f7e839",
+            "code": "2840d7f5-9ad2-4a9b-bd0f-09bbe9f7e839",
+            "description": "Pote de Molho de Cogumelos",
+            "details": "Pote de 120 ml de Molho de cogumelos",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }]
+          },
+          {
+            "id": "a6f8ab42-0e78-4146-abac-e001416b0907",
+            "code": "a6f8ab42-0e78-4146-abac-e001416b0907",
+            "description": "Bisnaga de Molho Do Chef",
+            "details": "Bisnaga de 120ml de molho do Chef",
+            "needChoices": false,
+            "unitPrice": 9.9,
+            "unitMinPrice": 9.9,
+            "productTags": [{ "group": "PORTION_SIZE", "tags": ["NOT_APPLICABLE"] }],
+            "productInfo": { "id": "a6f8ab42-0e78-4146-abac-e001416b0907", "quantity": 0, "unit": "g" }
+          }
+        ]
+      }
+    ]
+  }
+}
