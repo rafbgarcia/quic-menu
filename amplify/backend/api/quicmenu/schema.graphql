@@ -2,45 +2,100 @@
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
-type Place @model @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+enum PlaceType {
+  Restaurant
+}
+
+type FoodPlace @model @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+  type: PlaceType
   owner: String
   name: String!
-  category: String
-  about: String
-  menuGroups: [MenuGroup] @hasMany
+  description: String
+  phone: String
+  address: Address
+  takeoutTime: Int
+  deliveryTime: Int
+  minimumOrderPrice: Int
+  isDisabled: Boolean
+  priceRange: PriceRating
+  shifts: [Shift]
+  mainCategory: String
+  categories: [String]
+  documents: [Document]
+}
+
+type Document {
+  type: String
+  value: String
+}
+
+enum PriceRating {
+  one
+  two
+  three
+  four
+  five
+}
+
+type Shift {
+  dayOfWeek: String
+  start: String
+  end: String
+}
+
+type Address {
+  district: String
+  city: String
+  state: String
+  country: String
+  latitude: Float
+  longitude: Float
+  timezone: String
+  zipCode: String
+  streetName: String
+  streetNumber: String
 }
 
 type MenuGroup @model @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+  foodPlace: FoodPlace @belongsTo
   name: String!
+  template: String
   items: [MenuItem!]!
-}
-
-type ItemImages {
-  small: String
-  medium: String
-  large: String
 }
 
 type MenuItem {
   name: String!
-  price: Float!
-  discountPrice: Float
   description: String
-  images: ItemImages
-  hide: Boolean
-  hideFromDelivery: Boolean
-  minimumAge: Int
+  imageKey: String
+  unitPrice: Float!
+  unitMinPrice: Float!
+  needChoices: Boolean
+  discountPrice: Float
+  choices: [Choice]
+}
+
+type Choice {
+  name: String!
+  min: Int!
+  max: Int!
+  items: [ChoiceItem]
+}
+
+type ChoiceItem {
+  description: String!
+  unitPrice: Float!
 }
 
 #########
 # Order #
 #########
 
-type Order @model @auth(rules: [{ allow: public }]) {
+type Order @model @auth(rules: [{ allow: public, operations: [create, read] }]) {
   items: [OrderItem!]!
   status: OrderStatus!
-  toGo: Boolean
-  meta: OrderMetadata
+  table: String
+  isTakeout: Boolean
+  isDelivery: Boolean
 }
 
 type OrderItem {
@@ -51,10 +106,5 @@ type OrderItem {
 
 enum OrderStatus {
   requested
-  acknowledged
-  complete
-}
-
-type OrderMetadata {
-  table: String
+  paid
 }
